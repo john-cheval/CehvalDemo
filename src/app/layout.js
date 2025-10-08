@@ -118,7 +118,10 @@ export default function RootLayout({ children }) {
         </noscript>
 
         {/* Single Google Tag Manager implementation */}
-        <Script id="google-tag-manager" strategy="lazyOnload" /* partytown */>
+        <Script
+          id="google-tag-manager"
+          strategy="afterInteractive" /* partytown */
+        >
           {`
             (function(w,d,s,l,i){
               w[l]=w[l]||[];
@@ -135,11 +138,11 @@ export default function RootLayout({ children }) {
         {/* Consolidated Analytics Scripts - afterInteractive ensures they don't block rendering */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-E4N6B3LXG2"
-          strategy="lazyOnload"
+          strategy="afterInteractive"
         />
 
         {/* Consolidated Google Analytics */}
-        <Script id="google-analytics" strategy="lazyOnload">
+        <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -150,7 +153,10 @@ export default function RootLayout({ children }) {
           `}
         </Script>
 
-        <Script id="linkedin-insight" strategy="lazyOnload" /* partytown */>
+        <Script
+          id="linkedin-insight"
+          strategy="afterInteractive" /* partytown */
+        >
           {`
             _linkedin_partner_id = "6408778";
             window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
@@ -172,7 +178,7 @@ export default function RootLayout({ children }) {
         </Script>
 
         {/* Form tracking */}
-        <Script id="form-tracking" strategy="lazyOnload" /* partytown */>
+        <Script id="form-tracking" strategy="afterInteractive" /* partytown */>
           {`
             document.addEventListener("wpcf7mailsent", function(event) {
               window.location = "https://chevalme.com/thank-you/";
