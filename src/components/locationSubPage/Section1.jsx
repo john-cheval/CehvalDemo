@@ -80,9 +80,9 @@ function Section1({ data }) {
                 <div className="flex flex-col  w-full h-full" key={index + 1}>
                   <Image
                     src={item?.image?.url}
-                    height={0}
-                    width={0}
-                    sizes="100vw"
+                    height={400}
+                    width={300}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     alt={item?.title}
                     // unoptimized={disableImageOptimization}
                     className="w-full h-60 object-cover object-center"
@@ -192,7 +192,8 @@ function Section1({ data }) {
                             src={item?.image?.url}
                             height={0}
                             width={0}
-                            sizes="100vw"
+                            // sizes="100vw"
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                             alt={item?.title}
                             // unoptimized={disableImageOptimization}
                             className="h-[358px] w-full col-span-10 lg:col-span-6 object-cover object-center"
@@ -227,7 +228,8 @@ function Section1({ data }) {
                       src={section?.sub_sections[0]?.image?.url}
                       width={0}
                       height={0}
-                      sizes="100vw"
+                      // sizes="100vw"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       // unoptimized={disableImageOptimization}
                       alt={section?.sub_sections[0]?.title || "image"}
                       className="object-cover- w-[60%] absolute top-0 left-0 h-full object-left hidden lg:block"

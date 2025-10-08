@@ -26,19 +26,21 @@ const SeoSectionThree = ({ section }) => {
             dangerouslySetInnerHTML={{ __html: section?.description }}
           ></div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
-            {section?.sub_sections?.map((card, index) => (
-              <div key={index} className="space-y-3">
-                <p className="text-[#27172f] font-sora text-xl sm:text-2xl md:text-3xl font-semibold leading-[136.5%] text-center md:text-left">
-                  {card?.title}
-                </p>
-                <div
-                  className="text-sm text-black font-satoshi leading-[173.85%] md:max-w-[430px] w-full  text-center md:text-left"
-                  dangerouslySetInnerHTML={{ __html: card?.description }}
-                ></div>
-              </div>
-            ))}
-          </div>
+          {section?.sub_sections && (
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+              {section?.sub_sections?.map((card, index) => (
+                <div key={index} className="space-y-3">
+                  <p className="text-[#27172f] font-sora text-xl sm:text-2xl md:text-3xl font-semibold leading-[136.5%] text-center md:text-left">
+                    {card?.title}
+                  </p>
+                  <div
+                    className="text-sm text-black font-satoshi leading-[173.85%] md:max-w-[430px] w-full  text-center md:text-left"
+                    dangerouslySetInnerHTML={{ __html: card?.description }}
+                  ></div>
+                </div>
+              ))}
+            </div>
+          )}
         </div>
       </div>
     </div>

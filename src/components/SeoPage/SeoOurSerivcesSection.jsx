@@ -40,7 +40,8 @@ const SeoOurSerivcesSection = ({ section }) => {
                   height={400}
                   width={600}
                   // unoptimized={disableImageOptimization}
-                  sizes="100vw"
+                  // sizes="100vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   alt={item?.title}
                   className="w-full h-60- h-auto object-cover- object-center- mb-2-"
                 />

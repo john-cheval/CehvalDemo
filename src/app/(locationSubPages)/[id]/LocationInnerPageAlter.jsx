@@ -22,7 +22,7 @@ const LocationInnerPageAlter = ({
   return (
     <>
       <Section1 data={pageData} />
-      {/*<LocationContact
+      <LocationContact
         title={pageData?.contact_form_heading}
         desc={pageData?.contact_form_description}
       />
@@ -46,7 +46,7 @@ const LocationInnerPageAlter = ({
           faqs_heading_footer={faq_title}
           faqs_list_footer={faq_list}
         />
-      )} */}
+      )}
     </>
   );
 };

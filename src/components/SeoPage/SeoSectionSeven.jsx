@@ -41,7 +41,8 @@ const SeoSectionSeven = ({ section }) => {
               // unoptimized={disableImageOptimization}
               width={100}
               className="object-cover- h-auto w-full rounded-lg"
-              sizes="(min-width: 768px) 50vw, 100vw"
+              // sizes="(min-width: 768px) 50vw, 100vw"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
           </div>
         </div>

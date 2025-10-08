@@ -13,7 +13,8 @@ const WeServeLoc = ({ serveList }) => {
               alt={item?.title}
               height={0}
               width={0}
-              sizes="100vw"
+              // sizes="100vw"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               // unoptimized={disableImageOptimization}
               className="w-10 object-contain h-fit"
             />
