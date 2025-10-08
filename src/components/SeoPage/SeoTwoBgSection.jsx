@@ -17,6 +17,7 @@ const SeoTwoBgSection = ({ section }) => {
                 alt={item?.title || "image"}
                 width={400}
                 height={300}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 className={`object-cover w-full absolute top-0 rounded-lg left-0 ${index === 0 ? "h-[60%] object-center" : "h-full object-top"}`}
               />
               {index === 0 && (

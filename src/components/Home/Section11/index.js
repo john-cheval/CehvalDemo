@@ -210,6 +210,7 @@ function Section11({ data, title, isLocation = false }) {
                       }
                       alt="ratingStar"
                       priority={false}
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     />
                   ))}
                 </div>
@@ -268,6 +269,7 @@ function Section11({ data, title, isLocation = false }) {
                         role="button"
                         tabIndex={0}
                         priority={false}
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       />
                     </button>
 
@@ -307,6 +309,7 @@ function Section11({ data, title, isLocation = false }) {
                     className="absolute -top-8 h-16 object-contain z-50"
                     src={quotation}
                     alt="quotation"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     priority={false}
                   />
                 </div>
@@ -350,6 +353,7 @@ function Section11({ data, title, isLocation = false }) {
                         role="button"
                         tabIndex={0}
                         priority={false}
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       />
                     </button>
                     <p
@@ -388,6 +392,7 @@ function Section11({ data, title, isLocation = false }) {
                     className="absolute -top-8 h-16 object-contain z-50"
                     src={quotation}
                     alt="quotation"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     priority={false}
                   />
                 </div>
@@ -429,6 +434,7 @@ function Section11({ data, title, isLocation = false }) {
                         role="button"
                         tabIndex={0}
                         priority={false}
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       />
                     </button>
                     <p

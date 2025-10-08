@@ -30,7 +30,8 @@ const SeoSectionChoose = ({ section }) => {
                   src={item?.image?.url}
                   width={100}
                   height={100}
-                  sizes="100vw"
+                  // sizes="100vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   className="w-[70px] h-fit object-cover"
                   alt={item?.title}
                   // unoptimized={disableImageOptimization}

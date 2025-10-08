@@ -5,6 +5,7 @@ import Link from "next/link";
 import React from "react";
 
 const SeoBannerSection = ({ left, right, title }) => {
+  const isLCPImage = true;
   return (
     <div className=" grid grid-cols-12 md:grid-cols-12 gap-2 grid-flow-row">
       {left && (
@@ -13,8 +14,11 @@ const SeoBannerSection = ({ left, right, title }) => {
             src={left}
             height={400}
             width={600}
-            sizes="100vw"
             alt={title || "image"}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            fetchpriority="high"
+            loading="eager"
+            priority={isLCPImage}
             // unoptimized={disableImageOptimization}
             className="h-full w-full object-cover object-center--"
           />
@@ -36,9 +40,12 @@ const SeoBannerSection = ({ left, right, title }) => {
           height={400}
           width={600}
           // unoptimized={disableImageOptimization}
-          sizes="100vw"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           alt={title}
           className="h-full w-full object-cover object-center--"
+          fetchpriority="high"
+          loading="eager"
+          priority={isLCPImage}
         />
       </div>
     </div>

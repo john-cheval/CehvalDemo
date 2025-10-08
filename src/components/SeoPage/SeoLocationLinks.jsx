@@ -34,7 +34,8 @@ const SeoLocationLinks = ({ section }) => {
                 <Image
                   src={serv?.image?.url}
                   className="w-11  md:w-20 mt-3-- object-contain h-fit"
-                  sizes="100vw"
+                  // sizes="100vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   height={300}
                   width={400}
                   alt={index}

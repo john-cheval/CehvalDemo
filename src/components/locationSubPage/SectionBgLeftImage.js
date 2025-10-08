@@ -11,7 +11,8 @@ const SectionBgLeftImage = ({ section }) => {
             <Image
               height={720}
               width={680}
-              sizes="100vw"
+              // sizes="100vw"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               src={data?.image?.url}
               alt="left_image"
               className="w-full h-full object-cover"
