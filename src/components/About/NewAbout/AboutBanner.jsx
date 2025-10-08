@@ -238,7 +238,7 @@ const AboutBanner = ({ bannerData, bannerPopupVideo }) => {
                 height={parseInt(img.height)}
                 priority={true}
                 className="w-full h-full object-cover"
-                unoptimized={disableImageOptimization}
+                // unoptimized={disableImageOptimization}
               />
             </div>
           ))}

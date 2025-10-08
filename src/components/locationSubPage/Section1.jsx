@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 // import { ArrowRight, ArrowUpRight } from "lucide-react";
 import WeServeLoc from "./WeServeLoc";
-import Process from "./Process";
+// import Process from "./Process";
 import Section3 from "./Section3";
 import Benifits from "./Benifits";
 import SeoSectionOne from "../SeoPage/SeoSectionOne";
@@ -24,6 +24,8 @@ import LocationServicesLoc from "./ServicesLoc";
 import SeoLocationLinks from "../SeoPage/SeoLocationLinks";
 import { disableImageOptimization } from "@/util/constants";
 import SeoTwoBgSection from "../SeoPage/SeoTwoBgSection";
+import dynamic from "next/dynamic";
+const Process = dynamic(() => import("./Process"));
 
 function Section1({ data }) {
   const expHead = data?.our_services_heading ?? "";
@@ -82,7 +84,7 @@ function Section1({ data }) {
                     width={0}
                     sizes="100vw"
                     alt={item?.title}
-                    unoptimized={disableImageOptimization}
+                    // unoptimized={disableImageOptimization}
                     className="w-full h-60 object-cover object-center"
                   />
                   <div className="flex w-full bg-white flex-col py-8 space-y-4 px-10 h-full">
@@ -192,7 +194,7 @@ function Section1({ data }) {
                             width={0}
                             sizes="100vw"
                             alt={item?.title}
-                            unoptimized={disableImageOptimization}
+                            // unoptimized={disableImageOptimization}
                             className="h-[358px] w-full col-span-10 lg:col-span-6 object-cover object-center"
                           />
                           <div className="flex flex-col col-span-10 lg:col-span-4 justify-center text-[#27172F] h-full space-y-2 lg:pl-7">
@@ -226,7 +228,7 @@ function Section1({ data }) {
                       width={0}
                       height={0}
                       sizes="100vw"
-                      unoptimized={disableImageOptimization}
+                      // unoptimized={disableImageOptimization}
                       alt={section?.sub_sections[0]?.title || "image"}
                       className="object-cover- w-[60%] absolute top-0 left-0 h-full object-left hidden lg:block"
                     />
@@ -249,13 +251,14 @@ function Section1({ data }) {
                           {section?.sub_sections[0]?.title}
                         </h4>
                       )}
-
-                      <div
-                        className="font-satoshi w-full paragraphText-Size text-center lg:text-left"
-                        dangerouslySetInnerHTML={{
-                          __html: section?.sub_sections[0]?.description,
-                        }}
-                      ></div>
+                      {section?.sub_sections[0]?.description && (
+                        <div
+                          className="font-satoshi w-full paragraphText-Size text-center lg:text-left"
+                          dangerouslySetInnerHTML={{
+                            __html: section?.sub_sections[0]?.description,
+                          }}
+                        ></div>
+                      )}
 
                       <Link
                         href={section?.sub_sections[0]?.link}

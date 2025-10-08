@@ -14,7 +14,7 @@ const WhyChooseUsSection = ({ section }) => {
             width={1000}
             height={1000}
             alt={section?.title || "image"}
-            unoptimized={disableImageOptimization}
+            // unoptimized={disableImageOptimization}
             sizes="100vw"
             className="w-full max-h-[300px] h-full md:max-h-full object-cover"
           />

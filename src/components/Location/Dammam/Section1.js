@@ -55,7 +55,7 @@ function Section1() {
               src={image1}
               className="h-fit w-full object-contain object-center"
               alt="image-1"
-              unoptimized={disableImageOptimization}
+              // unoptimized={disableImageOptimization}
             />
             <div className="absolute top-0 left-0 h-full w-full bg-gradient-to-b from-transparent via-transparent  items-end to-black to-95% hidden md:flex">
               <p className="font-satoshi max-w-[900px] px-14 py-14 text-white paragraphText-Size">
@@ -331,7 +331,7 @@ function Section1() {
               alt="image-2"
               src={image2}
               className="object-cover w-[50%] rounded-lg absolute top-0 right-0 h-full object-right"
-              unoptimized={disableImageOptimization}
+              // unoptimized={disableImageOptimization}
             />
             <div className="absolute right-0 top-0 h-full w-[100%] rounded-lg  bg-gradient-to-l from-transparent to-[#F2F4F9] to-50% z-20"></div>
 
@@ -397,7 +397,7 @@ function Section1() {
               alt="image-3"
               src={image3}
               className="object-cover w-1/2 rounded-lg absolute top-0 right-0 h-full object-right"
-              unoptimized={disableImageOptimization}
+              // unoptimized={disableImageOptimization}
             />
             <div className="absolute right-0 top-0 h-full w-[100%] rounded-lg  bg-gradient-to-l from-transparent to-[#F2F4F9] to-50% z-20"></div>
 
@@ -438,7 +438,7 @@ function Section1() {
               src={image5}
               alt="image-5"
               className="object-cover w-1/2 absolute top-0 rounded-lg left-0 h-full object-left"
-              unoptimized={disableImageOptimization}
+              // unoptimized={disableImageOptimization}
             />
             <div className="absolute right-0 top-0 h-full w-[100%] rounded-lg bg-gradient-to-r from-transparent to-black to-50% z-20"></div>
             {/* <div className="absolute -right-32 top-1/2 -translate-y-1/2 z-20 blur-[120px] rounded-full w-64 h-64 bg-[#FF0C15]"></div> */}

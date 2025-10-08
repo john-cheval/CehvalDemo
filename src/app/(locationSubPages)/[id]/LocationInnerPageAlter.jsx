@@ -1,9 +1,14 @@
 import FaqSchemaAccordion from "@/components/common/FaqSchemaAccordion";
 import Section11 from "@/components/Home/Section11";
 import Section9 from "@/components/Home/Section9";
-import LocationContact from "@/components/Location/Common/LocationContact";
+// import LocationContact from "@/components/Location/Common/LocationContact";
 import Section1 from "@/components/locationSubPage/Section1";
 import LocationServicesLoc from "@/components/locationSubPage/ServicesLoc";
+import dynamic from "next/dynamic";
+
+const LocationContact = dynamic(
+  () => import("../../../components/Location/Common/LocationContact")
+);
 
 import React from "react";
 
@@ -12,13 +17,12 @@ const LocationInnerPageAlter = ({
   faq_title,
   faq_list,
   blogsHomePage,
-
   review,
 }) => {
   return (
     <>
       <Section1 data={pageData} />
-      <LocationContact
+      {/*<LocationContact
         title={pageData?.contact_form_heading}
         desc={pageData?.contact_form_description}
       />
@@ -42,7 +46,7 @@ const LocationInnerPageAlter = ({
           faqs_heading_footer={faq_title}
           faqs_list_footer={faq_list}
         />
-      )}
+      )} */}
     </>
   );
 };

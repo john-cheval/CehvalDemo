@@ -36,7 +36,7 @@ const ScreenShotList = ({ data1, data2, ID }) => {
                     src={img?.image}
                     width={300}
                     height={400}
-                    unoptimized={disableImageOptimization}
+                    // unoptimized={disableImageOptimization}
                     sizes="100vw"
                     className="rounded-[1rem] h-auto  w-full col-span-1 md:col-span-2 bg-transparent"
                     alt="workInner1"
@@ -66,7 +66,7 @@ const ScreenShotList = ({ data1, data2, ID }) => {
                       className="rounded-[1rem] w-full h-auto object-cover "
                       alt="workInner1"
                       sizes="100vw"
-                      unoptimized={disableImageOptimization}
+                      // unoptimized={disableImageOptimization}
                     />
                   )}
                 </div>
@@ -97,7 +97,7 @@ const ScreenShotList = ({ data1, data2, ID }) => {
                     width={300}
                     height={300}
                     sizes="100vw"
-                    unoptimized={disableImageOptimization}
+                    // unoptimized={disableImageOptimization}
                     className="rounded-[1rem] col-span-1 md:col-span-3 w-full bg-transparent h-auto"
                     alt="workInner1"
                   />
@@ -147,7 +147,7 @@ const ScreenShotList = ({ data1, data2, ID }) => {
                         // overrideSrc="/Work/work1.png"
                         width={400}
                         height={400}
-                        unoptimized={disableImageOptimization}
+                        // unoptimized={disableImageOptimization}
                         sizes="100vw"
                         className="rounded-[1rem] col-span-1 w-full h-auto md:col-span-6 object-fill"
                         alt="work-image"
@@ -181,7 +181,7 @@ const ScreenShotList = ({ data1, data2, ID }) => {
                         // overrideSrc="/Work/work1.png"
                         width={400}
                         height={400}
-                        unoptimized={disableImageOptimization}
+                        // unoptimized={disableImageOptimization}
                         sizes="100vw"
                         className="rounded-[1rem] w-full col-span-1 md:col-span-4 bg-transparent h-auto"
                         alt="work-image"
@@ -219,7 +219,7 @@ const ScreenShotList = ({ data1, data2, ID }) => {
                           className="rounded-[1rem] h-auto w-full object-cover"
                           alt="work-image"
                           sizes="100vw"
-                          unoptimized={disableImageOptimization}
+                          // unoptimized={disableImageOptimization}
                         />
                       </div>
                     );
@@ -254,7 +254,7 @@ const ScreenShotList = ({ data1, data2, ID }) => {
                         sizes="100vw"
                         className="rounded-[1rem] w-full col-span-1 md:col-span-3 bg-transparent h-auto"
                         alt="work-image"
-                        unoptimized={disableImageOptimization}
+                        // unoptimized={disableImageOptimization}
                       />
                     );
                   }
@@ -288,7 +288,7 @@ const ScreenShotList = ({ data1, data2, ID }) => {
                         sizes="100vw"
                         className="rounded-[1rem] w-full col-span-1 md:col-span-3 bg-transparent h-auto"
                         alt="work-image"
-                        unoptimized={disableImageOptimization}
+                        // unoptimized={disableImageOptimization}
                       />
                     );
                   }

@@ -20,7 +20,7 @@ const ServiceSubBanner = ({ image, heading, desc }) => {
         priority
         loading="eager"
         className="w-full h-[400px] lg:h-full object-cover"
-        unoptimized={disableImageOptimization}
+        // unoptimized={disableImageOptimization}
       />
 
       <div className="wrapper-padding absolute w-full bottom-7 lg:bottom-14 z-20 flex flex-col lg:flex-row  lg:justify-between items-center gap-x-5 space-y-3 lg:space-y-5 ">

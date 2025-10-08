@@ -130,7 +130,7 @@ const PortfolioSection = ({ section }) => {
                                 width={500}
                                 height={300}
                                 className="object-cover w-full h-[230px] md:h-[330px] lg:h-[410px] rounded-[30px] transition-all- duration-500 ease-in-out swpi"
-                                unoptimized={disableImageOptimization}
+                                // unoptimized={disableImageOptimization}
                               />
                               {activeCard === index && (
                                 <div>
@@ -165,7 +165,7 @@ const PortfolioSection = ({ section }) => {
                       <Image
                         src={project?.image?.url}
                         alt={project?.post_title || "image"}
-                        unoptimized={disableImageOptimization}
+                        // unoptimized={disableImageOptimization}
                         width={300}
                         height={300}
                         className="object-cover w-full h-[400px] md:h-[500px] lg:h-[584px] rounded-[30px] transition-all- duration-500 ease-in-out swpi"

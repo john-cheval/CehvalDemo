@@ -21,7 +21,7 @@ const SectionClients = ({ clients }) => {
                   fill
                   alt={`client-${index}`}
                   priority={false}
-                  unoptimized={disableImageOptimization}
+                  // unoptimized={disableImageOptimization}
                   className="object-contain brightness-95 opacity-80 "
                   sizes="(max-width: 640px) 10rem, 13rem"
                 />

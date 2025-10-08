@@ -14,7 +14,7 @@ const WeServeLoc = ({ serveList }) => {
               height={0}
               width={0}
               sizes="100vw"
-              unoptimized={disableImageOptimization}
+              // unoptimized={disableImageOptimization}
               className="w-10 object-contain h-fit"
             />
             <p className="text-base md:text-xl font-satoshi ">

@@ -139,7 +139,7 @@ const ServiceListNew = ({ services }) => {
                           height={300}
                           width={1000}
                           sizes="100vw"
-                          unoptimized={disableImageOptimization}
+                          // unoptimized={disableImageOptimization}
                         />
                       )}
                     </div>
@@ -161,7 +161,7 @@ const ServiceListNew = ({ services }) => {
                                     height={300}
                                     width={1000}
                                     sizes="100vw"
-                                    unoptimized={disableImageOptimization}
+                                    // unoptimized={disableImageOptimization}
                                   />
                                 )}
                               </div>

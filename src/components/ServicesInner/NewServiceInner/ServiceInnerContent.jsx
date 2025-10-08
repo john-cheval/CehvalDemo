@@ -98,7 +98,7 @@ const ServiceInnerContent = ({ services, serviceHeading }) => {
                           width={400}
                           height={400}
                           sizes="100vw"
-                          unoptimized={disableImageOptimization}
+                          // unoptimized={disableImageOptimization}
                         />
                       )}
                     </div>
@@ -121,7 +121,7 @@ const ServiceInnerContent = ({ services, serviceHeading }) => {
                               width={500}
                               height={500}
                               sizes="100vw"
-                              unoptimized={disableImageOptimization}
+                              // unoptimized={disableImageOptimization}
                             />
                           )}
                         </div>
@@ -182,7 +182,7 @@ const ServiceInnerContent = ({ services, serviceHeading }) => {
                               width={500}
                               height={500}
                               sizes="100vw"
-                              unoptimized={disableImageOptimization}
+                              // unoptimized={disableImageOptimization}
                             />
                           )}
                         </div>

@@ -38,7 +38,7 @@ const SeoLocationLinks = ({ section }) => {
                   height={300}
                   width={400}
                   alt={index}
-                  unoptimized={disableImageOptimization}
+                  // unoptimized={disableImageOptimization}
                 />
                 <h5
                   style={{

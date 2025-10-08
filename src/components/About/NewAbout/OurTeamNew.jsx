@@ -31,7 +31,7 @@ const OurTeamNew = ({ title, team, data }) => {
                   width={0}
                   height={0}
                   sizes="100vw"
-                  unoptimized={disableImageOptimization}
+                  // unoptimized={disableImageOptimization}
                 />
               </div>
 

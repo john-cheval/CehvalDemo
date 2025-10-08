@@ -17,7 +17,7 @@ const WeServe = () => {
       <div className="hidden lg:block col-span-2 h-[1px] w-full  bg-[#D8D8D8]"></div>
       <div className="py-6 col-span-2 md:col-span-1 text-base   sm:text-xl font-normal flex leading-none items-center gap-x-4 md:gap-x-6 px-3 uppercase justify-start">
         <Image
-          unoptimized={disableImageOptimization}
+          // unoptimized={disableImageOptimization}
           src={mall}
           className="w-10 object-contain h-fit"
           alt="mall"
@@ -28,7 +28,7 @@ const WeServe = () => {
       </div>
       <div className="py-6 col-span-2 md:col-span-1 text-base sm:text-xl font-normal flex leading-none items-center gap-x-4 md:gap-x-6 px-3 uppercase justify-start">
         <Image
-          unoptimized={disableImageOptimization}
+          // unoptimized={disableImageOptimization}
           src={agent}
           className="w-10 object-contain h-fit"
           alt="agent"
@@ -40,7 +40,7 @@ const WeServe = () => {
       <div className="hidden md:block col-span-2 h-[1px] w-full  bg-[#D8D8D8]"></div>
       <div className="py-6 col-span-2 md:col-span-1 text-base sm:text-xl font-normal flex leading-none items-center gap-x-4 md:gap-x-6 px-3 uppercase justify-start">
         <Image
-          unoptimized={disableImageOptimization}
+          // unoptimized={disableImageOptimization}
           src={alert}
           className="w-10 object-contain h-fit"
           alt="alert"
@@ -51,7 +51,7 @@ const WeServe = () => {
       </div>
       <div className="py-6 col-span-2 md:col-span-1  text-base sm:text-xl font-normal flex leading-none items-center gap-x-4 md:gap-x-6 px-3 uppercase justify-start">
         <Image
-          unoptimized={disableImageOptimization}
+          // unoptimized={disableImageOptimization}
           src={fastfood}
           className="w-10 object-contain h-fit"
           alt="fastfood"
@@ -63,7 +63,7 @@ const WeServe = () => {
       <div className="col-span-2 h-[1px] w-full  bg-[#D8D8D8] hidden md:block"></div>
       <div className="py-6 col-span-2 md:col-span-1 text-base sm:text-xl font-normal flex leading-none items-center gap-x-4 md:gap-x-6 px-3 uppercase justify-start">
         <Image
-          unoptimized={disableImageOptimization}
+          // unoptimized={disableImageOptimization}
           src={balance}
           className="w-10 object-contain h-fit"
           alt="balance"
@@ -74,7 +74,7 @@ const WeServe = () => {
       </div>
       <div className="py-6 col-span-2 md:col-span-1 text-base sm:text-xl font-normal flex leading-none items-center gap-x-4 md:gap-x-6 px-3 uppercase justify-start">
         <Image
-          unoptimized={disableImageOptimization}
+          // unoptimized={disableImageOptimization}
           src={belt}
           className="w-10 object-contain h-fit"
           alt="belt"
@@ -86,7 +86,7 @@ const WeServe = () => {
       <div className="col-span-2 h-[1px] w-full  bg-[#D8D8D8] hidden md:block"></div>
       <div className="py-6 col-span-2 md:col-span-1 text-base sm:text-xl font-normal flex leading-none items-center gap-x-4 md:gap-x-6 px-3 uppercase justify-start">
         <Image
-          unoptimized={disableImageOptimization}
+          // unoptimized={disableImageOptimization}
           src={shuttle}
           className="w-10 object-contain h-fit"
           alt="shuttle"
@@ -97,7 +97,7 @@ const WeServe = () => {
       </div>
       <div className="py-6 col-span-2 md:col-span-1 text-base sm:text-xl font-normal flex leading-none items-center gap-x-4 md:gap-x-6 px-3 uppercase justify-start">
         <Image
-          unoptimized={disableImageOptimization}
+          // unoptimized={disableImageOptimization}
           src={cinematic}
           className="w-10 object-contain h-fit"
           alt="cinematic"
@@ -110,7 +110,7 @@ const WeServe = () => {
       <div className="col-span-2 h-[1px] w-full  bg-[#D8D8D8] hidden md:block"></div>
       <div className="py-6 col-span-2 md:col-span-1 text-base sm:text-xl font-normal flex leading-none items-center gap-x-4 md:gap-x-6 px-3 uppercase justify-start">
         <Image
-          unoptimized={disableImageOptimization}
+          // unoptimized={disableImageOptimization}
           src={cast}
           className="w-10 object-contain h-fit"
           alt="cast"
@@ -121,7 +121,7 @@ const WeServe = () => {
       </div>
       <div className="py-6 col-span-2 md:col-span-1 text-base sm:text-xl font-normal flex leading-none items-center gap-x-4 md:gap-x-6 px-3 uppercase justify-start">
         <Image
-          unoptimized={disableImageOptimization}
+          // unoptimized={disableImageOptimization}
           src={shipping}
           className="w-10 object-contain h-fit"
           alt="shipping"

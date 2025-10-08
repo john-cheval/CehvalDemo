@@ -44,7 +44,7 @@ function Section1() {
               src={image1}
               className="h-fit w-full object-contain object-center"
               alt="abudhabi"
-              unoptimized={disableImageOptimization}
+              // unoptimized={disableImageOptimization}
             />
           </div>
         </div>
@@ -223,7 +223,7 @@ function Section1() {
                 src={image2}
                 className="object-cover w-full absolute top-0 rounded-lg left-0 h-[60%] object-center"
                 alt="Image-2"
-                unoptimized={disableImageOptimization}
+                // unoptimized={disableImageOptimization}
               />
               <div className=" w-full h-full bg-gradient-to-b from-transparent rounded-t-lg to-[#27172F] to-95% z-20"></div>
               <div className="flex w-full  h-fit bg-[#27172F] rounded-b-lg flex-col pb-14 space-y-4  z-20 px-8 md:px-14 py-8 lg:py-0">
@@ -256,7 +256,7 @@ function Section1() {
                 src={image3}
                 className="object-cover w-full absolute top-0 rounded-lg left-0 h-full object-top"
                 alt="Image"
-                unoptimized={disableImageOptimization}
+                // unoptimized={disableImageOptimization}
               />
               <div className="flex w-full  h-fit  rounded-b-lg flex-col pb-14 space-y-4  z-20 px-8 md:px-14 py-8 lg:py-0">
                 <h4 className="font-sora font-semibold text-white text-3xl lg:text-4xl  !leading-[130%] pt-5 ">

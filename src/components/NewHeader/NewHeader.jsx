@@ -334,7 +334,7 @@ const NewHeader = ({ navLinksNew }) => {
                         height={100}
                         width={100}
                         sizes="100vw"
-                        unoptimized={disableImageOptimization}
+                        // unoptimized={disableImageOptimization}
                       />
                     </Link>
 
@@ -617,7 +617,7 @@ const NewHeader = ({ navLinksNew }) => {
                     alt="WhatsApp"
                     width={32}
                     height={32}
-                    unoptimized={disableImageOptimization}
+                    // unoptimized={disableImageOptimization}
                   />
                   <span className="red-dot"></span>
                 </div>

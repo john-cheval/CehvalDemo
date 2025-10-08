@@ -49,7 +49,7 @@ const AdsSection4 = ({ teamList }) => {
                       width={163}
                       height={163}
                       sizes="100vw"
-                      unoptimized={disableImageOptimization}
+                      // unoptimized={disableImageOptimization}
                     />
                   </div>
 

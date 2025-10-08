@@ -64,7 +64,7 @@ function Section10({ data }) {
                       alt={`client-${index}`}
                       priority={false}
                       className="object-contain"
-                      unoptimized={disableImageOptimization}
+                      // unoptimized={disableImageOptimization}
                       sizes="(max-width: 640px) 10rem, 13rem"
                     />
                   </div>

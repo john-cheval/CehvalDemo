@@ -78,7 +78,7 @@ function AboutClientMobile({ data }) {
                       fill={true}
                       alt="image"
                       className="object-contain"
-                      unoptimized={disableImageOptimization}
+                      // unoptimized={disableImageOptimization}
                     />
                   </div>
                 ))}

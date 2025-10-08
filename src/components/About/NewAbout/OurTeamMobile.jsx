@@ -17,7 +17,7 @@ const OurTeamMobile = ({ team }) => {
               width={50}
               height={50}
               sizes="100vw"
-              unoptimized={disableImageOptimization}
+              // unoptimized={disableImageOptimization}
             />
           </div>
 

@@ -88,8 +88,8 @@ export default function RootLayout({ children }) {
 
         <main className="flex-grow-1">
           {" "}
-          <UnloadWarning enabled={true} />
-          <ScrollToTop />
+          {/* <UnloadWarning enabled={true} /> */}
+          {/* <ScrollToTop /> */}
           {children}
           <HydrationDebug />
         </main>
@@ -184,10 +184,6 @@ export default function RootLayout({ children }) {
             });
           `}
         </Script>
-        <Script
-          src="https://cloudflare-static/email-decode.min.js"
-          strategy="lazyOnload"
-        />
       </body>
     </html>
   );

@@ -50,7 +50,7 @@ const ServiceInnerSwipper = ({ slides }) => {
                 className="block h-full w-full object-cover "
                 src={slide?.image}
                 alt={slide?.title || `slide-${index}`}
-                unoptimized={disableImageOptimization}
+                // unoptimized={disableImageOptimization}
               />
             </SwiperSlide>
           ))}

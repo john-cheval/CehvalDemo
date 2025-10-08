@@ -117,7 +117,7 @@ const HomeBlogsSection = ({ title, data, isNew = false }) => {
                           className=" object-cover object-center rounded-lg "
                           alt={data?.type}
                           priority={false}
-                          unoptimized={disableImageOptimization}
+                          // unoptimized={disableImageOptimization}
                           sizes="100vw"
                         />
                       </div>

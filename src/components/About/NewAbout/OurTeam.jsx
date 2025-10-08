@@ -29,7 +29,7 @@ const OurTeam = ({ title, team, data }) => {
                   width={50}
                   height={50}
                   sizes="100vw"
-                  unoptimized={disableImageOptimization}
+                  // unoptimized={disableImageOptimization}
                 />
               </div>
               <div className="content font-satoshi">

@@ -86,7 +86,7 @@ function BlogsInnerSection2({ data, blogID }) {
                         className=" object-cover object-center rounded-lg "
                         alt={data?.type}
                         priority={false}
-                        unoptimized={disableImageOptimization}
+                        // unoptimized={disableImageOptimization}
                         sizes="100vw"
                       />
                     </div>

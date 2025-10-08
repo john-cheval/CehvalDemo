@@ -39,7 +39,7 @@ const SeoOurSerivcesSection = ({ section }) => {
                   src={item?.image?.url}
                   height={400}
                   width={600}
-                  unoptimized={disableImageOptimization}
+                  // unoptimized={disableImageOptimization}
                   sizes="100vw"
                   alt={item?.title}
                   className="w-full h-60- h-auto object-cover- object-center- mb-2-"

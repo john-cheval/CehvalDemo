@@ -328,7 +328,7 @@ const NotFoundContent = () => {
             key={index}
             src={img}
             alt={"img"}
-            unoptimized={disableImageOptimization}
+            // unoptimized={disableImageOptimization}
             className="w-20 md:w-24 lg:w-28 h-auto absolute left-[50%] top-10 dm-matter-elem-circle z-[101] cursor-grab opacity-50"
           />
         ))}

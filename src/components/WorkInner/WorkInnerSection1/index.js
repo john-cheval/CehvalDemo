@@ -31,7 +31,7 @@ function WorkInnerSection1({ data }) {
             sizes="100vw"
             className="rounded-[1rem]  bg-transparent w-full h-auto h-[80%]-- object-contain-- max-h-[622px]-- xl:h-auto--"
             alt={data?.post_title || "WorkImage"}
-            unoptimized={disableImageOptimization}
+            // unoptimized={disableImageOptimization}
           />
         )}
 

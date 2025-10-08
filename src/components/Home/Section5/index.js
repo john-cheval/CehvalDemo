@@ -96,7 +96,7 @@ function Section5({ data, isNew = false }) {
               className="object-cover rounded-[30px]"
               alt={data[key].home_title.split(" ")[0] || "Work"}
               priority={true}
-              unoptimized={disableImageOptimization}
+              // unoptimized={disableImageOptimization}
             />
           )}
         </div>

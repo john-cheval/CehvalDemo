@@ -83,7 +83,7 @@ const HowAreWe = () => {
           src={image4}
           alt="image4"
           className="object-cover col-span-2 lg:col-span-1 w-full top-0 rounded-lg  h-full object-center"
-          unoptimized={disableImageOptimization}
+          // unoptimized={disableImageOptimization}
         />
       </div>
     </div>

@@ -44,10 +44,10 @@ const Process = ({ section }) => {
                 <p className="font-sora font-semibold text-xl sm:text-2xl lg:text-3xl ">
                   {item?.title}
                 </p>
-                <p
+                <div
                   className="font-satoshi w-full paragraphText-Size "
                   dangerouslySetInnerHTML={{ __html: item?.description }}
-                ></p>
+                ></div>
               </div>
             </div>
           ))}

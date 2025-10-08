@@ -15,7 +15,7 @@ const SectionBgLeftImage = ({ section }) => {
               src={data?.image?.url}
               alt="left_image"
               className="w-full h-full object-cover"
-              unoptimized={disableImageOptimization}
+              // unoptimized={disableImageOptimization}
             />
           </div>
 

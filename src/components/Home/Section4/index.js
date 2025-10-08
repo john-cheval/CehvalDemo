@@ -77,7 +77,7 @@ function Section4({ cardData }) {
             priority={index === 0}
             loading={index === 0 ? "eager" : "lazy"}
             quality={75}
-            unoptimized={disableImageOptimization}
+            // unoptimized={disableImageOptimization}
           />
         )}
         <div className="absolute lg:hidden inset-0 h-full w-full z-10">
