@@ -41,7 +41,7 @@ const NewService = ({ data, title }) => {
                         fill={true}
                         alt={data[key]?.post_title}
                         priority={true}
-                        unoptimized={disableImageOptimization}
+                        // unoptimized={disableImageOptimization}
                       />
                     </div>
 

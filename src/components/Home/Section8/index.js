@@ -74,7 +74,7 @@ function Section8({ data, split, isNew = false }) {
                         fill={true}
                         alt="gallery"
                         priority={false}
-                        unoptimized={disableImageOptimization}
+                        // unoptimized={disableImageOptimization}
                       />
                     </div>
                   )
@@ -94,7 +94,7 @@ function Section8({ data, split, isNew = false }) {
                         fill={true}
                         alt="gallery"
                         priority={false}
-                        unoptimized={disableImageOptimization}
+                        // unoptimized={disableImageOptimization}
                       />
                     </div>
                   )
@@ -114,7 +114,7 @@ function Section8({ data, split, isNew = false }) {
                         fill={true}
                         alt="gallery"
                         priority={false}
-                        unoptimized={disableImageOptimization}
+                        // unoptimized={disableImageOptimization}
                       />
                     </div>
                   )
@@ -138,7 +138,7 @@ function Section8({ data, split, isNew = false }) {
                         fill={true}
                         alt="gallery"
                         priority={false}
-                        unoptimized={disableImageOptimization}
+                        // unoptimized={disableImageOptimization}
                       />
                     </div>
                   )
@@ -158,7 +158,7 @@ function Section8({ data, split, isNew = false }) {
                         fill={true}
                         alt="gallery"
                         priority={false}
-                        unoptimized={disableImageOptimization}
+                        // unoptimized={disableImageOptimization}
                       />
                     </div>
                   )
@@ -178,7 +178,7 @@ function Section8({ data, split, isNew = false }) {
                         fill={true}
                         alt="gallery"
                         priority={false}
-                        unoptimized={disableImageOptimization}
+                        // unoptimized={disableImageOptimization}
                       />
                     </div>
                   )

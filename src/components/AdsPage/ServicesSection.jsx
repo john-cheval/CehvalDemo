@@ -24,11 +24,11 @@ const ServicesSection = ({ section }) => {
             <div>
               <Image
                 src={data?.image?.url}
-                alt={data?.title || 'image'}
+                alt={data?.title || "image"}
                 sizes="100vw"
                 height={54}
                 width={67}
-                unoptimized={disableImageOptimization}
+                // unoptimized={disableImageOptimization}
                 className="w-full h-auto object-cover max-w-16"
               />
             </div>

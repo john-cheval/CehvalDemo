@@ -58,7 +58,7 @@ function Section1() {
             <Image
               src={image1}
               alt="image-1"
-              unoptimized={disableImageOptimization}
+              // unoptimized={disableImageOptimization}
               className="h-[580px] w-full object-cover object-center"
             />
           </div>
@@ -331,7 +331,7 @@ function Section1() {
             <Image
               src={image2}
               alt="image-2"
-              unoptimized={disableImageOptimization}
+              // unoptimized={disableImageOptimization}
               className="object-cover w-1/2 rounded-lg absolute top-0 right-0 h-full object-right"
             />
             <div className="absolute right-0 top-0 h-full w-[100%] rounded-lg  bg-gradient-to-l from-transparent to-[#F2F4F9] from-[-20%] lg:from-30% to-50% z-20"></div>
@@ -386,7 +386,7 @@ function Section1() {
                 src={mitre}
                 className="w-[85px] h-fit object-contain"
                 alt="mitre"
-                unoptimized={disableImageOptimization}
+                // unoptimized={disableImageOptimization}
               />
               <div className=" text-[#27172F] flex w-full flex-col space-y-1.5">
                 <p className="font-sora font-semibold text-2xl md:text-3xl">
@@ -404,7 +404,7 @@ function Section1() {
                 src={history}
                 className="w-[85px] h-fit object-contain"
                 alt="historic"
-                unoptimized={disableImageOptimization}
+                // unoptimized={disableImageOptimization}
               />
               <div className=" text-[#27172F] flex w-full flex-col space-y-1.5">
                 <p className="font-sora font-semibold text-2xl md:text-3xl">
@@ -421,7 +421,7 @@ function Section1() {
                 src={acute}
                 className="w-[85px] h-fit object-contain"
                 alt="acute"
-                unoptimized={disableImageOptimization}
+                // unoptimized={disableImageOptimization}
               />
               <div className=" text-[#27172F] flex w-full flex-col space-y-1.5">
                 <p className="font-sora font-semibold text-2xl md:text-3xl">
@@ -438,7 +438,7 @@ function Section1() {
                 src={card}
                 className="w-[85px] h-fit object-contain"
                 alt="card"
-                unoptimized={disableImageOptimization}
+                // unoptimized={disableImageOptimization}
               />
               <div className=" text-[#27172F] flex w-full flex-col space-y-1.5">
                 <p className="font-sora font-semibold text-2xl md:text-3xl">
@@ -538,7 +538,7 @@ function Section1() {
             <Image
               alt="image3"
               src={image3}
-              unoptimized={disableImageOptimization}
+              // unoptimized={disableImageOptimization}
               className="object-cover col-span-2 lg:col-span-1 w-full top-0 rounded-lg  h-full object-center"
             />
           </div>

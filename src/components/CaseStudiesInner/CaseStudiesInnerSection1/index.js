@@ -92,7 +92,7 @@ function WorkInnerSection1({ data }) {
           style={{ width: "100%", height: "auto" }} // optional
           className="rounded-[2rem] bg-transparent"
           alt="workInner1"
-          unoptimized={disableImageOptimization}
+          // unoptimized={disableImageOptimization}
         />
 
         {data?.home_description && (

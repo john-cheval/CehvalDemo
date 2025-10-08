@@ -20,7 +20,7 @@ function BlogsInnerSection1({ data }) {
               fill={true}
               className=" object-cover  object-center rounded-[8px] md:rounded-[12px] lg:rounded-[2rem]    w-full-- h-auto--"
               alt={data?.post_title}
-              unoptimized={disableImageOptimization}
+              // unoptimized={disableImageOptimization}
             />
             {/* <div className="flex flex-col font-satoshi absolute bottom-0 h-full w-full justify-end bg-gradient-to-b from-50% from-transparent to-[#000] rounded-[2rem] px-10 py-10 text-white">
               <span className="text-[10px] sm:text-xs md:text-sm  font-sora">

@@ -116,7 +116,7 @@ const WorkBody = ({ data, categories }) => {
                 height={60}
                 sizes="100vw"
                 className="h-full w-full rounded-full object-cover"
-                unoptimized={disableImageOptimization}
+                // unoptimized={disableImageOptimization}
               />
             </div>
             <p
@@ -142,7 +142,7 @@ const WorkBody = ({ data, categories }) => {
                 <Image
                   src={work?.icon_image}
                   alt={work.name}
-                  unoptimized={disableImageOptimization}
+                  // unoptimized={disableImageOptimization}
                   width={60}
                   height={60}
                   sizes="100vw"
@@ -189,7 +189,7 @@ const WorkBody = ({ data, categories }) => {
               width={100}
               height={100}
               sizes="100vw"
-              unoptimized={disableImageOptimization}
+              // unoptimized={disableImageOptimization}
               className="h-full w-full rounded-full object-cover"
               priority
             />
@@ -216,7 +216,7 @@ const WorkBody = ({ data, categories }) => {
                 alt={work.name}
                 width={200}
                 height={200}
-                unoptimized={disableImageOptimization}
+                // unoptimized={disableImageOptimization}
                 sizes="100vw"
                 className="h-full w-full rounded-full object-cover"
               />
@@ -267,7 +267,7 @@ const WorkBody = ({ data, categories }) => {
                         // layout="intrinsic"
                         quality={80}
                         // formats={["image/webp"]}
-                        unoptimized={disableImageOptimization}
+                        // unoptimized={disableImageOptimization}
                       />
                     </div>
 

@@ -27,7 +27,7 @@ function BlogsSection1({ data }) {
                           fill={true}
                           className="rounded-[2rem] object-cover"
                           alt={data.title.rendered}
-                          unoptimized={disableImageOptimization}
+                          // unoptimized={disableImageOptimization}
                         />
                       </div>
                     )}
@@ -59,7 +59,7 @@ function BlogsSection1({ data }) {
                           fill={true}
                           className="rounded-[2rem] object-cover"
                           alt={data.title.rendered}
-                          unoptimized={disableImageOptimization}
+                          // unoptimized={disableImageOptimization}
                         />
                       </div>
                     )}
@@ -91,7 +91,7 @@ function BlogsSection1({ data }) {
                           fill={true}
                           className="rounded-[2rem] object-cover"
                           alt={data.title.rendered}
-                          unoptimized={disableImageOptimization}
+                          // unoptimized={disableImageOptimization}
                         />
                       </div>
                     )}
@@ -123,7 +123,7 @@ function BlogsSection1({ data }) {
                       // fill={true}
                       className="rounded-[2rem] object-cover w-full"
                       alt={data.title.rendered}
-                      unoptimized={disableImageOptimization}
+                      // unoptimized={disableImageOptimization}
                       height={100}
                       width={400}
                     />

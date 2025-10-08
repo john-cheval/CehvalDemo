@@ -162,7 +162,7 @@ const MobileServicesNew = ({ serviceList }) => {
                     height={400}
                     width={600}
                     sizes="100vw"
-                    unoptimized={disableImageOptimization}
+                    // unoptimized={disableImageOptimization}
                   />
                 )}
               </div>
@@ -184,7 +184,7 @@ const MobileServicesNew = ({ serviceList }) => {
                               width={200}
                               height={200}
                               sizes="100vw"
-                              unoptimized={disableImageOptimization}
+                              // unoptimized={disableImageOptimization}
                             />
                           )}
                         </div>

@@ -50,7 +50,7 @@ function CaseStudiesSection1({ data }) {
                         // overrideSrc="/Work/work1.png"
                         className="rounded-[2rem] object-cover"
                         alt={data[key]?.post_title || "Case Study"}
-                        unoptimized={disableImageOptimization}
+                        // unoptimized={disableImageOptimization}
                       />
                     </div>
                     <div className="absolute group-hover:scale-y-100 -translate-y-12 group-hover:translate-y-0 scale-y-0  transition-all duration-500  -top-2 rounded-bl-2xl -right-2  px-2 space-x-1.5 h-[50px] flex items-center bg-[#F6F6F4]">

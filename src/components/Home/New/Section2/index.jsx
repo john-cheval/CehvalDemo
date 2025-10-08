@@ -40,7 +40,7 @@ const HomeSectionTwo = ({ clientsData, serviceInner = false }) => {
               width={250}
               height={150}
               sizes="100vw"
-              unoptimized={process.env.NEXT_PUBLIC_IMAGE_UNOPTIMIZED === "true"}
+              // unoptimized={process.env.NEXT_PUBLIC_IMAGE_// unoptimized === "true"}
               className="w-full h-auto object-cover max-w-[200px] md:max-w-[200px] 5xl:max-w-[350px]"
             />
           </div>

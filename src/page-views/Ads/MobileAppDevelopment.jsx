@@ -122,7 +122,7 @@ export default function MovileAppDevelopmentClientContent({
               alt="WhatsApp"
               width={32}
               height={32}
-              unoptimized={disableImageOptimization}
+              // unoptimized={disableImageOptimization}
             />
             <span className=" font-sora text-sm text-white leading-normal">
               WhatsApp
@@ -140,7 +140,7 @@ export default function MovileAppDevelopmentClientContent({
               alt="call"
               width={32}
               height={32}
-              unoptimized={disableImageOptimization}
+              // unoptimized={disableImageOptimization}
             />
             <span className=" font-sora text-sm text-white leading-normal">
               Call

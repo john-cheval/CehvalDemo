@@ -145,7 +145,7 @@ const CodeCenter = ({ link, closeMegaMenu }) => {
           height={0}
           width={0}
           sizes="100vw"
-          unoptimized={disableImageOptimization}
+          // unoptimized={disableImageOptimization}
         />
       </div>
     </>

@@ -47,7 +47,7 @@ function LocationServicesLoc({ service, heading }) {
                   height={0}
                   width={0}
                   alt={index}
-                  unoptimized={disableImageOptimization}
+                  // unoptimized={disableImageOptimization}
                 />
                 <h5
                   style={{

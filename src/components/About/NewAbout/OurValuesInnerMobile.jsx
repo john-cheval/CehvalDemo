@@ -16,7 +16,7 @@ const OurValuesInnerMobile = ({ valuesData }) => {
                 width={0}
                 className="h-full w-full"
                 sizes="100vw"
-                unoptimized={disableImageOptimization}
+                // unoptimized={disableImageOptimization}
               />
             </div>
             <div>

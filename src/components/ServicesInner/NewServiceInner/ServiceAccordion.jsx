@@ -28,7 +28,7 @@ function ServiceAccordion({ title, accoridion }) {
               width={500}
               height={300}
               sizes="100vw"
-              unoptimized={disableImageOptimization}
+              // unoptimized={disableImageOptimization}
             />
           </div>
         </div>

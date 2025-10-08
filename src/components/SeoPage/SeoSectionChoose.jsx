@@ -33,7 +33,7 @@ const SeoSectionChoose = ({ section }) => {
                   sizes="100vw"
                   className="w-[70px] h-fit object-cover"
                   alt={item?.title}
-                  unoptimized={disableImageOptimization}
+                  // unoptimized={disableImageOptimization}
                 />
                 <div className=" text-[#27172F] flex w-full flex-col items-center- space-y-2">
                   <p className="font-sora font-semibold text-2xl  sm:text-3xl ">

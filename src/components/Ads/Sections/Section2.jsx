@@ -33,7 +33,7 @@ const AdsSectionTwo = ({ title }) => {
                 height={384}
                 sizes="100vw"
                 alt={img?.title}
-                unoptimized
+                // unoptimized
                 className="w-full h-auto rounded-[15px] lg:rounded-[30px] border-[#ececec]"
               />
               <p className="font-sora text-[#101763] text-sm md:text-base lg:text-xl leading-[170%] mt-2">

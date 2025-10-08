@@ -15,7 +15,7 @@ const SeoBannerSection = ({ left, right, title }) => {
             width={600}
             sizes="100vw"
             alt={title || "image"}
-            unoptimized={disableImageOptimization}
+            // unoptimized={disableImageOptimization}
             className="h-full w-full object-cover object-center--"
           />
           <Link href={"/projects"} className="hidden md:block">
@@ -35,7 +35,7 @@ const SeoBannerSection = ({ left, right, title }) => {
           src={right}
           height={400}
           width={600}
-          unoptimized={disableImageOptimization}
+          // unoptimized={disableImageOptimization}
           sizes="100vw"
           alt={title}
           className="h-full w-full object-cover object-center--"

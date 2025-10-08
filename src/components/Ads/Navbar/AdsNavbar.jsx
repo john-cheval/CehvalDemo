@@ -73,7 +73,7 @@ const AdsNavbar = ({ scroll }) => {
                 alt="WhatsApp"
                 width={32}
                 height={32}
-                unoptimized={disableImageOptimization}
+                // unoptimized={disableImageOptimization}
               />
               <span className="red-dot"></span>
             </div>

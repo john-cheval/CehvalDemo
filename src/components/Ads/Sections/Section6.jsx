@@ -20,7 +20,7 @@ const AdsSectionSix = ({ clientsData }) => {
               width={200}
               height={50}
               sizes="100vw"
-              unoptimized={disableImageOptimization}
+              // unoptimized={disableImageOptimization}
             />
           </div>
         ))}

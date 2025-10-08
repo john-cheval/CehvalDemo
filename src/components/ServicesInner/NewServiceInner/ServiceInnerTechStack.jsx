@@ -21,7 +21,7 @@ const ServiceInnerTechStack = ({ title, stacks }) => {
                 width={300}
                 height={300}
                 sizes="100vw"
-                unoptimized={disableImageOptimization}
+                // unoptimized={disableImageOptimization}
               />
             ) : (
               <div className="flex flex-col items-start justify-center ml-10 mt-12">
@@ -34,7 +34,7 @@ const ServiceInnerTechStack = ({ title, stacks }) => {
                       height={100}
                       width={100}
                       sizes="100vw"
-                      unoptimized={disableImageOptimization}
+                      // unoptimized={disableImageOptimization}
                     />
                   </div>
                 )}

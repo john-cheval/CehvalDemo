@@ -29,7 +29,7 @@ const VerticalStackCards = ({ cardData }) => {
           fill={true}
           className="object-center h-full object-cover overflow-hidden"
           alt="imageAbout"
-          unoptimized={disableImageOptimization}
+          // unoptimized={disableImageOptimization}
         />
       </div>
 

@@ -54,7 +54,7 @@ function Section1() {
           <div className=" w-full relative">
             <Image
               src={image1}
-              unoptimized={disableImageOptimization}
+              // unoptimized={disableImageOptimization}
               alt="image-1"
               className="h-fit  w-full object-contain object-center"
             />
@@ -127,7 +127,7 @@ function Section1() {
               <div className="px-5 w-full">
                 <Image
                   src={image10}
-                  unoptimized={disableImageOptimization}
+                  // unoptimized={disableImageOptimization}
                   alt="image-10"
                   className="w-full h-[180px] rounded-lg  object-cover object-center"
                 />
@@ -173,7 +173,7 @@ function Section1() {
                 <Image
                   src={image2}
                   alt="image-2"
-                  unoptimized={disableImageOptimization}
+                  // unoptimized={disableImageOptimization}
                   className="w-full h-[180px] rounded-lg  object-cover object-center"
                 />
               </div>
@@ -216,7 +216,7 @@ function Section1() {
                 <Image
                   src={image3}
                   alt="image-3"
-                  unoptimized={disableImageOptimization}
+                  // unoptimized={disableImageOptimization}
                   className="w-full h-[180px] rounded-lg  object-cover object-center"
                 />
               </div>
@@ -263,7 +263,7 @@ function Section1() {
                 <Image
                   src={image5}
                   alt="image-5"
-                  unoptimized={disableImageOptimization}
+                  // unoptimized={disableImageOptimization}
                   className="w-full h-[180px] rounded-lg  object-cover object-center"
                 />
               </div>
@@ -308,7 +308,7 @@ function Section1() {
                 <Image
                   src={image6}
                   alt="image-6"
-                  unoptimized={disableImageOptimization}
+                  // unoptimized={disableImageOptimization}
                   className="w-full h-[180px] rounded-lg  object-cover object-center"
                 />
               </div>
@@ -321,7 +321,7 @@ function Section1() {
           <div className="w-full h-fit relative overflow-hidden  items-end justify-end flex ">
             <Image
               src={image7}
-              unoptimized={disableImageOptimization}
+              // unoptimized={disableImageOptimization}
               alt="image-7"
               className="object-cover w-[50%] rounded-lg absolute top-0 left-0 h-full object-left"
             />
@@ -361,7 +361,7 @@ function Section1() {
             <Image
               src={image8}
               alt="image-8"
-              unoptimized={disableImageOptimization}
+              // unoptimized={disableImageOptimization}
               className="object-cover w-full rounded-lg absolute top-0 left-0 h-full scale-150 object-center"
             />
             <div className="absolute right-0 top-0 h-full w-[100%] rounded-lg via-transparent  bg-gradient-to-l from-transparent to-[#F2F4F9] from-[-200%] lg:from-30% to-50% z-20"></div>
@@ -459,7 +459,7 @@ function Section1() {
             <Image
               src={image9}
               alt="image-9"
-              unoptimized={disableImageOptimization}
+              // unoptimized={disableImageOptimization}
               className="object-cover w-1/2 absolute top-0 rounded-lg left-0 h-full object-left"
             />
             <div className="absolute right-0 top-0 h-full w-[100%] rounded-lg bg-gradient-to-r from-transparent to-black to-50% z-20"></div>

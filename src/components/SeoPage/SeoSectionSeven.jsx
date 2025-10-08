@@ -38,7 +38,7 @@ const SeoSectionSeven = ({ section }) => {
               alt={`image-${index + 1}`}
               // fill
               height={100}
-              unoptimized={disableImageOptimization}
+              // unoptimized={disableImageOptimization}
               width={100}
               className="object-cover- h-auto w-full rounded-lg"
               sizes="(min-width: 768px) 50vw, 100vw"

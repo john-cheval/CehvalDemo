@@ -53,7 +53,7 @@ function Section1() {
               src={image1}
               className="h-full w-full object-cover object-center"
               alt="image-1"
-              unoptimized={disableImageOptimization}
+              // unoptimized={disableImageOptimization}
             />
             <Link href={"/projects"}>
               <div className="flex absolute bottom-0 right-0 my-14 mx-20 items-center justify-between py-2.5 text-white space-x-2 rounded-[50px] sm:w-fit w-full--  px-4 border border-white  bg-transparent  font-sora text-center text-sm ">
@@ -77,7 +77,7 @@ function Section1() {
               src={image2}
               className="h-full w-full object-cover object-center"
               alt="image-2"
-              unoptimized={disableImageOptimization}
+              // unoptimized={disableImageOptimization}
             />
           </div>
         </div>
@@ -122,7 +122,7 @@ function Section1() {
                   src={image5}
                   className="w-full h-60 object-cover object-center"
                   alt="image-5"
-                  unoptimized={disableImageOptimization}
+                  // unoptimized={disableImageOptimization}
                 />
                 <div className="flex w-full bg-white flex-col py-8 space-y-4 px-10 h-full">
                   <h3 className="font-sora font-semibold text-[#101763] text-xl sm:text-2xl md:text-3xl ">
@@ -145,7 +145,7 @@ function Section1() {
                   src={image3}
                   className="w-full h-60 object-cover object-center"
                   alt="image-3"
-                  unoptimized={disableImageOptimization}
+                  // unoptimized={disableImageOptimization}
                 />
                 <div className="flex w-full bg-white flex-col py-8 space-y-4 px-10 h-full">
                   <h3 className="font-sora font-semibold text-[#101763] text-xl sm:text-2xl md:text-3xl ">
@@ -166,7 +166,7 @@ function Section1() {
                   src={image4}
                   className="w-full h-60 object-cover object-center"
                   alt="image-4"
-                  unoptimized={disableImageOptimization}
+                  // unoptimized={disableImageOptimization}
                 />
                 <div className="flex w-full bg-white flex-col py-8 space-y-4 px-10 h-full">
                   <h3 className="font-sora font-semibold text-[#101763] text-xl sm:text-2xl md:text-3xl ">
@@ -188,7 +188,7 @@ function Section1() {
                   src={image10}
                   className="w-full h-60 object-cover object-center"
                   alt="image-10"
-                  unoptimized={disableImageOptimization}
+                  // unoptimized={disableImageOptimization}
                 />
                 <div className="flex w-full bg-white flex-col py-8 space-y-4 px-10 h-full">
                   <h3 className="font-sora font-semibold text-[#101763] text-xl sm:text-2xl md:text-3xl ">
@@ -211,7 +211,7 @@ function Section1() {
                   src={image11}
                   className="w-full h-60 object-cover object-center"
                   alt="image-11"
-                  unoptimized={disableImageOptimization}
+                  // unoptimized={disableImageOptimization}
                 />
                 <div className="flex w-full bg-white flex-col py-8 space-y-4 px-10 h-full">
                   <h3 className="font-sora font-semibold text-[#101763] text-xl sm:text-2xl md:text-3xl ">
@@ -237,7 +237,7 @@ function Section1() {
             src={image6}
             className="object-cover w-[60%] absolute top-0 left-0 h-full object-left hidden lg:block"
             alt="image-6"
-            unoptimized={disableImageOptimization}
+            // unoptimized={disableImageOptimization}
           />
           <div className="absolute right-0 top-0 h-full w-full lg:w-[70%] bg-gradient-to-r from-transparent to-black to-0% lg:to-40% z-20"></div>
           <div className="absolute -right-32 top-1/2 -translate-y-1/2 z-20 blur-[120px] rounded-full w-64 h-64 bg-[#FF0C15]"></div>
@@ -293,7 +293,7 @@ function Section1() {
                 src={image7}
                 className="h-[358px] col-span-10 md:col-span-6 object-cover object-center"
                 alt="image-7"
-                unoptimized={disableImageOptimization}
+                // unoptimized={disableImageOptimization}
               />
               <div className="flex flex-col col-span-10 md:col-span-4 justify-center text-[#27172F] h-full space-y-2 md:pl-7">
                 <p className="font-sora font-semibold text-2xl  sm:text-3xl ">
@@ -312,7 +312,7 @@ function Section1() {
                 src={image8}
                 className="h-[358px] col-span-10 md:col-span-6 object-cover object-center"
                 alt="image-8"
-                unoptimized={disableImageOptimization}
+                // unoptimized={disableImageOptimization}
               />
               <div className="flex flex-col col-span-10 md:col-span-4 justify-center text-[#27172F] h-full space-y-2 md:pl-7">
                 <p className="font-sora font-semibold  text-2xl  sm:text-3xl ">
@@ -334,7 +334,7 @@ function Section1() {
                 src={image9}
                 className="h-[358px] col-span-10 md:col-span-6 object-cover object-center"
                 alt="image-9"
-                unoptimized={disableImageOptimization}
+                // unoptimized={disableImageOptimization}
               />
               <div className="flex flex-col col-span-10 md:col-span-4 justify-center text-[#27172F] h-full space-y-2 md:pl-7">
                 <p className="font-sora font-semibold  text-2xl  sm:text-3xl ">
@@ -473,7 +473,7 @@ function Section1() {
               src={image10}
               className="h-[358px] col-span-10 md:col-span-6 object-cover object-center"
               alt="image-10"
-              unoptimized={disableImageOptimization}
+              // unoptimized={disableImageOptimization}
             />
             <div className="flex flex-col col-span-10 md:col-span-4 justify-center text-white bg-black h-full space-y-5 wrapper-padding md:px-20 py-10 md:py-0">
               <p

@@ -66,7 +66,7 @@ function WorkInnerSection2({ data, ID, link }) {
                           // overrideSrc="/Work/work1.png"
                           className="rounded-[2rem] object-cover"
                           alt={data[key]?.post_title || "Work"}
-                          unoptimized={disableImageOptimization}
+                          // unoptimized={disableImageOptimization}
                         />
                       </div>
                       <div className="flex mt-4 md:mt-6 mb-1 md:mb-2.5 font-sora pl-2 text-lg md:text-2xl lg:text-[25px] text-[#101763] w-full items-center space-x-2">

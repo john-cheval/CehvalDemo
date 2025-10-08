@@ -33,7 +33,7 @@ const WorkMobile = ({ data }) => {
             height={0}
             sizes="100vw"
             priority={true}
-            unoptimized={disableImageOptimization}
+            // unoptimized={disableImageOptimization}
           />
         )}
         <div className="absolute inset-0"></div>
