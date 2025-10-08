@@ -10,7 +10,10 @@ const nextConfig = {
     removeConsole: process.env.NODE_ENV === "production",
   },
   output: "standalone",
+
   compress: true,
+  // optimizeFonts: true,
+  productionBrowserSourceMaps: false,
   async redirects() {
     return [
       {
@@ -73,6 +76,30 @@ const nextConfig = {
         hostname: "bunny-wp-pullzone-1uo9uvm3si.b-cdn.net",
       },
     ],
+    formats: ["image/avif", "image/webp"],
+    minimumCacheTTL: 86400,
+  },
+  async headers() {
+    return [
+      {
+        source: "/:path*.(css|js)",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
+          },
+        ],
+      },
+      {
+        source: "/:path*.(png|jpg|jpeg|gif|ico|svg|webp)",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
+          },
+        ],
+      },
+    ];
   },
   webpack(config, { isServer }) {
     // Add support for handling videos and GIF files
@@ -94,6 +121,11 @@ const nextConfig = {
               name: "commons",
               chunks: "all",
               minChunks: 2,
+            },
+            react: {
+              test: /[\\/]node_modules[\\/](react|react-dom)[\\/]/,
+              name: "react",
+              chunks: "all",
             },
           },
         },
