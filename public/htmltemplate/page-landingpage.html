@@ -1,0 +1,231 @@
+<?php
+/**
+ * Template Name: Landing Page
+ *
+ * @package WordPress
+ * @subpackage Twenty_Fourteen
+ * @since Twenty Fourteen 1.0
+ */
+get_header('landingpage'); ?>
+<?php global $post; $pidhome = $post->ID; ?>
+
+<section class="landing_home">
+  <div class="container">
+    <div class="landing_home_div">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="header-logo_landing">
+            <a href="https://manage.chevalme.com/chevalapi/"
+              ><img
+                src="<?=get_bloginfo('template_url'); ?>/assets/images/logo.svg"
+                alt="Digital Cheval"
+            /></a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <a class="btn btn_header_landing" href="#contactus">Enquire Now</a>
+        </div>
+      </div>
+
+      <div class="row row_bg_ch">
+        <div class="col-md-8">
+          <h1><?=$post->post_title; ?></h1>
+
+          <?=apply_filters('the_content', $post->post_content); ?>
+          <a class="btn btn_header_landing_red" href="#contactus">Contact Us</a>
+
+          <?php if($section_for_count = get_field('section_for_count',
+          $pidhome)){ ?>
+          <ul class="section_for_count">
+            <?php foreach($section_for_count as $count_list){ ?>
+            <li>
+              <?=(($count_list['total_number']) ? '
+              <h4>
+                <span
+                  class="counting_l"
+                  data-count="'.$count_list['total_number'].'"
+                  >0</span
+                >+
+              </h4>
+              ' : '').$count_list['title']; ?>
+            </li>
+            <?php } ?>
+          </ul>
+          <?php } ?>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<?php if($section_for_count = get_field('section_projects', $pidhome)){ ?>
+<section id="Case_Studies" class="landing_projects">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div id="owl-projects" class="owl-carousel">
+          <?php foreach($section_for_count as $count_list){ ?>
+          <div class="row_landing_projects">
+            <?=(($count_list['website_link']) ? '<a
+              class="website_link_a"
+              target="_blank"
+              href="'.$count_list['website_link'].'"
+            ></a
+            >' : ''); ?>
+            <div class="row">
+              <?=(($count_list['image']) ? '
+              <div class="col-md-12">
+                <img
+                  src="'.$count_list['image'].'"
+                  alt="'.$count_list['title'].'"
+                />
+              </div>
+              ' : ''); ?>
+            </div>
+            <div class="row row_pro_s">
+              <div class="col-md-12">
+                <h4>Case Studies</h4>
+                <?=(($count_list['title']) ? '
+                <h2>'.$count_list['title'].'</h2>
+                ' : ''); ?>
+              </div>
+
+              <div class="col-md-7">
+                <?=(($count_list['client_name']) ? '
+                <div class="client_name">
+                  <label>CLIENT NAME:</label> '.$count_list['client_name'].'
+                </div>
+                ' : ''); ?> <?php if($challenges = $count_list['challenges']){
+                $challenges_list = explode(PHP_EOL,$challenges); ?>
+                <label>CHALLENGE:</label>
+                <ul>
+                  <?php foreach($challenges_list as $list){ ?>
+                  <li><?=$list; ?></li>
+                  <?php } ?>
+                </ul>
+                <?php } ?>
+              </div>
+              <div class="col-md-5">
+                <?php if($solutions = $count_list['solutions_pro']){
+                $challenges_list = explode(PHP_EOL,$solutions); ?>
+                <label class="solutions_label">SOLUTION:</label>
+                <ul>
+                  <?php foreach($challenges_list as $list){ ?>
+                  <li><?=$list; ?></li>
+                  <?php } ?>
+                </ul>
+                <?php } ?>
+              </div>
+            </div>
+          </div>
+          <?php } ?>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<?php } ?> <?php if($about_cheval_description_left =
+get_field('about_cheval_description_left', $pidhome)){ ?>
+<section id="About_Us" class="landing_aboutus">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <div class="about_cheval_description_left">
+          <?=((get_field('about_cheval_heading', $pidhome)) ? '
+          <h4>'.get_field('about_cheval_heading', $pidhome).'</h4>
+          ' : ''); ?> <?=$about_cheval_description_left; ?>
+        </div>
+      </div>
+
+      <div class="col-md-5">
+        <div class="about_cheval_description_right">
+          <?=((get_field('about_cheval_description_right', $pidhome)) ?
+          get_field('about_cheval_description_right', $pidhome) : ''); ?>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<?php } ?> <?php if($testimonials = get_field('testimonials', $pidhome)){ ?>
+<section id="Testimonials" class="landing_testimonials">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div id="owl-testimonials" class="owl-carousel">
+          <?php foreach($testimonials as $testimonials_list){ ?>
+          <div class="row_testimonials">
+            <div class="row">
+              <?=(($testimonials_list['client_logo']) ? '
+              <div class="col-md-3">
+                <img
+                  src="'.$testimonials_list['client_logo'].'"
+                  alt="'.$testimonials_list['client_name'].'"
+                />
+              </div>
+              ' : ''); ?>
+              <div class="col-md-9">
+                <h4>Testimonials</h4>
+                <?=$testimonials_list['client_description']; ?>
+                <?=(($testimonials_list['client_name']) ? '
+                <h5>'.$testimonials_list['client_name'].'</h5>
+                ' : ''); ?>
+              </div>
+            </div>
+          </div>
+          <?php } ?>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<?php } ?> <?php $pidhome_s=98; if(get_field('trust_us_list', $pidhome_s)){ ?>
+<section id="Our_Clients" class="trust_us_list_about">
+  <div class="container mx-auto">
+    <h3
+      class="font-chopard font-bold text-[40px] text-center leading-[44px] text-white uppercase"
+    >
+      <?=((get_field('trust_us_heading', $pidhome_s)) ?
+      get_field('trust_us_heading', $pidhome_s) : 'They Trust Us'); ?>
+    </h3>
+
+    <div class="client-logo_row">
+      <?php foreach(get_field('trust_us_list', $pidhome_s) as $service_list){ ?>
+      <?=(($service_list['image']) ? '
+      <div class="item">
+        <img
+          src="'.$service_list['image'].'"
+          alt="'.$service_list['title'].'"
+        />
+      </div>
+      ' : ''); ?> <?php } ?>
+    </div>
+  </div>
+</section>
+<?php } ?> <?php if($contact_description = get_field('contact_description',
+$pidhome)){ ?>
+<section id="contactus" class="landing_aboutus">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="contact_description_left">
+          <?=((get_field('contact_heading', $pidhome)) ? '
+          <h4>'.get_field('contact_heading', $pidhome).'</h4>
+          ' : ''); ?> <?=$contact_description; ?>
+        </div>
+        <div class="address_foot">
+          <h4>Address</h4>
+          <p><?=get_field('address', 56); ?></p>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="contact_description_right">
+          <?=((get_field('form_heading', $pidhome)) ? '
+          <h4>'.get_field('form_heading', $pidhome).'</h4>
+          ' : ''); ?> <?=((get_field('form_shortcode', $pidhome)) ?
+          do_shortcode(get_field('form_shortcode', $pidhome)) : ''); ?>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<?php } ?> <?php get_footer('landingpage');

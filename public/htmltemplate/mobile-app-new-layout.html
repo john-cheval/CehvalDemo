@@ -1,0 +1,667 @@
+<?php
+
+/**
+ * Template Name: Mobile App New Layout Landing Page
+ *
+ * @package WordPress
+ * @subpackage Twenty_Fourteen
+ * @since Twenty Fourteen 1.0
+ */
+get_header('landingmobile-app'); ?>
+
+<?php while (have_posts()) : the_post(); ?>
+
+<!--home-->
+<section class="home-section mobileapppage" id="home">
+  <div class="container">
+    <div class="left-bg mobile-develop">
+      <h1 class="mobile-title">
+        Your Business Made Mobile With Anywhere & Anytime Access. Innovative
+        Mobile App Solutions For UAE's Business
+      </h1>
+      <p>
+        We specialize in custom app development made uniquely for your business
+        to help you achieve your business and enterprise goals seamlessly.
+      </p>
+      <ul>
+        <li>Custom Solutions For iOS & Android</li>
+        <li>Dedicated Developer & POC</li>
+        <li>Responsive, Scalable and Intuitive Designs</li>
+        <li>Ontime Delivery</li>
+        <li>Flexible Payment Plan</li>
+      </ul>
+      <div class="hand-img">
+        <img
+          src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/hand-img.png"
+          alt=""
+        />
+      </div>
+      <a
+        href="javascript:void(0)"
+        class="btn-started"
+        data-toggle="modal"
+        data-target="#exampleModalCenter"
+        >Get Started<span>NOW!</span></a
+      >
+    </div>
+    <div class="right-bg">
+      <div class="form-area">
+        <h2>Get a free quote</h2>
+        <!-- <div class="form-floating mb-3">
+                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                  <label for="floatingInput">Email address</label>
+                </div> -->
+        <?php echo do_shortcode('[contact-form-7 id="1823" title="Landing Page
+        Mobile Application"]'); ?>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="four-block-area">
+    <div class="container">
+      <div class="row md-6">
+        <div class="col-lg-3 col-md-6 pd-6">
+          <div class="icon-block">
+            <div class="icon">
+              <img
+                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/app/android-icon.png"
+                alt=""
+              />
+            </div>
+            <div class="innertitle"><span>67</span>Android App Done</div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 pd-6">
+          <div class="icon-block">
+            <div class="icon">
+              <img
+                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/app/apple-icon.png"
+                alt=""
+              />
+            </div>
+            <div class="innertitle"><span>82</span>IOS App Done</div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 pd-6">
+          <div class="icon-block">
+            <div class="icon">
+              <img
+                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/app/returning-clients-icon.png"
+                alt=""
+              />
+            </div>
+            <div class="innertitle"><span>80%</span>Returning Clients</div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 pd-6">
+          <div class="icon-block">
+            <div class="icon">
+              <img
+                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/app/satisfied-customers-icon.png"
+                alt=""
+              />
+            </div>
+            <div class="innertitle"><span>99.99%</span>Satisfied Customers</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="app-screenshot-area">
+    <div class="container">
+      <ul class="photo-list">
+        <li>
+          <div class="photo-block">
+            <img
+              src="https://manage.chevalme.com/wp-content/uploads/2024/09/app-screenshot-1-1.png"
+              alt=""
+            />
+          </div>
+          <div class="mobile-block">
+            <img
+              src="https://manage.chevalme.com/wp-content/uploads/2024/09/mobile-app-screenshot-1.png"
+              alt=""
+            />
+          </div>
+        </li>
+        <li>
+          <div class="photo-block">
+            <img
+              src="https://manage.chevalme.com/wp-content/uploads/2024/09/app-screenshot-2-1.png"
+              alt=""
+            />
+          </div>
+          <div class="mobile-block">
+            <img
+              src="https://manage.chevalme.com/wp-content/uploads/2024/09/mobile-app-screenshot-2.png"
+              alt=""
+            />
+          </div>
+        </li>
+        <li>
+          <div class="photo-block">
+            <img
+              src="https://manage.chevalme.com/wp-content/uploads/2024/09/app-screenshot-3-1.png"
+              alt=""
+            />
+          </div>
+          <div class="mobile-block">
+            <img
+              src="https://manage.chevalme.com/wp-content/uploads/2024/09/mobile-app-screenshot-3.png"
+              alt=""
+            />
+          </div>
+        </li>
+        <li>
+          <div class="photo-block">
+            <img
+              src="https://manage.chevalme.com/wp-content/uploads/2024/09/app-screenshot-4-1.png"
+              alt=""
+            />
+          </div>
+          <div class="mobile-block">
+            <img
+              src="https://manage.chevalme.com/wp-content/uploads/2024/09/mobile-app-screenshot-4.png"
+              alt=""
+            />
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!--industries we serve-->
+<section>
+  <div class="industries-area">
+    <div class="container">
+      <h2>Industries We Serve | Mobile App Development</h2>
+      <ul class="industries-list">
+        <li>
+          <div class="industries-block">
+            <div class="photo-block">
+              <img
+                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/app/industries-1.png"
+                alt=""
+              />
+            </div>
+            <h3 class="name">Fashion & Retail App</h3>
+          </div>
+        </li>
+        <li>
+          <div class="industries-block">
+            <div class="photo-block">
+              <img
+                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/app/industries-2.png"
+                alt=""
+              />
+            </div>
+            <h3 class="name">Industrial App</h3>
+          </div>
+        </li>
+        <li>
+          <div class="industries-block">
+            <div class="photo-block">
+              <img
+                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/app/industries-3.png"
+                alt=""
+              />
+            </div>
+            <h3 class="name">eCommerce App Development</h3>
+          </div>
+        </li>
+        <li>
+          <div class="industries-block">
+            <div class="photo-block">
+              <img
+                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/app/industries-4.png"
+                alt=""
+              />
+            </div>
+            <h3 class="name">Real Estate</h3>
+          </div>
+        </li>
+        <li>
+          <div class="industries-block">
+            <div class="photo-block">
+              <img
+                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/app/industries-5.png"
+                alt=""
+              />
+            </div>
+            <h3 class="name">Financial App</h3>
+          </div>
+        </li>
+        <li>
+          <div class="industries-block">
+            <div class="photo-block">
+              <img
+                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/app/industries-6.png"
+                alt=""
+              />
+            </div>
+            <h3 class="name">App Development for FMCG Sector</h3>
+          </div>
+        </li>
+        <li>
+          <div class="industries-block">
+            <div class="photo-block">
+              <img
+                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/app/industries-7.png"
+                alt=""
+              />
+            </div>
+            <h3 class="name">Healthcare App Development</h3>
+          </div>
+        </li>
+        <li>
+          <div class="industries-block">
+            <div class="photo-block">
+              <img
+                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/app/industries-8.png"
+                alt=""
+              />
+            </div>
+            <h3 class="name">Transport & Logistic App</h3>
+          </div>
+        </li>
+        <li>
+          <div class="industries-block">
+            <div class="photo-block">
+              <img
+                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/app/industries-9.png"
+                alt=""
+              />
+            </div>
+            <h3 class="name">Pickup & Delivery App</h3>
+          </div>
+        </li>
+        <li>
+          <div class="industries-block">
+            <div class="photo-block">
+              <img
+                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/app/industries-10.png"
+                alt=""
+              />
+            </div>
+            <h3 class="name">Banking App</h3>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!--about-area-->
+<section>
+  <div class="who-we-are-section">
+    <div class="container">
+      <!-- <div class="row">
+                <div class="col-lg-4 col-md-4">
+                    <div class="counter-block">
+                        <div class="icon"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/client-icon.jpg" alt=""></div>
+                        <div class="detail">
+                            <h3>100+</h3>
+                            <div class="subtitle">Happy Clients</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="counter-block">
+                        <div class="icon"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/team-icon.jpg" alt=""></div>
+                        <div class="detail">
+                            <h3>30+</h3>
+                            <div class="subtitle">Experienced Team</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="counter-block">
+                        <div class="icon"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/project-icon.jpg" alt=""></div>
+                        <div class="detail">
+                            <h3>150+</h3>
+                            <div class="subtitle">Completed Projects</div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+      <h2><span>THEY TRUST US</span>clients</h2>
+
+      <?php $images = get_field('client_logos'); if ($images) : ?>
+      <ul class="logo-list">
+        <?php foreach ($images as $image) : ?>
+
+        <li>
+          <div class="logo-block">
+            <img
+              src="<?php echo $image['sizes']['large']; ?>"
+              alt="<?php echo $image['alt']; ?>"
+            />
+          </div>
+        </li>
+        <?php endforeach; ?>
+      </ul>
+      <?php endif; ?>
+
+      <div class="d-flex">
+        <div class="leftside">
+          <h3>Who we are</h3>
+          <h4>
+            At Cheval Middle East, we are more than just a custom app
+            development company – we are your digital transformation partner in
+            the heart of Dubai. With a rich history spanning over a decade, we
+            have been at the forefront of the digital revolution, helping
+            businesses in the vibrant city of Dubai and beyond establish a
+            strong online presence.
+          </h4>
+        </div>
+        <div class="rightside">
+          <div class="counter-block">
+            <div class="icon">
+              <img
+                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/client-icon.jpg"
+                alt=""
+              />
+            </div>
+            <div class="detail">
+              <h3>100+</h3>
+              <div class="subtitle">Happy Clients</div>
+            </div>
+          </div>
+          <div class="counter-block">
+            <div class="icon">
+              <img
+                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/team-icon.jpg"
+                alt=""
+              />
+            </div>
+            <div class="detail">
+              <h3>30+</h3>
+              <div class="subtitle">Experienced Team</div>
+            </div>
+          </div>
+          <div class="counter-block">
+            <div class="icon">
+              <img
+                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/project-icon.jpg"
+                alt=""
+              />
+            </div>
+            <div class="detail">
+              <h3>150+</h3>
+              <div class="subtitle">Completed Projects</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--mobile-app-service-area-->
+<section>
+  <div class="mobile-app-service-area">
+    <div class="container">
+      <div class="top-content-block">
+        <div class="lefttitle-area">
+          <h2>What we do</h2>
+          <div class="subtitle">
+            End to end mobile app development services in dubai for your every
+            business need
+          </div>
+        </div>
+        <div class="content">
+          <p>
+            Cheval is one of the leading custom app development companies in the
+            UAE, and has a proven track record of delivering end-to-end app
+            development for businesses and enterprises.
+          </p>
+        </div>
+      </div>
+      <ul class="service-list">
+        <li>
+          <div class="app-service-block">
+            <h3 class="service-title">
+              <div class="icon">
+                <img
+                  src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/app/android-service-icon.png"
+                  alt=""
+                />
+              </div>
+              Android App Development
+            </h3>
+            <ol>
+              <li>Android app design & development</li>
+              <li>Enterprise android app development</li>
+              <li>Android app support and maintenance</li>
+              <li>API integration</li>
+              <li>Android app testing</li>
+              <li>Play store optimization</li>
+              <li>App version upgrades and updates</li>
+            </ol>
+            <a href="#" class="btn-red">Build Android App</a>
+          </div>
+        </li>
+        <li>
+          <div class="app-service-block">
+            <h3 class="service-title">
+              <div class="icon">
+                <img
+                  src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/app/ios-service-icon.png"
+                  alt=""
+                />
+              </div>
+              IOS App Development
+            </h3>
+            <ol>
+              <li>Iphone app Design and development</li>
+              <li>i Watch app development</li>
+              <li>IOS app support and maintenance</li>
+              <li>Ipad app development</li>
+              <li>App store Optimization</li>
+            </ol>
+            <a href="#" class="btn-red">Build IOS App</a>
+          </div>
+        </li>
+        <li>
+          <div class="app-service-block">
+            <h3 class="service-title">
+              <div class="icon">
+                <img
+                  src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/app/hybrid-service-icon.png"
+                  alt=""
+                />
+              </div>
+              Hybrid App Development
+            </h3>
+            <ol>
+              <li>HTML5 app development</li>
+              <li>Iconic app development</li>
+              <li>Phonegap app development</li>
+              <li>React native app development</li>
+              <li>Migration to hybrid frameworks</li>
+              <li>Hybrid app support and maintenance</li>
+            </ol>
+            <a href="#" class="btn-red">Build Hybrid App</a>
+          </div>
+        </li>
+        <li>
+          <div class="app-service-block">
+            <h3 class="service-title">
+              <div class="icon">
+                <img
+                  src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/app/react-native-service-icon.png"
+                  alt=""
+                />
+              </div>
+              React Native App Development
+            </h3>
+            <ol>
+              <li>React Native android app development</li>
+              <li>React Native IOS app development</li>
+              <li>React Native App Customization</li>
+              <li>React Native UI/UX design</li>
+              <li>React Native support & Maintenance</li>
+            </ol>
+            <a href="#" class="btn-red">Build React Native App</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!--Testimonials-->
+<section>
+  <div class="testimonials-area">
+    <div class="container">
+      <h2><span>What they say about us</span>Testimonials</h2>
+      <!-- <?php echo do_shortcode('[grw id="1590"]'); ?> -->
+      <div class="swiper testimonial-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="testimonial-block">
+              <div class="testimonial-logo">
+                <img
+                  src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/testimonial-1.png"
+                  alt=""
+                />
+              </div>
+              <h3>Waynik</h3>
+              <p>
+                Cheval ME did an outstanding job at designing and developing my
+                ecommerce mobile app. With a seamless design and user journey, I
+                have received 5 star reviews all around on my mobile app.
+                Working with Cheval ME was a great business decision we made,
+                they brought our vision to life. Definitely recommend their app
+                dev company.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial-block">
+              <div class="testimonial-logo">
+                <img
+                  src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/testimonial-2.png"
+                  alt=""
+                />
+              </div>
+              <h3>Faraj Fund</h3>
+              <p>
+                Thanks to Cheval Team, Faraj Fund has a beautiful app, allowing
+                users to easily make donations and navigate through the
+                application to know more about Faraj Fund. They are truly an
+                outstanding Custom Mobile App Development agency here in the
+                UAE.
+              </p>
+            </div>
+          </div>
+
+          <!--                     <div class="swiper-slide">
+                        <div class="testimonial-block">
+                            <div class="testimonial-logo">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/testimonial-4.png" alt="">
+                            </div>
+                            <h3>Taste Studio</h3>
+                            <p>We reached out to Cheval ME as one of the leading website development agencies in Dubai, to design and develop our website. Not only did they exceed our expectations in regards to UX and UI experiences and exceptional designs, they have also integrated an online payment gateway into our website. After seeing such extraordinary work, we continued to work with them to further enhance our website with their SEO Services, and now we can proudly say that we rank on the first page of google for over 15 keywords related to our business.</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-block">
+                            <div class="testimonial-logo">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/testimonial-5.jpg" alt="">
+                            </div>
+                            <h3>Al Wasl Printing Press</h3>
+                            <p>We have worked with Cheval ME as they are the leading Website Development Agency in Dubai. They have helped us create a custom website for our business to easily showcase our products and services. Not only that, but we have worked with them for our SEO, and we can proudly say that now we rank on the first page of Google for all our keywords. I would definitely recommend Cheval ME as a Website Development Agency and an SEO Agency in Dubai.</p>
+                        </div>
+                    </div> -->
+        </div>
+        <div class="swiper-button-next">
+          <svg
+            width="56"
+            height="56"
+            viewBox="0 0 56 56"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="28"
+              cy="28"
+              r="28"
+              transform="matrix(-1 0 0 1 56 0)"
+              fill="#EE2525"
+            />
+            <mask
+              id="mask0_40_763"
+              style="mask-type: alpha"
+              maskUnits="userSpaceOnUse"
+              x="18"
+              y="16"
+              width="24"
+              height="24"
+            >
+              <rect x="18" y="16" width="24" height="24" fill="#D9D9D9" />
+            </mask>
+            <g mask="url(#mask0_40_763)">
+              <path
+                d="M26.025 38L24.25 36.225L32.475 28L24.25 19.775L26.025 18L36.025 28L26.025 38Z"
+                fill="white"
+              />
+            </g>
+          </svg>
+        </div>
+        <div class="swiper-button-prev">
+          <svg
+            width="56"
+            height="56"
+            viewBox="0 0 56 56"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="28" cy="28" r="28" fill="#EE2525" />
+            <mask
+              id="mask0_40_758"
+              style="mask-type: alpha"
+              maskUnits="userSpaceOnUse"
+              x="14"
+              y="16"
+              width="24"
+              height="24"
+            >
+              <rect
+                width="24"
+                height="24"
+                transform="matrix(-1 0 0 1 38 16)"
+                fill="#D9D9D9"
+              />
+            </mask>
+            <g mask="url(#mask0_40_758)">
+              <path
+                d="M29.975 38L31.75 36.225L23.525 28L31.75 19.775L29.975 18L19.975 28L29.975 38Z"
+                fill="white"
+              />
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<?php endwhile; ?> <?php get_footer('landingmobile-app'); ?>
+
+<script>
+  document.addEventListener(
+    "wpcf7mailsent",
+    function (event) {
+      window.location =
+        "https://chevalme.com/mobile-application-development/thankyou/";
+    },
+    false
+  );
+</script>

@@ -1,0 +1,122 @@
+<?php
+
+/**
+ * Template Name: Services Page
+ *
+ * @package WordPress
+ * @subpackage Twenty_Fourteen
+ * @since Twenty Fourteen 1.0
+ */
+
+
+
+//get_header(); ?>
+<?php global $post; $pidhome = $post->ID; ?>
+
+<section
+  class="md:pt-[100px] pt-[50px] relative sm:px-0 px-5 bg-blackcurrant before:bg-[url(../images/img-expand.png)] before:absolute before:top-0 before:left-0 before:h-full before:w-full before:bg-no-repeat before:bg-right-top relative_service_heading_sec"
+>
+  <div class="container mx-auto relative relative_service_heading">
+    <div class="flex lg:flex-row flex-col justify-between items-end">
+      <div class="lg:w-1/2">
+        <div class="lg:mr-[36px] mr-0">
+          <h1
+            class="font-chopard font-bold text-whiteOpacity-800 text-xl mb-10 uppercase"
+          >
+            <?=$post->post_title; ?>
+          </h1>
+          <?=((get_field('sub_heading', $pidhome)) ? '
+          <h6
+            class="uppercase font-chopard font-bold text-white md:text-[40px] md:leading-[44px] text-3xl"
+          >
+            '.get_field('sub_heading', $pidhome).'
+          </h6>
+          ' : ''); ?>
+        </div>
+      </div>
+    </div>
+    <?=((get_field('banner_image', $pidhome)) ? '
+    <div class="w-full mt-[120px]">
+      <img
+        src="'.get_field('banner_image', $pidhome).'"
+        alt="services"
+        class="w-full"
+      />
+    </div>
+    ' : ''); ?>
+  </div>
+</section>
+<section
+  class="md:pt-[120px] py-[50px] sm:px-0 px-5 bg-blackcurrant relative service_list_p"
+>
+  <div class="container mx-auto">
+    <div class="md:mr-[36px] mr-0">
+      <h1
+        class="font-chopard font-bold text-whiteOpacity-800 text-xl mb-10 uppercase"
+      >
+        Our Expertise
+      </h1>
+    </div>
+    <div class="expertise-slider">
+      <?php // The Query $home_sl = 1; query_posts( array ( 'post_type' =>
+      'service', 'order' => '', 'showposts' => 120 ) ); ?> <?php /* Start the
+      Loop */ ?> <?php while ( have_posts() ) : the_post(); ?>
+
+      <div class="group relative">
+        <a
+          target="_blank"
+          href="<?=get_permalink($post->ID); ?>"
+          class="border-b border-b-whiteOpacity-200 border-b-solid pt-[50px] pb-[20px] group-hover:border-b-cinnabar lg:text-[52px] lg:leading-[57.2px] text-3xl text-white uppercase font-chopard font-bold flex items-center justify-between group-hover:pl-6"
+          ><span class="relative xl:max-w-none max-w-[520px]"
+            ><?=$post->post_title; ?></span
+          >
+          <img
+            src="<?=get_bloginfo('template_url'); ?>/assets/images/arrow-right-r.svg"
+            alt="arrow"
+            class="group-hover:!inline-block !hidden"
+          />
+        </a>
+      </div>
+
+      <?php $home_sl++; ?> <?php endwhile; ?> <?php wp_reset_query(); ?>
+    </div>
+  </div>
+</section>
+<?php if(get_field('trust_us_list', $pidhome)){ ?>
+<section
+  class="md:pt-[100px] py-[50px] pb-[120px] sm:px-0 px-5 bg-blackcurrant"
+>
+  <div class="container mx-auto">
+    <h2
+      class="font-chopard font-bold text-whiteOpacity-800 text-xl mb-10 uppercase"
+    >
+      <?=((get_field('trust_us_heading', $pidhome)) ?
+      get_field('trust_us_heading', $pidhome) : 'They Trust Us'); ?>
+    </h2>
+    <div class="client-logo_row">
+      <?php foreach(get_field('trust_us_list', $pidhome) as $service_list){ ?>
+      <?=(($service_list['image']) ? '
+      <div class="item">
+        <img
+          src="'.$service_list['image'].'"
+          alt="'.$service_list['title'].'"
+        />
+      </div>
+      ' : ''); ?> <?php } ?>
+    </div>
+    <?php /*
+    <div class="client-logo owl-carousel owl-theme">
+      <?php foreach(get_field('trust_us_list', $pidhome) as $service_list){ ?>
+      <?=(($service_list['image']) ? '
+      <div class="item">
+        <img
+          src="'.$service_list['image'].'"
+          alt="'.$service_list['title'].'"
+        />
+      </div>
+      ' : ''); ?> <?php } ?>
+    </div>
+    */?>
+  </div>
+</section>
+<?php } ?> <?php //get_footer('contactwithus'); ?>

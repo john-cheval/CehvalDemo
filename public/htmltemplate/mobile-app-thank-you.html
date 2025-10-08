@@ -1,0 +1,142 @@
+<?php
+/**
+ * Template Name: Mobile App Agency Thank Page
+ *
+ * @package WordPress
+ * @subpackage Twenty_Fourteen
+ * @since Twenty Fourteen 1.0
+ */
+?>
+
+<!doctype html>
+<html <?php language_attributes(); ?> <?php twentytwentyone_the_html_classes(); ?>>
+
+<head>
+	
+	<!-- Event snippet for PSC - Chevalme - Mobile Application - Lead Submit conversion page -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11182646972"></script>
+	<script>
+	  gtag('event', 'conversion', {'send_to': 'AW-11182646972/2DJxCIGirpwZELzNptQp'});
+	</script>
+	
+	<meta charset="<?php bloginfo('charset'); ?>" />
+	<meta name="google-site-verification" content="mj_ehhvxOGEaANIISpS9ITzhE5Owv63YX9_APzz_J8Q" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="icon" href="<?= get_bloginfo('template_url'); ?>/assets/images/favicon.png" type="image/png" />
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+	<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/css/custom.css" />
+<!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11182646972"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-11182646972'); </script> 
+	<?php wp_head(); ?>
+    <style>
+        .thank-you-page{background: #EFF0F4; height: 100vh; display: flex; align-items: center;}
+        .thank-you-page .content-area{width: 1258px; margin: 0 auto; position: relative; }
+        .thank-you-page .content-area svg.bg-svg{width: 100%; height: 100%; position: absolute; top: 0px; left: 0px}
+        .thank-you-page .content-area .inner-area{display: flex; align-items: center; position: relative; z-index: 1; padding: 18px 0}
+        .thank-you-page .content-area .inner-area .rightside{padding-left: 65px}
+        .thank-you-page .content-area .inner-area h1{font-size: 48px; font-weight: 700; line-height: 67px; text-align: left; text-transform: uppercase; max-width: 450px; margin: 0 0 35px 0; color: #000}
+        .thank-you-page .content-area .inner-area p{font-size: 16px; font-weight: 400; line-height: 26px; max-width: 265px; margin: 0 0 44px 0; color: #27172F}
+        .thank-you-page .content-area .inner-area .btn-home{background: #27172F; color: #fff; font-size: 16px; font-weight: 700; line-height: 20px; text-align: left; padding: 12px 28px; border-radius: 30px}
+        .thank-you-page .content-area .inner-area .social{margin-top: 85px; display: flex}
+        .thank-you-page .content-area .inner-area .social h2{font-size: 26px; font-weight: 400; line-height: 35px; color: #000000; margin: 0px 25px 0px 0px; text-align: left;}
+        .thank-you-page .content-area .inner-area .social ul.social_ul_footer{margin: 0px; padding: 0px; list-style: none; display: flex;}
+        .thank-you-page .content-area .inner-area .social ul.social_ul_footer li{margin-right: 20px}
+
+        @media (min-width: 768px) and (max-width: 1024px){
+            .thank-you-page{height: auto; padding: 15px}
+            .thank-you-page .content-area{background: #fff; border-radius: 15px; width: 100%;}
+            .thank-you-page .content-area svg.bg-svg{display: none}
+            .thank-you-page .content-area .inner-area{display: block;}
+            .thank-you-page .content-area .inner-area .leftside img {width: 100%;}
+            .thank-you-page .content-area .inner-area .rightside {padding: 0 20px; text-align: center;}
+            .thank-you-page .content-area .inner-area h1{max-width: 100%; width: 100%; text-align: center;}
+            .thank-you-page .content-area .inner-area p{ max-width: 100%; width: 100%}
+            .thank-you-page .content-area .inner-area .social{margin-top: 35px; display: flex; justify-content: center;}
+        }
+
+        @media (max-width: 767px) {
+            .thank-you-page{height: auto; padding: 15px}
+            .thank-you-page .content-area{background: #fff; border-radius: 15px; width: 100%;}
+            .thank-you-page .content-area svg.bg-svg{display: none}
+            .thank-you-page .content-area .inner-area{display: block;}
+            .thank-you-page .content-area .inner-area .leftside img {width: 100%;}
+            .thank-you-page .content-area .inner-area .rightside {padding: 0 20px; text-align: center;}
+            .thank-you-page .content-area .inner-area h1{font-size: 26px; line-height: 38px; margin: 0 0 15px 0; max-width: 100%; width: 100%; text-align: center;}
+            .thank-you-page .content-area .inner-area p{font-size: 14px; line-height: 24px; margin: 0 0 20px 0; max-width: 100%; width: 100%}
+            .thank-you-page .content-area .inner-area .btn-home{font-size: 13px}
+            .thank-you-page .content-area .inner-area .social {margin-top: 25px; display: block;}
+            .thank-you-page .content-area .inner-area .social h2{font-size: 20px; line-height: 30px; margin: 0; text-align: center;}
+            .thank-you-page .content-area .inner-area .social ul.social_ul_footer{justify-content: center;}
+            .thank-you-page .content-area .inner-area .social ul.social_ul_footer li{margin: 0 10px}
+
+        }
+    </style>
+</head>
+<body>
+
+<div class="thank-you-page">
+    <div class="content-area">
+        <svg class="bg-svg" width="1260" height="587" viewBox="0 0 1260 587" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1259 144.011V556C1259 572.569 1245.57 586 1229 586H877.37H438.725H31C14.4315 586 1 572.569 1 556V383.068V31C1 14.4315 14.4315 1 31 1H1127.85C1144.41 1 1157.85 14.4314 1157.85 31V84.0114C1157.85 100.58 1171.28 114.011 1187.85 114.011H1197.39H1229C1245.57 114.011 1259 127.443 1259 144.011Z" fill="white" stroke="white"/>
+        </svg>
+        <div class="inner-area">
+            <div class="leftside">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/thank-you-img.png" alt="">
+            </div>
+            <div class="rightside">
+                <h1>thank you for contacting us!</h1>
+                <p>We have received your message. We’ll reach you out immediately!</p>
+                <a class="btn btn-home" href="<?=get_permalink(8); ?>">Back to Homepage</a>
+                <div class="social">
+                    <h2>Let's Connect</h2>
+                    <ul class="social_ul_footer">
+                          <li><a target="_blank" href="#" class="top_a_linkn text-white-n"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_421_188)"><path d="M26 6.59924V6.93708C25.9788 7.00668 25.9847 7.0783 25.9847 7.14948C25.9847 11.2597 25.9844 15.37 25.9847 19.4802C25.9847 20.1149 25.9554 20.748 25.8937 21.3796C25.6675 23.699 23.8909 25.5594 21.5831 25.8828C20.9213 25.9756 20.2534 25.9982 19.5853 25.9984C15.6648 25.9988 11.7443 25.9995 7.82406 25.9979C6.93893 25.9975 6.05381 26.0151 5.16936 25.9524C4.68155 25.918 4.19666 25.8714 3.72889 25.7214C1.69166 25.0682 0.512317 23.6668 0.154845 21.5712C0.0431918 20.9163 0.0384645 20.2487 0.0382394 19.584C0.0377892 15.4551 0.0389147 11.3259 0.0371138 7.197C0.0368887 6.41613 0.0449926 5.63615 0.107573 4.8573C0.162949 4.16787 0.324352 3.50546 0.639278 2.89148C1.41253 1.38401 2.64927 0.48489 4.30832 0.178126C5.01426 0.0474915 5.73348 0.039158 6.45022 0.0389327C10.6521 0.0373561 14.8537 0.0389327 19.0556 0.0373561C19.7537 0.0371309 20.4504 0.0515457 21.1464 0.107403C22.129 0.186009 23.0366 0.478358 23.836 1.06441C25.0408 1.94777 25.7091 3.14847 25.8903 4.62329C25.9651 5.23073 25.9853 5.84246 25.9851 6.45486C25.9851 6.50306 25.9948 6.55126 26 6.59969V6.59924ZM10.4698 15.6405C10.4698 17.3144 10.4698 18.9883 10.4698 20.6624C10.4698 20.8233 10.4743 20.8278 10.6334 20.8278C11.56 20.828 12.4865 20.8278 13.413 20.8278C13.4169 20.8278 13.4205 20.8278 13.4243 20.8278C13.5648 20.826 13.5751 20.8158 13.5767 20.6712C13.5772 20.63 13.5767 20.5886 13.5767 20.5473C13.5767 18.8509 13.5767 17.1545 13.5767 15.4578C13.5767 15.2094 13.5945 14.9621 13.6602 14.7215C13.8349 14.0821 14.1685 13.5708 14.8114 13.315C15.17 13.1724 15.5435 13.1267 15.9268 13.1519C16.8012 13.2093 17.4315 13.7542 17.6136 14.6109C17.6575 14.8172 17.673 15.0263 17.6728 15.2373C17.6705 17.0464 17.6696 18.8554 17.6687 20.6645C17.6687 20.8199 17.6773 20.8275 17.8364 20.8275C18.7555 20.8278 19.6744 20.8275 20.5935 20.8275C20.7267 20.8275 20.7933 20.7623 20.7934 20.6318C20.7934 18.5187 20.7901 16.4056 20.7959 14.2925C20.7973 13.7589 20.6919 13.2526 20.5123 12.7526C20.1391 11.7142 19.4498 10.9809 18.4363 10.555C17.8303 10.3002 17.1944 10.2192 16.5407 10.2689C15.3069 10.3628 14.2892 10.8762 13.5024 11.8372C13.4801 11.8645 13.4655 11.9178 13.4234 11.9043C13.3822 11.891 13.3966 11.8392 13.3966 11.8034C13.3955 11.4131 13.3962 11.0228 13.3957 10.6325C13.3957 10.4561 13.3903 10.4509 13.2104 10.4507C12.3627 10.4505 11.5149 10.4507 10.6672 10.4507C10.5356 10.4507 10.4697 10.5177 10.4695 10.6518C10.4695 12.3145 10.4695 13.9771 10.4695 15.64L10.4698 15.6405ZM8.65966 15.6411C8.65966 13.9672 8.65966 12.2935 8.65966 10.6196C8.65966 10.4579 8.65381 10.4514 8.49803 10.4514C7.54537 10.4509 6.59249 10.4509 5.63983 10.4514C5.47708 10.4514 5.46875 10.4599 5.46875 10.6243C5.46875 13.9681 5.46875 17.3121 5.46875 20.6559C5.46875 20.8221 5.4746 20.8278 5.63893 20.8278C6.58416 20.828 7.52939 20.8278 8.47462 20.8278C8.59783 20.8278 8.65958 20.7651 8.65989 20.6399C8.65989 18.9737 8.65989 17.3074 8.65989 15.6409L8.65966 15.6411ZM7.05284 8.87362C8.07888 8.87475 8.88837 8.07293 8.89085 7.05353C8.89332 6.03481 8.08158 5.21272 7.06972 5.20911C6.05516 5.20551 5.22856 6.03121 5.22834 7.04857C5.22834 8.05986 6.04098 8.87272 7.05284 8.87385V8.87362Z" fill="#FF0D14"/></g><defs><clipPath id="clip0_421_188"><rect width="26" height="26" fill="white"/></clipPath></defs></svg></a></li>
+
+                          <li>
+							  <a target="_blank" href="#" class="top_a_linkn text-white-n">
+								<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_481_1769)">
+								<path d="M17.6882 26L8.46403 26C8.36419 25.9893 8.26384 25.9701 8.164 25.9691C7.43721 25.961 6.71398 25.9047 6.0024 25.7582C3.08259 25.1566 1.19671 23.4451 0.435458 20.5385C0.13998 19.4103 0.121735 18.2522 0.0938597 17.0981C0.067505 16.01 0.0832166 14.9213 0.0771348 13.8327C0.0761212 13.6142 0.0599029 13.3958 0.0507801 13.1769C0.0507801 13.0755 0.0507801 12.9741 0.0507801 12.8728C0.0599029 12.7217 0.0756145 12.5707 0.0771349 12.4197C0.0953807 10.4811 0.0153029 8.53842 0.240839 6.60692C0.396434 5.27144 0.805947 4.02212 1.62548 2.93397C3.0091 1.09725 4.93148 0.317248 7.15441 0.136313C7.59027 0.100835 8.02766 0.0790419 8.46404 0.0506599C11.5217 0.0506602 14.5799 0.0506604 17.6375 0.0506607C17.7374 0.0618108 17.8372 0.0805633 17.9376 0.0820837C18.673 0.0947544 19.4058 0.14645 20.1265 0.292415C22.9835 0.872221 24.8694 2.52041 25.6712 5.35507C25.8557 6.00735 25.9205 6.67939 26.0001 7.34891L26.0001 18.5497C25.9367 19.0423 25.9068 19.5385 25.8141 20.0281C25.5049 21.6626 24.7984 23.0756 23.5238 24.1759C22.2167 25.3046 20.6597 25.781 18.9725 25.9148C18.5447 25.9488 18.116 25.9721 17.6877 26L17.6882 26ZM13.0645 23.6448C14.5768 23.6691 16.0882 23.6199 17.5995 23.5916C18.3233 23.5779 19.0505 23.5485 19.7652 23.3974C21.6282 23.0021 22.8537 21.9246 23.3601 20.0641C23.5998 19.1827 23.6297 18.277 23.6429 17.3769C23.6738 15.2488 23.6738 13.1196 23.6672 10.9914C23.6626 9.55713 23.6859 8.1208 23.502 6.69206C23.2293 4.5705 21.9045 3.13417 19.8077 2.69019C18.7926 2.4753 17.7587 2.47226 16.7318 2.4606C14.2996 2.43323 11.8663 2.43577 9.43409 2.46009C8.47417 2.46972 7.5102 2.48898 6.55636 2.64914C4.53667 2.9877 3.19815 4.24664 2.74454 6.24403C2.54131 7.1406 2.51901 8.05491 2.5109 8.96364C2.48708 11.6833 2.4886 14.4034 2.5109 17.123C2.51749 17.9643 2.54232 18.8112 2.7045 19.6444C3.07854 21.5683 4.17429 22.8268 6.09363 23.329C6.90099 23.5404 7.73016 23.5764 8.55526 23.5921C10.058 23.6215 11.5612 23.6691 13.065 23.6453L13.0645 23.6448Z" fill="#FF0D14"/>
+								<path d="M6.3728 13.0269C6.3728 9.34734 9.39042 6.32667 13.0674 6.32465C16.7566 6.32262 19.7838 9.35291 19.7762 13.04C19.7686 16.7191 16.747 19.7311 13.0669 19.7281C9.38688 19.725 6.37331 16.7084 6.3728 13.0269ZM13.0796 17.3171C15.4454 17.3161 17.3653 15.3978 17.3668 13.034C17.3683 10.657 15.4444 8.73307 13.0674 8.73408C10.7026 8.7351 8.78477 10.6534 8.78376 13.0203C8.78224 15.4049 10.6955 17.3181 13.0796 17.3171Z" fill="#FF0D14"/>
+								<path d="M18.4292 6.08035C18.4328 5.21267 19.1509 4.50059 20.0146 4.50768C20.8711 4.51427 21.6014 5.2522 21.5933 6.10215C21.5852 6.98199 20.8711 7.67634 19.9796 7.67228C19.1008 7.66823 18.4252 6.97439 18.4292 6.08035Z" fill="#FF0D14"/>
+								</g>
+								<defs>
+								<clipPath id="clip0_481_1769">
+								<rect width="26" height="26" fill="white"/>
+								</clipPath>
+								</defs>
+								</svg>
+  
+							  </a>
+							</li>
+
+                          <li><a target="_blank" href="#" class="top_a_linkn text-white-n"><svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M26.4163 18.9121C26.4163 23.6138 23.6134 26.4167 18.9118 26.4167H17.3747C16.6643 26.4167 16.083 25.8355 16.083 25.125V17.6721C16.083 17.3234 16.3672 17.0263 16.7159 17.0263L18.9893 16.9875C19.1701 16.9746 19.3251 16.8455 19.3638 16.6646L19.8159 14.1975C19.8247 14.1416 19.8213 14.0845 19.8058 14.03C19.7904 13.9756 19.7633 13.9251 19.7264 13.8821C19.6896 13.8392 19.6439 13.8047 19.5924 13.7811C19.541 13.7575 19.485 13.7453 19.4284 13.7455L16.6772 13.7842C16.3155 13.7842 16.0313 13.5 16.0184 13.1513L15.9668 9.98671C15.9668 9.78004 16.1347 9.59921 16.3543 9.59921L19.4543 9.54754C19.6738 9.54754 19.8418 9.37963 19.8418 9.16004L19.7901 6.06004C19.7901 5.84046 19.6222 5.67254 19.4026 5.67254L15.9151 5.72421C15.406 5.73194 14.9034 5.84006 14.4362 6.04237C13.969 6.24469 13.5462 6.53721 13.1923 6.90319C12.8383 7.26917 12.56 7.7014 12.3734 8.17511C12.1868 8.64883 12.0954 9.15472 12.1047 9.66379L12.1693 13.2159C12.1822 13.5775 11.898 13.8617 11.5363 13.8746L9.98634 13.9005C9.76676 13.9005 9.59884 14.0684 9.59884 14.288L9.63759 16.7421C9.63759 16.9617 9.80551 17.1296 10.0251 17.1296L11.5751 17.1038C11.9368 17.1038 12.2209 17.388 12.2338 17.7367L12.3501 25.0992C12.363 25.8225 11.7818 26.4167 11.0584 26.4167H8.08759C3.38592 26.4167 0.583008 23.6138 0.583008 18.8992V8.08796C0.583008 3.38629 3.38592 0.583374 8.08759 0.583374H18.9118C23.6134 0.583374 26.4163 3.38629 26.4163 8.08796V18.9121Z" fill="#FF0D14"/></svg></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<?php wp_footer(); ?>
+
+<script type="text/javascript">
+_linkedin_partner_id = "5962740";
+window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script><script type="text/javascript">
+(function(l) {
+if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
+window.lintrk.q=[]}
+var s = document.getElementsByTagName("script")[0];
+var b = document.createElement("script");
+b.type = "text/javascript";b.async = true;
+b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+s.parentNode.insertBefore(b, s);})(window.lintrk);
+</script>
+<noscript>
+<img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=5962740&fmt=gif" />
+</noscript>
+</body>
+</html>

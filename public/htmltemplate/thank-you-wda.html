@@ -1,0 +1,35 @@
+<?php
+/**
+ * Template Name: Thank You WDA Page
+ *
+ * @package WordPress
+ * @subpackage Twenty_Fourteen
+ * @since Twenty Fourteen 1.0
+ */
+get_header('landingwda'); ?>
+
+<?php while (have_posts()): the_post(); ?>
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+<!--home-->
+<section class="thank-section">
+    <div class="container">
+        <div class="left-bg">
+            <h1>thank you for contacting us!</h1>
+            <p>We have received your message. We’ll reach you out<br>immediately!</p>
+            <a href="https://manage.chevalme.com/chevalapi/" class="btn-started">Back to home</a>
+            <div class="connect-area">
+                <h2>Let’s Connect</h2>
+                <a href="https://www.linkedin.com/company/chevalmiddleeast/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/chevalmiddleeast/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/chevalmiddleeast"><i class="fab fa-facebook-square"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<?php endwhile; ?>
+
+<?php wp_footer(); ?>
+    </body>
+</html>

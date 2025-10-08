@@ -1,0 +1,118 @@
+marquee {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: 1rem;
+}
+.marquee__content {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  min-width: 100%;
+  animation: scroll 10s linear infinite;
+}
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 1rem));
+  }
+}
+
+.marquee-img {
+  object-fit: contain;
+  filter: brightness(95);
+  opacity: 80;
+  height: 7rem;
+  width: 13rem;
+}
+@media (max-width: 620px) {
+  .marquee-img {
+    width: 10rem;
+  }
+}
+
+/* Swiper */
+
+.swiper {
+  width: 100%;
+  min-height: 320px;
+}
+
+.swiper-slide {
+  @apply w-[140px] lg:w-[180px] relative overflow-hidden cursor-pointer transition-all duration-500 ease-in-out  z-40;
+}
+.swiper-slide.active-slide {
+  overflow: hidden;
+  @apply w-[600px];
+}
+.main-image {
+  @apply object-cover w-full h-full rounded-[30px] transition-all duration-500;
+}
+.swiper-slide.active-slide .main-image {
+  opacity: 0;
+  visibility: hidden;
+}
+.vertical {
+  @apply text-main font-sora text-xl leading-[135%] tracking-[-0.25px] max-h-[180px] absolute bottom-10 left-10 z-50 [writing-mode:vertical-rl] rotate-180;
+}
+.swiper-slide.active-slide .expanded-content img {
+  @apply object-cover h-[230px] md:h-[330px] lg:h-[410px] relative z-40;
+}
+.grad {
+  @apply absolute bg-ads-portfolio-grad h-full w-full bottom-0 left-0 overflow-hidden z-50 rounded-b-[30px] max-h-[300px];
+}
+
+.swiper-slide.active-slide .vertical,
+.swiper-slide.active-slide .grad {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.expanded-content {
+  @apply absolute overflow-hidden inset-0 opacity-0 invisible transition-all duration-500;
+}
+.swiper-slide.active-slide .expanded-content {
+  opacity: 1;
+  visibility: visible;
+}
+.my-swiper-2 {
+  @apply h-full w-full;
+}
+
+.my-swiper-2 .swiper-slide img {
+  @apply object-cover w-full h-full rounded-[30px];
+}
+
+.active-content {
+  @apply w-full pt-[3.75rem] pb-5 px-7 rounded-b-[30px] absolute  bottom-1 z-[-1] bg-[#f8f8f8];
+}
+.active-content h4 {
+  @apply font-sora text-lg sm:text-xl md:text-2xl lg:text-3xl text-main leading-[135%] tracking-[-0.3px];
+}
+.active-content p {
+  @apply text-main font-sora text-sm font-light leading-[202%];
+}
+.my-swiper-2 .swiper-button-next,
+.my-swiper-2 .swiper-button-prev {
+  @apply text-[#1C1B1F]  rounded-full w-16 h-16;
+  background-size: 20px 20px;
+  background-position: center;
+  top: 40%;
+  transform: translateY(-50%);
+}
+.my-swiper-2 .swiper-button-next {
+  right: 10px;
+}
+
+.my-swiper-2 .swiper-button-prev {
+  left: 10px;
+}
+
+.my-swiper-2 .swiper-button-next::after,
+.my-swiper-2 .swiper-button-prev::after {
+  @apply text-sm;
+}

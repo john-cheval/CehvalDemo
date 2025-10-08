@@ -1,0 +1,129 @@
+<?php
+
+/**
+
+ * Template Name: Projects Page
+
+ *
+
+ * @package WordPress
+
+ * @subpackage Twenty_Fourteen
+
+ * @since Twenty Fourteen 1.0
+
+ */
+
+ ini_set('display_errors', 1);
+ ini_set('display_startup_errors', 1);
+ error_reporting(E_ALL);
+
+//get_header(); ?>
+
+<section class="md:pt-[100px] py-[50px] sm:px-0 px-5 bg-blackcurrant">
+  <div class="container mx-auto">
+    <div class="columns-1- sm:columns-2- lg:columns-3- row_projects">
+      <?php // The Query $home_sl = 1; query_posts( array ( 'post_type' =>
+      'projects', 'order' => '', 'showposts' => 120 ) ); ?> <?php while (
+      have_posts() ) : the_post(); ?> <?php $image =
+      wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), '' );
+      //print_r($image); if ($image) : ?>
+      <div
+        class="mb-4 aos-item col-md-4 wow-- fadeInUp--"
+        data-wow-delay="2s"
+        data-aos="zoom-in"
+      >
+        <a href="<?=get_permalink($post->ID); ?>" class="relative">
+          <img
+            src="<?=$image[0]; ?>"
+            alt="<?=$post->post_title; ?>"
+            class="w-full"
+          />
+          <div
+            class="absolute title_projects bottom-0 w-full left-0 bg-black px-5 py-[10px] bg-opacity-70"
+          >
+            <h2 class="text-lg text-white-n uppercase font-chopard font-bold">
+              <?=$post->post_title; ?>
+            </h2>
+            <p class="text-base text-white-n">
+              <?=get_field('list_sub_heading', $post->ID); ?>
+            </p>
+          </div>
+        </a>
+      </div>
+      <?php $home_sl++; endif;?> <?php endwhile; ?> <?php wp_reset_query(); ?>
+    </div>
+    <?php /*
+    <div class="sealbrowngradient fixed bottom-0 w-full h-[150px] left-0">
+      <div
+        x-data="scrollProgress"
+        class="fixed inline-flex items-center justify-center overflow-hidden rounded-full left-1/2 -translate-x-1/2"
+      >
+        <svg class="w-[143px] h-[143px] -rotate-90">
+          <circle
+            class="text-whiteOpacity-800"
+            stroke-width="2"
+            stroke="currentColor"
+            fill="transparent"
+            r="71.5px"
+            cx="71.5px"
+            cy="71.5px"
+          />
+          <circle
+            class="text-cinnabar"
+            stroke-width="4"
+            :stroke-dasharray="circumference"
+            :stroke-dashoffset="circumference - percent / 100 * circumference"
+            stroke-linecap="round"
+            stroke="currentColor"
+            fill="transparent"
+            r="71.5px"
+            cx="71.5px"
+            cy="71.5px"
+          />
+        </svg>
+        <span
+          class="absolute text-white-n text-base leading-[100%] text-center uppercase font-semibold"
+          >Scroll to browse our Projects</span
+        >
+      </div>
+    </div>
+    */?>
+  </div>
+</section>
+
+<!--     <script src="<?php //get_bloginfo('template_url'); ?>/js/aos.js"></script>
+
+
+    <script>
+        AOS.init({
+            duration: 1200,
+        });
+    </script> -->
+
+<!-- <script
+  src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.2.2/cdn.js"
+  defer
+></script> -->
+<script>
+  const scrollProgress = () => {
+    return {
+      init() {
+        window.addEventListener("scroll", () => {
+          let winScroll =
+            document.body.scrollTop || document.documentElement.scrollTop;
+          let height =
+            document.documentElement.scrollHeight -
+            document.documentElement.clientHeight;
+          this.percent = Math.round((winScroll / height) * 100);
+        });
+      },
+      circumference: 71.5 * 2 * Math.PI,
+      percent: 0,
+    };
+  };
+</script>
+<?php /*
+<script src="<?=get_bloginfo('template_url'); ?>/assets/js/owl.carousel.min.js"></script>
+<script src="<?=get_bloginfo('template_url'); ?>/assets/js/main.js"></script>
+*/ ?> <?php //get_footer('contactwithus'); ?>

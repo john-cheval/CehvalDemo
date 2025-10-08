@@ -1,0 +1,112 @@
+<?php
+
+/**
+ * Template Name: Contact Page
+ *
+ * @package WordPress
+ * @subpackage Twenty_Fourteen
+ * @since Twenty Fourteen 1.0
+ */
+
+
+
+//get_header(); ?>
+<?php global $post;
+
+$pidhome = $post->ID;
+
+?>
+
+
+<section class="lg:pt-[100px] py-[50px] bg-blackcurrant sm:px-0 px-5">
+        <div class="container mx-auto wow animate">
+            <h1 class="font-chopard font-bold text-whiteOpacity-800 text-xl leading-[1.375rem] mb-10 uppercase"><?=$post->post_title; ?></h1>
+            <?=((get_field('sub_heading', $pidhome)) ? '<h6 class="font-chopard font-bold text-white md:text-[40px] md:leading-[44px] text-3xl uppercase">'.get_field('sub_heading', $pidhome).'</h6>' : ''); ?> 
+
+            <div class="flex sm:flex-row flex-col justify-between contact_address_outer">
+        
+        
+
+		        <div class="sm:mt-0 mt-5">
+        <h5 class="text-white sm:text-[22px] leading-[200%] font-chopard">Contact</h5>
+          <p class="text-white leading-[200%] "><a href="mailto:<?=get_field('email_address', 56); ?>"><i class="fa fa-envelope"></i> <?=get_field('email_address', 56); ?></a></p>
+          <p class="text-white leading-[200%] "><a href="tel:<?=str_replace(" ","",get_field('phone_number', 56)); ?>"><i class="fa fa-phone"></i> <?=get_field('phone_number', 56); ?></a></p>
+
+          <p class="text-white leading-[200%] ">
+          <a href="https://web.whatsapp.com/send?phone=<?=urlencode(get_field('whatsapp_number', 56).'&amp;text=Hello! I am interested in your service');?>" onclick="gtag('event', 'WhatsApp', {'event_action': 'whatsapp_chat', 'event_category': 'Chat', 'event_label': 'Chat_WhatsApp'});" target="_blank" class="for_desktop"><i class="fab fa-whatsapp"></i> <?=get_field('whatsapp_number', 56); ?></a>
+
+	<a href="https://wa.me/<?=urlencode(get_field('whatsapp_number', 56).'?text=Hello! I am interested in your service');?>" onclick="gtag('event', 'WhatsApp', {'event_action': 'whatsapp_chat', 'event_category': 'Chat', 'event_label': 'Chat_WhatsApp'});" target="_blank" class="for_mobile"><i class="fab fa-whatsapp"></i> <?=get_field('whatsapp_number', 56); ?></a></p>
+        </div>
+		    <div class="sm:mt-0 mt-5">
+    <h5 class="text-white sm:text-[22px] leading-[200%] font-chopard">Get Social</h5>
+          <ul class="social_ul_footer">
+          <?=((get_field('facebook_link', 56)) ? '<li><a target="_blank" href="'.get_field('facebook_link', 56).'" class="top_a_linkn text-white"><i class="fab fa-facebook"></i></a></li>' : ''); ?>  
+          <?=((get_field('instagram_link', 56)) ? '<li><a target="_blank" href="'.get_field('instagram_link', 56).'" class="top_a_linkn text-white"><i class="fab fa-instagram"></i></a></li>' : ''); ?>
+          <?=((get_field('linkedin_link', 56)) ? '<li><a target="_blank" href="'.get_field('linkedin_link', 56).'" class="top_a_linkn text-white"><i class="fab fa-linkedin"></i></a></li>' : ''); ?>
+          
+           
+    </ul>
+        </div>
+
+
+        <div class="sm:mt-0 mt-5 address_area">
+        <h5 class="text-white sm:text-[22px] leading-[200%] font-chopard">Address</h5>
+          <p class="text-white leading-[200%] "><i class="fa fa-map-marker-alt"></i> <span><?=get_field('address', 56); ?></span></p>
+          <p class="text-white leading-[200%] "><a target="_blank" href="<?=get_field('map_link', 56); ?>">View Map</a></p>
+        </div>
+        
+      </div>
+
+        </div>
+    </section>
+
+
+    <?=((get_field('banner_image', $pidhome)) ? '<section class="contact_img_area wow animate"><div class="w-full"><div class="image_cover"><img src="'.get_field('banner_image', $pidhome).'" alt="'.$post->post_title.'" class="w-full"></div></div> </section>' : ''); ?> 
+
+    <section class="bg-blackcurrant contact_form_section">
+        <div class="container mx-auto wow animate">
+           
+            <div class="flex lg:flex-row-reverse flex-col justify-between">                
+                
+                <div class="lg:w-5/5 w-full">
+                    <div class="">
+                        <?=do_shortcode('[contact-form-7 id="173" title="Contact Page"]');?>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <?php /* if(get_field('address_list', $pidhome)){ ?>
+    <section class="bg-blackcurrant pt-[70px] sm:px-0 px-5 md:pb-[50px] address_lisr_section">
+        <div class="container mx-auto">
+            <div class="flex md:flex-row flex-col">
+            <?php foreach(get_field('address_list', $pidhome) as $address_list){ ?>
+                <div class="md:w-1/2 address_list_outer2">
+                    <div class="bg-[#0B0C21] lg:px-[50px] p-[25px] md:mr-3- md:my-0 my-5 h-full">
+                        <div class="flex items-end address_list_outer">
+                            <div class="mr-4">
+                                <span class="bg-[#4B2177] text-white hide hidden text-base px-[8px] mb-2.5 inline-block"><?=$address_list['title']; ?></span>
+                                <p class="text-base text-white"><?=$address_list['address']; ?></p>
+                                <?=(($address_list['phone_number']) ? '<a class="a_contact_l" href="tel:'.$address_list['phone_number'].'">'.$address_list['phone_number'].'</a>' : ''); ?>
+                            </div>
+                            <div>
+                                <ul class="flex items-center">
+                                <?=(($address_list['phone_number']) ? '<li class="w-[60px] h-[60px] rounded-full bg-blackcurrant text-center flex items-center justify-center mr-4"><a href="tel:'.$address_list['phone_number'].'"><img src="'.get_bloginfo('template_url').'/assets/images/smartphone.svg"></a></li>' : ''); ?>  
+
+                                <?=(($address_list['map_link']) ? '<li class="w-[60px] h-[60px] rounded-full bg-blackcurrant text-center flex items-center justify-center"><a target="_blank" href="'.$address_list['map_link'].'"><img src="'.get_bloginfo('template_url').'/assets/images/map.svg"></a></li>' : ''); ?>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <?php } ?>
+                
+            </div>
+        </div>
+    </section>
+    <?php }*/ ?>
+
+

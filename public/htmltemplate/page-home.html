@@ -1,0 +1,248 @@
+<?php
+
+/**
+
+ * Template Name: Home Page
+
+ *
+
+ * @package WordPress
+
+ * @subpackage Twenty_Fourteen
+
+ * @since Twenty Fourteen 1.0
+
+ */
+
+
+//get_header(); ?>
+<?php global $post;
+
+$pidhome = $post->ID;
+
+?>
+<?php if(get_field('slider_section', $pidhome)){ $slider_section = get_field('slider_section', $pidhome); ?>
+<section class="home-banner-section relative">
+    <div class="home-banner-slider" id="home-banner-slider">
+
+
+    <?php foreach($slider_section as $slide){if($slide['banner_image']){ ?>
+      <div class="slide_holder">
+        <div
+          class="slide_inner slide_inner_cheval flex items-center justify-center- relative bg-no-repeat bg-center bg-cover before:bg-blackcurrant before:top-0 before:left-0 before:absolute before:h-full before:w-full before:bg-opacity-[0.8] md:px-0 px-5"
+          style="background-image:url(<?php echo $slide['banner_image']; ?>);">
+          <!--<img src="<?php echo $slide['banner_image']; ?>">-->
+          <div class="slide_content max-w-5xl mx-auto- relative text-center-">
+            <p style="font-size:20px; color:#fff;">Completed Projects</p>
+            <p class="font-chopard font-bold md:text-[50px] md:leading-[55px] text-2xl text-white-n  uppercase">
+            <?php echo $slide['title']; ?>
+            </p>
+            <p class="font-poppins font-normal leading-[22px] text-base text-white-n  mt-[25px] mb-[42px]"><?php echo $slide['description']; ?></p>
+            <?=(($slide['link']) ? '<a target="_blank" title="Explore More" href="'.$slide['link'].'" class="border-white border-2 border-solid w-[180px] h-[60px] text-base font-semibold text-center uppercase text-white-n  hover:bg-white hover:text-blackcurrant">Explore</a>' : ''); ?>
+
+          </div>
+        </div>
+      </div>
+    <?php }} ?>
+
+    </div>
+    <?php /*if(get_field('email_address', 56)){ $email = get_field('email_address', 56); ?>
+    <div class="flex absolute sm:bottom-[20px] bottom-[60px] w-full  justify-between sm:flex-row flex-col">
+      <p
+        class="md:pl-[70px] pl-5 tex-white leading-[18px] sm:text-left text-center text-xs uppercase tracking-[0.59em] text-white">
+        <a target="_blank" href="mailto:<?=$email; ?>"><?=$email; ?></a>
+      </p>
+    </div>
+    <?php }*/ ?>
+  </section>
+
+  <?php } ?>
+  <?php if(get_field('web_title', $pidhome)){ ?>
+  <section class="bg-[url(../images/parallax-img.jpg)] bg-fixed bg-no-repeat bg-cover bg-center before:bg-blackOpacity before:top-0 before:left-0 before:absolute before:w-full before:h-full relative h-[600px] flex justify-center items-center flex-col" <?=((get_field('web_banner', $pidhome)) ? 'style="background-image:url('.get_field('web_banner', $pidhome).');"' : ''); ?>>
+    <div class="container">
+      <div class="relative text-center md:px-0 px-5">
+        <h1 class="font-chopard font-bold md:text-[40px] md:leading-[44px] text-3xl text-sealbrown uppercase mb-5"><?=get_field('web_title', $pidhome); ?></h1>
+          <?=((get_field('web_link', $pidhome)) ? '<a target="_blank" title="Our Services" href="'.get_field('web_link', $pidhome).'"
+          class="border-sealbrown border-2 border-solid w-[180px] h-[60px] text-base font-semibold text-center uppercase text-sealbrown hover:bg-white hover:text-blackcurrant leading-[56px]"
+          >Explore</a>' : ''); ?>
+      </div>
+    </div>
+  </section>
+  <?php } ?>
+  <?php if(get_field('service_list', $pidhome)){ ?>
+  <section class="bg-white flex lg:items-stretch item lg:flex-nowrap flex-wrap section-counting">
+    <div class="lg:w-2/5 w-full image-holder">
+    <?=((get_field('service_banner', $pidhome)) ? '<img loading="lazy" src="'.get_field('service_banner', $pidhome).'" alt="Web Development Solution agency" title="Web Development Solution" class="w-full h-full">' : ''); ?>
+
+    </div>
+    <div class="lg:w-3/5 md:px-[95px] md:pt-[100px] md:pb-[40px] p-[20px] relative">
+      <a title="What we do" href="#WhatWeDo"
+        class="sm:flex hidden transform rotate-90 absolute translate-y-full -right-[46px] text-[0.875rem] leading-[21px] text-sealbrown tracking-[0.59em] font-bold uppercase top-[230px] scrolling">
+        scroll Down <span class="arrow-animation"><svg width="60" height="20" viewBox="0 0 64 23" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M0.75 11.5C0.75 10.7764 1.30964 10.1897 2 10.1897H61.3548C62.0452 10.1897 62.6048 10.7764 62.6048 11.5C62.6048 12.2237 62.0452 12.8104 61.3548 12.8104H2C1.30964 12.8104 0.75 12.2237 0.75 11.5Z"
+              fill="#120A08" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M52.0854 1.07194C52.5743 0.561076 53.3658 0.562462 53.8531 1.07504L62.8854 10.575C63.3716 11.0864 63.3716 11.9137 62.8854 12.425L53.8531 21.925C53.3658 22.4376 52.5743 22.439 52.0854 21.9281C51.5964 21.4173 51.5951 20.5876 52.0824 20.075L60.2352 11.5L52.0824 2.92505C51.5951 2.41247 51.5964 1.58281 52.0854 1.07194Z"
+              fill="#120A08" />
+          </svg></span>
+
+      </a>
+      <div class="card-block relative h-auto mb-[150px] ">
+      <?=((get_field('service_heading', $pidhome)) ? '<h2 class="font-chopard font-bold md:text-[40px] md:leading-[44px] text-3xl text-sealbrown uppercase mb-5">'.get_field('service_heading', $pidhome).'</h2>' : ''); ?>
+      <?=((get_field('service_description', $pidhome)) ? '<p class="font-poppins font-normal block text-lg text-ironsidegrey mt-6 mb-10 leading-[27px]">'.get_field('service_description', $pidhome).'</p>' : ''); ?>
+
+      <?php if(get_field('service_countdown', $pidhome)){ ?>
+        <div class="flex sm:flex-nowrap flex-wrap">
+        <?php foreach(get_field('service_countdown', $pidhome) as $service_countdown){ ?>
+          <div class="sm:mr-3 sm:mb-0 mb-5 ">
+            <p class="lg:text-[70px] lg:leading-[77px] text-6xl text-cinnabar font-bold flex"><span class="counting"
+                data-count="<?=$service_countdown['total_count']; ?>">0</span>+</p>
+            <p class="text-[22px] text-sealbrown leading-[33px] font-semibold my-[20px]"><?=$service_countdown['title']; ?></p>
+            <p class="text-[18px] text-ironsidegrey leading-[27px]"><?=$service_countdown['description']; ?></p>
+          </div>
+          <?php } ?>
+        </div>
+        <?php } ?>
+        <hr
+          class="h-[5px] w-full bg-cinnabar overflow-visible md:-left-[30%] -bottom-[70px] absolute border-0 border-none after:h-[5px] after:bg-cinnabar after:w-full after:absolute md:after:-right-[30%] sm:after:inline-block after:hidden">
+      </div>
+      <?php $cl_hr = array('[#4B2177]','[#EB8134]','cinnabar'); $kl=0; foreach(get_field('service_list', $pidhome) as $service_list){ ?>
+      <div class="card-block relative h-auto mb-[150px]">
+        <p class="font-chopard font-bold md:text-[40px] md:leading-[44px] text-3xl text-sealbrown uppercase mb-5">
+        <?=$service_list['title']; ?>
+        </p>
+        <p class="font-poppins font-normal block text-lg leading-[27px] text-ironsidegrey mt-6 mb-10 "><?=$service_list['description']; ?></p>
+        <?=(($service_list['image']) ? '<div class=""><img loading="lazy" src="'.$service_list['image'].'" alt="'.$service_list['title'].'" title="website designing soluion"></div>' : ''); ?>
+        <hr class="h-[5px] w-full bg-<?=$cl_hr[$kl]; ?> overflow-visible md:-left-[30%] -bottom-[70px] absolute border-0 border-none after:h-[5px] after:bg-<?=$cl_hr[$kl]; ?> after:w-full after:absolute md:after:-right-[30%]  sm:after:inline-block after:hidden">
+      </div>
+      <?php $kl++; if($kl==3){ $kl=0; }} ?>
+    </div>
+  </section>
+  <?php } ?>
+
+  <?php get_footer('whatwedo'); ?>
+
+  <section class="combo for_desktop">
+    <p class="letter-work"><span class="hideme">W</span><span class="letter-o">O</span><span class="hideme">RK</span>
+    </p>
+    <hr class="border-0 border-none">
+    <?php
+					 // The Query
+					 $home_sl = 1;
+					query_posts( array ( 'post_type' => 'projects', 'order' => '', 'meta_key' => 'home_page', 'meta_value' => true, 'showposts' => 1 ) ); ?>
+          <?php /* Start the Loop */ ?>
+          <?php while ( have_posts() ) : the_post();  ?>
+          <?php  $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), '' );  //print_r($image);
+                          if ($image) : ?>
+    <div class="zoom-img">
+    <?=((get_field('home_image', $post->ID)) ? '<img loading="lazy" src="'.get_field('home_image', $post->ID).'"  class="mx-auto" alt="work" title="Our Portfolio">' : ''); ?>
+    </div>
+    <?php  $home_sl++;   endif;?>
+
+         <?php endwhile; ?>
+         <?php wp_reset_query(); ?>
+  </section>
+
+
+  <section class=" banner case-study-section" style="visibility: hidden; opacity: 0; height:0;">
+    <div class="pb-[90px] md:px-0 px-5">
+    <div class="container relative mx-auto case-study-container">
+    <p
+               class="font-chopard for_mobile font-bold text-[40px] leading-[44px] text-sealbrown uppercase mb-[45px] lg:pl-[95px] lg:mt-0 mt-5">
+               Our Case Studies
+             </p>
+    <?php
+					 // The Query
+					 $home_sl = 1;
+					query_posts( array ( 'post_type' => 'projects', 'order' => '', 'meta_key' => 'home_page', 'meta_value' => true, 'showposts' => 6 ) ); ?>
+          <?php /* Start the Loop */ ?>
+          <?php while ( have_posts() ) : the_post();  ?>
+          <?php  $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), '' );  //print_r($image);
+                          if ($image) : ?>
+
+        <?php if($home_sl%2==0){ ?>
+        <div class="flex pt-[102px] items-center lg:flex-row-reverse flex-col relative z-[1] row-case-study lg:after:w-[879px]  lg:after:bg-[#F5F5F5] lg:after:block lg:after:absolute lg:after:top-0 lg:after:left-1/2 lg:after:-translate-x-1/2"
+          id="CaseSTudyBlog2">
+          <div class="lg:w-1/2 w-full relative z-[2]">
+          <a target="_blank" title="'.$post->post_title.'" href="<?=get_permalink($post->ID); ?>" ><?=((get_field('home_image', $post->ID)) ? '<img loading="lazy" src="'.get_field('home_image', $post->ID).'"  class="w-full h-auto" alt="'.$post->post_title.' Image" title="'.$post->post_title.'">' : ''); ?></a>
+          </div>
+          <div class="lg:w-1/2 w-full relative z-[2]">
+            <div class="relative pt-[50px] md:pr-[95px] lg:mt-0 mt-5">
+              <hr class="h-[5px] lg:w-[760px] w-full bg-cinnabar left-0 top-0 absolute border-0 border-none">
+              <p class="text-3xl my-[30px] text-sealbrown font-chopard font-bold uppercase  leading-[33px]"><?=get_field('home_title', $post->ID); ?></p>
+              <p class="text-[18px] text-sealbrown leading-[27px] opacity-70"><?=get_field('home_description', $post->ID); ?></p>
+              <div class="mt-[50px]">
+                <a target="_blank" title="Vao Concept Store" class="w-[220px] h-[60px] text-base font-semibold text-sealbrown border-2 border-solid border-cinnabar justify-center flex items-center hover:bg-cinnabar hover:text-white bg-white" href="<?=get_permalink($post->ID); ?>">READ CASE STUDY</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+<?php }else{ ?>
+
+
+        <div class="flex mt-[102px] items-center relative flex-col lg:flex-row z-[1] row-case-study lg:after:w-[879px]  lg:after:bg-[#F5F5F5] lg:after:block lg:after:absolute lg:after:top-[89px] lg:after:left-1/2 lg:after:-translate-x-1/2 ">
+           <div class="lg:w-1/2 w-full relative z-[2]" id="case-study-img">
+             <a title="'.$post->post_title.'" href="<?=get_permalink($post->ID); ?>" ><?=((get_field('home_image', $post->ID)) ? '<img loading="lazy" src="'.get_field('home_image', $post->ID).'"  class="w-full h-auto" alt="'.$post->post_title.' Image" title="'.$post->post_title.'">' : ''); ?></a>
+           </div>
+           <div class="lg:w-1/2 w-full relative z-[2]">
+              <?php if($home_sl==1){ ?><p
+               class="font-chopard for_desktop font-bold text-[40px] leading-[44px] text-sealbrown uppercase mb-[45px] lg:pl-[95px] lg:mt-0 mt-5">
+               Our Case Studies
+             </p>
+             <?php } ?>
+             <div class="relative pt-[50px] lg:pl-[95px]">
+               <hr class="h-[5px] lg:w-[760px] w-full bg-cinnabar right-0  top-0 absolute border-0 border-none">
+               <p class="text-3xl my-[30px] text-sealbrown font-chopard font-bold uppercase  leading-[33px]"><?=get_field('home_title', $post->ID); ?></p>
+               <p class="text-[18px] text-sealbrown leading-[27px] opacity-70"><?=get_field('home_description', $post->ID); ?></p>
+               <div class="mt-[50px]">
+                 <a target="_blank" title="Sheikh Zayed Grand Mosque Center" class="w-[220px] h-[60px] text-base font-semibold text-sealbrown border-2 border-solid border-cinnabar justify-center flex items-center hover:bg-cinnabar hover:text-white bg-white" href="<?=get_permalink($post->ID); ?>" >READ CASE STUDY</a>
+               </div>
+             </div>
+           </div>
+
+         </div>
+
+            <?php } $home_sl++;   endif;?>
+
+          <?php endwhile; ?>
+          <?php wp_reset_query(); ?>
+      </div>
+    </div>
+  </section>
+
+  <?php $pidhome_s=98; if(get_field('trust_us_list', $pidhome_s)){ ?>
+    <section class="md:pt-[100px] py-[50px] pb-[120px] sm:px-0 px-5 bg-blackcurrant trust_us_list_about">
+        <div class="container mx-auto">
+        <p class="font-chopard font-bold text-[40px] text-center leading-[44px] text-white uppercase mb-5"><?=((get_field('trust_us_heading', $pidhome_s)) ? get_field('trust_us_heading', $pidhome_s) : 'They Trust Us'); ?></p>
+
+            <div class="client-logo_row">
+            <?php foreach(get_field('trust_us_list', $pidhome_s) as $service_list){ ?>
+                <?=(($service_list['image']) ? '<div class="item"><img loading="lazy" src="'.$service_list['image'].'" alt="'.$service_list['title'].' Image" title="'.$service_list['title'].'"></div>' : ''); ?>
+                <?php } ?>
+            </div>
+           <?php /* <div class="client-logo owl-carousel owl-theme">
+            <?php foreach(get_field('trust_us_list', $pidhome) as $service_list){ ?>
+                <?=(($service_list['image']) ? '<div class="item"><img src="'.$service_list['image'].'" alt="'.$service_list['title'].'"></div>' : ''); ?>
+                <?php } ?>
+            </div> */?>
+        </div>
+    </section>
+    <?php } ?>
+  <?php /*if(get_field('web_title_2', $pidhome)){ ?>
+<section id="combiningSection"
+    class="bg-[url(../images/parallax-img-2.jpg)] bg-fixed bg-no-repeat bg-center bg-cover
+  before:bg-blackOpacity before:top-0 before:left-0 before:absolute before:w-full before:h-full relative h-[600px] flex justify-center items-center flex-col for_desktop" <?=((get_field('web_banner_2', $pidhome)) ? 'style="background-image:url('.get_field('web_banner_2', $pidhome).');"' : ''); ?>>
+    <div class="relative text-center max-w-[644px] mx-auto md:px-0 px-5">
+      <h3 class="font-chopard font-bold text-[40px] leading-[44px] text-cinnabar  uppercase mb-5"><?=get_field('web_title_2', $pidhome); ?></h3>
+      <?=((get_field('web_link_2', $pidhome)) ? '<a href="'.get_field('web_link_2', $pidhome).'"
+          class="border-sealbrown border-2 border-solid w-[180px] h-[60px] text-base font-semibold text-center uppercase text-sealbrown hover:bg-white hover:text-blackcurrant leading-[56px]"
+          type="button" >Explore</a>' : ''); ?>
+    </div>
+  </section>
+  <?php }*/ ?>
+
+<?php get_footer('contactwithus'); ?>

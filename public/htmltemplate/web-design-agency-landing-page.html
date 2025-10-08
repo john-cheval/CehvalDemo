@@ -1,0 +1,479 @@
+<?php
+/**
+ * Template Name: Web Design Agency Landing Page
+ *
+ * @package WordPress
+ * @subpackage Twenty_Fourteen
+ * @since Twenty Fourteen 1.0
+ */
+get_header('landingwda'); ?>
+
+<?php while (have_posts()): the_post(); ?>
+
+<!--home-->
+<section class="home-section" id="home">
+    <div class="container">
+        <div class="left-bg">
+            <h1>Boost Your Business with Innovative <span>Web Solutions</span></h1>
+            <p>Empower your business with a digital presence that shines. Discover how our web design and development expertise can take you to the next level.</p>
+            <a href="javascript:void(0)" class="btn-started" data-toggle="modal" data-target="#exampleModalCenter">Get Started</a>
+
+        </div>
+        <div class="right-bg">
+            <div class="form-area">
+                <h2>Get a free quote</h2>
+                <!-- <div class="form-floating mb-3">
+                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                  <label for="floatingInput">Email address</label>
+                </div> -->
+                <?php echo do_shortcode('[contact-form-7 id="1539" title="Landing Page WDA"]'); ?>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Portfolio-->
+<section>
+    <div class="portfolio-area">
+        <div class="container">
+            <h2><span>Portfolio</span>Our Latest Work</h2>
+            <div class="web-view">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="portfolio-block">
+                            <div class="portfolio-img">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/project-1.jpg" alt="">
+                            </div>
+                            <div class="project-name">THE BOWERY COMPANY</div>
+                            <p>E-commerce Website</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="portfolio-block">
+                            <div class="portfolio-img">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/project-2.jpg" alt="">
+                            </div>
+                            <div class="project-name">SHEIKH ZAYED GRAND MOSQUE</div>
+                            <p>Custom CRM Solution</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="portfolio-block">
+                            <div class="portfolio-img">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/project-3.jpg" alt="">
+                            </div>
+                            <div class="project-name">IMG WORLD OF ADVENTURE</div>
+                            <p>Custom Ticket Booking System</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="portfolio-block">
+                            <div class="portfolio-img">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/project-4.jpg" alt="">
+                            </div>
+                            <div class="project-name">FARAJ FUND</div>
+                            <p>Custom Solution, Website & Mobile App</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="portfolio-block">
+                            <div class="portfolio-img">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/project-5.jpg" alt="">
+                            </div>
+                            <div class="project-name">MAKAW</div>
+                            <p>E-commerce Website</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="portfolio-block">
+                            <div class="portfolio-img">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/project-6.jpg" alt="">
+                            </div>
+                            <div class="project-name">VAO CONCEPT STORE</div>
+                            <p>E-commerce Website</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-view">
+                <div class="swiper project-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="portfolio-block">
+                                <div class="portfolio-img">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/project-1.jpg" alt="">
+                                </div>
+                                <div class="project-name">THE BOWERY COMPANY</div>
+                                <p>E-commerce Website</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio-block">
+                                <div class="portfolio-img">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/project-2.jpg" alt="">
+                                </div>
+                                <div class="project-name">SHEIKH ZAYED GRAND MOSQUE</div>
+                                <p>Custom CRM Solution</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio-block">
+                                <div class="portfolio-img">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/project-3.jpg" alt="">
+                                </div>
+                                <div class="project-name">IMG WORLD OF ADVENTURE</div>
+                                <p>Custom Ticket Booking System</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio-block">
+                                <div class="portfolio-img">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/project-4.jpg" alt="">
+                                </div>
+                                <div class="project-name">FARAJ FUND</div>
+                                <p>Custom Solution, Website & Mobile App</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio-block">
+                                <div class="portfolio-img">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/project-5.jpg" alt="">
+                                </div>
+                                <div class="project-name">MAKAW</div>
+                                <p>E-commerce Website</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio-block">
+                                <div class="portfolio-img">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/project-6.jpg" alt="">
+                                </div>
+                                <div class="project-name">VAO CONCEPT STORE</div>
+                                <p>E-commerce Website</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--about-area-->
+<section>
+    <div class="who-we-are-section">
+        <div class="container">
+            <!-- <div class="row">
+                <div class="col-lg-4 col-md-4">
+                    <div class="counter-block">
+                        <div class="icon"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/client-icon.jpg" alt=""></div>
+                        <div class="detail">
+                            <h3>100+</h3>
+                            <div class="subtitle">Happy Clients</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="counter-block">
+                        <div class="icon"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/team-icon.jpg" alt=""></div>
+                        <div class="detail">
+                            <h3>30+</h3>
+                            <div class="subtitle">Experienced Team</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="counter-block">
+                        <div class="icon"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/project-icon.jpg" alt=""></div>
+                        <div class="detail">
+                            <h3>150+</h3>
+                            <div class="subtitle">Completed Projects</div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <h2><span>THEY TRUST US</span>clients</h2>
+
+
+            <?php
+
+                $images = get_field('client_logos');
+                if( $images ): ?>
+                    <ul class="logo-list">
+                        <?php foreach( $images as $image ): ?>
+
+                            <li>
+                                <div class="logo-block">
+                                    <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
+                                </div>
+                            </li>
+                        <?php endforeach; ?>
+                    </ul>
+                <?php endif; ?>
+
+
+            <div class="d-flex">
+                <div class="leftside">
+                    <h3>Who we are</h3>
+                    <h4>At Cheval Middle East, we are more than just a website design and development company – we are your digital transformation partner in the heart of Dubai. With a rich history spanning over a decade, we have been at the forefront of the digital revolution, helping businesses in the vibrant city of Dubai and beyond establish a strong online presence.</h4>
+                </div>
+                <div class="rightside">
+                    <div class="counter-block">
+                        <div class="icon"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/client-icon.jpg" alt=""></div>
+                        <div class="detail">
+                            <h3>100+</h3>
+                            <div class="subtitle">Happy Clients</div>
+                        </div>
+                    </div>
+                    <div class="counter-block">
+                        <div class="icon"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/team-icon.jpg" alt=""></div>
+                        <div class="detail">
+                            <h3>30+</h3>
+                            <div class="subtitle">Experienced Team</div>
+                        </div>
+                    </div>
+                    <div class="counter-block">
+                        <div class="icon"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/project-icon.jpg" alt=""></div>
+                        <div class="detail">
+                            <h3>150+</h3>
+                            <div class="subtitle">Completed Projects</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!--service-area-->
+<section>
+    <div class="service-area">
+        <div class="container">
+            <h2><span>What we do</span>Our Services</h2>
+            <div class="swiper service-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="service-block">
+                            <div class="service-photo">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/service-1-new.jpg" alt="">
+                            </div>
+                            <div class="pd">
+                                <h3>Website Design & Development</h3>
+                                <p>Our skilled team designs and develops websites that captivate and perform flawlessly. We offer end-to-end solutions, tailored to your unique needs, ensuring your online presence excels and drives results.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="service-block">
+                            <div class="service-photo">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/service-3-new.jpg" alt="">
+                            </div>
+                            <div class="pd">
+                                <h3>E-commerce<br>Solutions</h3>
+                                <p>Take your online retail business to the next level with our e-commerce expertise. We build robust, secure and feature-rich e-commerce platforms that enable effortless product management, secure transactions and an exceptional shopping experience for your customers.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="service-block">
+                            <div class="service-photo">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/mobile-app.jpg" alt="">
+                            </div>
+                            <div class="pd">
+                                <h3>Mobile App<br>Development</h3>
+                                <p>Enhance your business's reach, engagement, and accessibility, offering customers a convenient and personalized experience at their fingertips with your own custom build mobile application.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="service-block">
+                            <div class="service-photo">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/service-4.png" alt="">
+                            </div>
+                            <div class="pd">
+                                <h3>Digital<br/>Marketing</h3>
+                                <p>Boost your online presence and drive results with our digital marketing services. From pay-per-click (PPC) advertising to social media marketing, we develop data-driven strategies to maximize your ROI.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="service-block">
+                            <div class="service-photo">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/service-2.jpg" alt="">
+                            </div>
+                            <div class="pd">
+                                <h3>Web<br>Hosting</h3>
+                                <p>Ensure your website's performance and security with our reliable web hosting services. We provide fast, secure, and scalable hosting solutions tailored to your specific needs.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="service-block">
+                            <div class="service-photo">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/service-1-new.jpg" alt="">
+                            </div>
+                            <div class="pd">
+                                <h3>Website Design & Development</h3>
+                                <p>Our skilled team designs and develops websites that captivate and perform flawlessly. We offer end-to-end solutions, tailored to your unique needs, ensuring your online presence excels and drives results.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="service-block">
+                            <div class="service-photo">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/service-3-new.jpg" alt="">
+                            </div>
+                            <div class="pd">
+                                <h3>E-commerce<br>Solutions</h3>
+                                <p>Take your online retail business to the next level with our e-commerce expertise. We build robust, secure and feature-rich e-commerce platforms that enable effortless product management, secure transactions and an exceptional shopping experience for your customers.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="service-block">
+                            <div class="service-photo">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/mobile-app.jpg" alt="">
+                            </div>
+                            <div class="pd">
+                                <h3>Mobile App<br>Development</h3>
+                                <p>Enhance your business's reach, engagement, and accessibility, offering customers a convenient and personalized experience at their fingertips with your own custom build mobile application.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="service-block">
+                            <div class="service-photo">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/service-4.png" alt="">
+                            </div>
+                            <div class="pd">
+                                <h3>Digital<br/>Marketing</h3>
+                                <p>Boost your online presence and drive results with our digital marketing services. From pay-per-click (PPC) advertising to social media marketing, we develop data-driven strategies to maximize your ROI.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="service-block">
+                            <div class="service-photo">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/service-2.jpg" alt="">
+                            </div>
+                            <div class="pd">
+                                <h3>Web<br>Hosting</h3>
+                                <p>Ensure your website's performance and security with our reliable web hosting services. We provide fast, secure, and scalable hosting solutions tailored to your specific needs.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-button-next">
+                    <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="28" cy="28" r="28" transform="matrix(-1 0 0 1 56 0)" fill="#EE2525"/><mask id="mask0_40_763" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="18" y="16" width="24" height="24"><rect x="18" y="16" width="24" height="24" fill="#D9D9D9"/></mask><g mask="url(#mask0_40_763)"><path d="M26.025 38L24.25 36.225L32.475 28L24.25 19.775L26.025 18L36.025 28L26.025 38Z" fill="white"/></g></svg>
+                </div>
+                <div class="swiper-button-prev">
+                    <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="28" cy="28" r="28" fill="#EE2525"/><mask id="mask0_40_758" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="14" y="16" width="24" height="24"><rect width="24" height="24" transform="matrix(-1 0 0 1 38 16)" fill="#D9D9D9"/></mask><g mask="url(#mask0_40_758)"><path d="M29.975 38L31.75 36.225L23.525 28L31.75 19.775L29.975 18L19.975 28L29.975 38Z" fill="white"/></g></svg>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!--why-choose-us-->
+<section>
+    <div class="why-choose-us">
+        <div class="container">
+            <h2><span>Cheval</span>Why Choose us</h2>
+            <div class="inner-area">
+                <div class="leftside">
+                    <div class="step-block">
+                        <div class="number">1</div>
+                        <h3>Expertise That Matters</h3>
+                        <p>With over 15 years of experience, we have a proven track record of delivering outstanding web solutions. Our expertise spans various industries and niches, ensuring we understand the unique challenges and opportunities your business faces.</p>
+                    </div>
+                    <div class="step-block">
+                        <div class="number">2</div>
+                        <h3>Customer-Centric Approach</h3>
+                        <p>Your satisfaction is our top priority. We believe in transparent communication, regular updates and collaborative decision-making. Throughout the project lifecycle, you'll find us responsive, attentive and dedicated to your success.</p>
+                    </div>
+                    <div class="step-block">
+                        <div class="number">3</div>
+                        <h3>Support That Never Sleeps</h3>
+                        <p>Your website's success doesn't end with its launch. We offer ongoing support and maintenance services to keep your site secure, updated and optimized for peak performance.</p>
+                    </div>
+                </div>
+                <div class="photo-area">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/why-choose-photo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Testimonials-->
+<section>
+    <div class="testimonials-area">
+        <div class="container">
+            <h2><span>What they say about us</span></h2>
+			<?php echo do_shortcode( '[grw id="1590"]' ); ?>
+            <!--div class="swiper testimonial-slider">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-block">
+                            <div class="testimonial-logo">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/brownie-logo.png" alt="">
+                            </div>
+                            <h3>Brownie Point</h3>
+                            <p>It is with immense gratitude and applause I write this testimonial for the recent delivering of our new e-commerce website. With the teams technical excellence and design brilliance, they ensured we achieved we received a website which meets our very specific needs. Within just a few months of launching, our orders have increased immensely and our revenue from the website is now equivalent to our stand alone stores. We definitely recommend the Cheval ME team to anyone who is looking for custom website development and mobile applications.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-block">
+                            <div class="testimonial-logo">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/asb-logo.png" alt="">
+                            </div>
+                            <h3>ASB Hospitality</h3>
+                            <p>Thanks to Cheval ME Team, our Company asb hospitality has a beautiful Professional website completed that helped us enhance our Hotels properties and services to an International level. We are extremely thankful to the Team for their tremendous patience and support to all our requirements, last minute updates and business needs – Def met to our quality standards and expectations.</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-block">
+                            <div class="testimonial-logo">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/testimonial-4.png" alt="">
+                            </div>
+                            <h3>Taste Studio</h3>
+                            <p>We reached out to Cheval ME as one of the leading website development agencies in Dubai, to design and develop our website. Not only did they exceed our expectations in regards to UX and UI experiences and exceptional designs, they have also integrated an online payment gateway into our website. After seeing such extraordinary work, we continued to work with them to further enhance our website with their SEO Services, and now we can proudly say that we rank on the first page of google for over 15 keywords related to our business.</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-block">
+                            <div class="testimonial-logo">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/images/testimonial-5.jpg" alt="">
+                            </div>
+                            <h3>Al Wasl Printing Press</h3>
+                            <p>We have worked with Cheval ME as they are the leading Website Development Agency in Dubai. They have helped us create a custom website for our business to easily showcase our products and services. Not only that, but we have worked with them for our SEO, and we can proudly say that now we rank on the first page of Google for all our keywords. I would definitely recommend Cheval ME as a Website Development Agency and an SEO Agency in Dubai.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-button-next"><svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="28" cy="28" r="28" transform="matrix(-1 0 0 1 56 0)" fill="#EE2525"/><mask id="mask0_40_763" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="18" y="16" width="24" height="24"><rect x="18" y="16" width="24" height="24" fill="#D9D9D9"/></mask><g mask="url(#mask0_40_763)"><path d="M26.025 38L24.25 36.225L32.475 28L24.25 19.775L26.025 18L36.025 28L26.025 38Z" fill="white"/></g></svg></div>
+                <div class="swiper-button-prev"><svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="28" cy="28" r="28" fill="#EE2525"/><mask id="mask0_40_758" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="14" y="16" width="24" height="24"><rect width="24" height="24" transform="matrix(-1 0 0 1 38 16)" fill="#D9D9D9"/></mask><g mask="url(#mask0_40_758)"><path d="M29.975 38L31.75 36.225L23.525 28L31.75 19.775L29.975 18L19.975 28L29.975 38Z" fill="white"/></g></svg></div>
+            </div-->
+        </div>
+    </div>
+</section>
+
+<?php endwhile; ?>
+
+<?php get_footer('landingwda');

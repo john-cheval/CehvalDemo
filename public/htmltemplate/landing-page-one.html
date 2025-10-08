@@ -1,0 +1,223 @@
+<?php
+
+/**
+ * Template Name:Landing Page One
+ *
+ * @package WordPress
+
+ * @subpackage Twenty_Fourteen
+
+ * @since Twenty Fourteen 1.0
+
+ */
+
+ //get_header();
+ $postID = get_the_ID();
+ $group = get_field('android_app_development_in_dubai');
+ // echo"";print_r($postID);exit;
+ ?>
+<link
+  rel="stylesheet"
+  href="<?php echo get_stylesheet_directory_uri(); ?>/assets/landing-page/css/new-landing.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<div class="landing-android-ios-page">
+  <div class="first-banner-text-area">
+    <div class="container">
+      <h1><?php echo $group ['main_title'] ?></h1>
+      <div class="banner-block">
+        <div class="photo">
+          <img src="<?php echo $group['main_image']['url']; ?>" alt="" />
+        </div>
+        <?php echo $group['main_description']; ?>
+      </div>
+    </div>
+  </div>
+
+  <div class="process-step-three-box-layout">
+    <div class="container">
+      <h2><?php echo $group ['from_main_title'] ?></h2>
+      <ul>
+        <?php $from_card = $group ['from_card']; if ($from_card > 0) { foreach
+        ($from_card as $key => $value) {?>
+        <li>
+          <div class="gray-block">
+            <div class="icon">
+              <img src="<?php echo $value['card_image']['url']; ?>" alt="" />
+            </div>
+            <h3><?php echo $value['card_title']; ?></h3>
+            <p><?php echo $value['card_description']; ?></p>
+          </div>
+        </li>
+
+        <?php } } ?>
+      </ul>
+    </div>
+  </div>
+
+  <div class="benefits-area">
+    <div class="container">
+      <h2><?php echo $group ['app_devlopment_in_dubai_section_title'] ?></h2>
+      <p>
+        <?php echo $group ['app_devlopment_in_dubai_section_description'] ?>
+      </p>
+      <ul>
+        <?php $app_devlopment_in_dubai_section_card = $group
+        ['app_devlopment_in_dubai_section_card']; if
+        ($app_devlopment_in_dubai_section_card > 0) { foreach
+        ($app_devlopment_in_dubai_section_card as $key => $value) {?>
+        <li>
+          <div class="gray-block">
+            <h3><?php echo $value['title']; ?></h3>
+            <p><?php echo $value['description']; ?></p>
+          </div>
+        </li>
+        <?php } } ?>
+      </ul>
+    </div>
+  </div>
+
+  <!--industries-section-->
+  <div class="industries-section">
+    <div class="container">
+      <div class="titlebar">
+        <h2><?php echo $group ['industries_title'] ?></h2>
+      </div>
+      <ul class="industries-point">
+        <?php $industries_list = $group ['industries_points']; if
+        ($industries_list > 0) { foreach ($industries_list as $key => $value) {
+        ?>
+        <li>
+          <div class="icon">
+            <img src="<?php echo $value ['point_image']['url']; ?>" alt="" />
+          </div>
+          <?php echo $value['point_title'] ?>
+        </li>
+
+        <?php } } ?>
+      </ul>
+    </div>
+  </div>
+
+  <!--testimonial-area-->
+  <div class="testimonial-area">
+    <div class="container">
+      <h2><?php echo $group ['testimonials_title'] ?></h2>
+      <div class="swiper testimonial-center-slider">
+        <div class="swiper-wrapper">
+          <?php $testimonials_list = $group ['testimonials']; if
+          ($testimonials_list > 0) { foreach ($testimonials_list as $key =>
+          $value) { ?>
+
+          <div class="swiper-slide">
+            <div class="review-block">
+              <p><?php echo $value['testimonials_description'] ?></p>
+              <h3><?php echo $value['testimonials_written_by'] ?></h3>
+            </div>
+          </div>
+
+          <?php } } ?>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+
+  <!--client-logo-area-->
+  <div class="client-logo-area">
+    <div class="container">
+      <h2><?php echo $group ['client_title'] ?></h2>
+      <ul class="logo-list">
+        <?php $client_box = $group ['client_box']; if ($client_box > 0) {
+        foreach ($client_box as $key => $value) { ?>
+
+        <li>
+          <div class="logo-block">
+            <img src="<?php echo $value ['client_image']['url']; ?>" alt="" />
+          </div>
+        </li>
+        <?php } } ?>
+      </ul>
+    </div>
+  </div>
+
+  <!--contact section-->
+  <div class="landing-contact-form">
+    <div class="form-section">
+      <div
+        class="flex items-top relative md:flex-row flex-col px-3 wow animate animated"
+      >
+        <div
+          class="md:w-1/2 d-sm-none d-tab-none"
+          style="
+            background-size: cover;
+            background-image: url(https://manage.chevalme.com/wp-content/uploads/2023/07/Rectangle-19-1-1.jpg);
+            height: auto;
+          "
+        ></div>
+        <div class="md:w-1/2 cus-head tab-w-100">
+          <h2>Have a question or need assistance?</h2>
+          <p>
+            You're just a few clicks away! Complete the contact form to reach
+            out to us and let us know how we can assist you.
+          </p>
+          <?php echo do_shortcode('[contact-form-7 id="844" title="Landing
+          Page"]'); ?>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--faq-section-->
+  <div class="faq-secion">
+    <div class="container">
+      <h2><?php echo $group ['faq_title'] ?></h2>
+      <div class="accordionWrapper">
+        <?php $i == 0; $faq_list = $group ['faq_list']; if ($faq_list > 0) {
+        foreach ($faq_list as $key => $value) { $class = ($i == 0) ? 'open' :
+        'close'; ?>
+
+        <div class="accordionItem <?php echo $class; ?>">
+          <h6 class="accordionItemHeading"><?php echo $value['question'] ?></h6>
+          <div class="accordionItemContent">
+            <p><?php echo $value['answer'] ?></p>
+          </div>
+        </div>
+
+        <?php $i++; } } ?>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".testimonial-center-slider", {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    centeredSlides: true,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 0,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 0,
+      },
+    },
+  });
+</script>

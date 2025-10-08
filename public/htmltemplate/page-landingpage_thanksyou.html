@@ -1,0 +1,35 @@
+<?php
+/**
+ * Template Name: Thanks for Landing Page
+ *
+ * @package WordPress
+ * @subpackage Twenty_Fourteen
+ * @since Twenty Fourteen 1.0
+ */
+get_header('landingpage_thanks'); ?>
+<?php global $post;
+$pidhome = $post->ID;
+?>
+<section class="thankspage_home">
+      <div class="container mx-auto">
+        <div class="thankspage_div">
+          <div class="row">
+                
+                <div class="col-md-6">
+                  <h1><?=$post->post_title; ?></h1>
+                  <?=apply_filters('the_content', $post->post_content); ?>
+                  <a class="btn btn_header_landing_red" href="<?=get_permalink(8); ?>">Back to Homepage</a> 
+                  
+                  <div class="thanks_social">
+                  <ul class="social_ul_footer">
+                        <?=((get_field('facebook_link', 56)) ? '<li><a target="_blank" href="'.get_field('facebook_link', 56).'" class="top_a_linkn text-white-n"><i class="fab fa-facebook"></i></a></li>' : ''); ?>  
+                        <?=((get_field('instagram_link', 56)) ? '<li><a target="_blank" href="'.get_field('instagram_link', 56).'" class="top_a_linkn text-white-n"><i class="fab fa-instagram"></i></a></li>' : ''); ?>
+                        <?=((get_field('linkedin_link', 56)) ? '<li><a target="_blank" href="'.get_field('linkedin_link', 56).'" class="top_a_linkn text-white-n"><i class="fab fa-linkedin"></i></a></li>' : ''); ?>            
+                  </ul>
+</div>
+                </div>
+          </div>
+        </div>
+    </div>
+</section>
+<?php get_footer('landingpage_thanks');

@@ -1,0 +1,2560 @@
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Questrial&family=Sora:wght@100..800&display=swap");
+  /* font-family: "Sora", sans-serif;
+  font-family: "Questrial", sans-serif; */
+  .new-best-web-development-area {
+    overflow: hidden;
+  }
+  .new-best-web-development-area .container {
+    max-width: 1290px !important;
+    margin: 0 auto;
+  }
+
+  .form-btn {
+    padding-block: 30px !important;
+  }
+  .top-video-section {
+    display: flex;
+    margin: 0 -8px;
+    flex-wrap: wrap;
+  }
+  .top-video-section .leftside {
+    width: 44%;
+    padding: 0 8px;
+  }
+  .top-video-section .leftside .blue-part {
+    background: #101763;
+    height: 100%;
+    position: relative;
+    padding: 70px 75px;
+    display: flex;
+    align-items: center;
+  }
+  .top-video-section .leftside .blue-part::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 365px;
+    height: 385px;
+    border-radius: 400px 0 0 0;
+    background: linear-gradient(
+      313.05deg,
+      rgba(16, 23, 99, 0) -28.24%,
+      #242d85 88.64%
+    );
+    z-index: 1;
+  }
+  .top-video-section .leftside .blue-part h1 {
+    position: relative;
+    z-index: 1;
+    font-family: "Sora", sans-serif;
+    font-size: 45px;
+    line-height: 56px;
+    color: #fff;
+    font-weight: 700;
+    margin: 0px;
+  }
+  .top-video-section .video-area {
+    width: 56%;
+    padding: 0 8px;
+    min-height: 474px;
+  }
+  .top-video-section .video-area .video-block {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  .top-video-section .video-area .video-block video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    object-fit: cover;
+  }
+  .top-video-section .third-full-content {
+    width: 100%;
+    padding: 50px 0 25px 0;
+    text-align: center;
+  }
+  .top-video-section .third-full-content p {
+    font-family: "Questrial", sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    color: #27172f;
+    font-weight: 400;
+    margin: 0 0 25px 0;
+  }
+
+  .service-web-development-section {
+    padding: 65px 0 55px 0;
+    background: linear-gradient(
+      180deg,
+      #f2f4f9 81.57%,
+      rgba(242, 244, 249, 0) 100%
+    );
+  }
+  .service-web-development-section h2 {
+    font-family: "Sora", sans-serif;
+    font-size: 32px;
+    line-height: 44px;
+    color: #000;
+    font-weight: 600;
+    margin: 0 0 22px 0;
+    padding: 0 0 24px 0;
+    position: relative;
+    background: #ff0c15;
+    background: linear-gradient(to right, #ff0c15 0%, #000000 26%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .service-web-development-section h2::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 120px;
+    height: 1px;
+    background: #000000;
+  }
+  .service-web-development-section p {
+    font-family: "Questrial", sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    color: #27172f;
+    font-weight: 400;
+    margin: 0px;
+  }
+  .service-web-development-section ul.service-list {
+    margin: 0px -10px;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .service-web-development-section ul.service-list li {
+    width: 33.33%;
+    padding: 0 10px;
+    margin-bottom: 20px;
+  }
+  .service-web-development-section ul.service-list li .service-block {
+    background: #fff;
+    border-radius: 8px;
+    padding: 24px 30px;
+    height: 100%;
+  }
+  .service-web-development-section ul.service-list li .service-block h3 {
+    font-family: "Sora", sans-serif;
+    font-size: 28px;
+    line-height: 38px;
+    color: #27172f;
+    font-weight: 600;
+    min-height: 98px;
+    margin-bottom: 50px;
+    position: relative;
+  }
+  .service-web-development-section
+    ul.service-list
+    li
+    .service-block
+    h3::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 78px;
+    height: 1px;
+    background: #000;
+  }
+  .service-web-development-section ul.service-list li .service-block p {
+    font-size: 14px;
+    line-height: 25px;
+    color: #27172f;
+    font-weight: 400;
+    margin: 0px;
+  }
+  .service-web-development-section .features-benefits-area {
+    padding: 54px 0 0 0;
+  }
+  .service-web-development-section .features-benefits-area h2 {
+    text-align: center;
+    margin: 0px 0px 60px 0px;
+    padding: 0px;
+    min-height: auto;
+  }
+  .service-web-development-section .features-benefits-area h2::before {
+    content: none;
+  }
+  .service-web-development-section .features-benefits-area .row {
+    display: flex;
+    margin: 0 -20px;
+  }
+  .service-web-development-section .features-benefits-area .col-lg-6 {
+    width: 50%;
+    padding: 0 20px;
+  }
+  .service-web-development-section .features-benefits-area .inner-block {
+    background: #f2f4f9;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+  }
+  .service-web-development-section
+    .features-benefits-area
+    .inner-block
+    .photo-block {
+    width: 44%;
+    min-height: 294px;
+  }
+  .service-web-development-section
+    .features-benefits-area
+    .inner-block
+    .photo-block
+    .img-block {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  .service-web-development-section
+    .features-benefits-area
+    .inner-block
+    .photo-block
+    .img-block
+    img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    object-fit: cover;
+  }
+  .service-web-development-section
+    .features-benefits-area
+    .inner-block
+    .right-content {
+    padding: 24px 28px;
+    width: 56%;
+  }
+  .service-web-development-section
+    .features-benefits-area
+    .inner-block
+    .right-content
+    .subtitle {
+    font-family: "Sora", sans-serif;
+    font-size: 28px;
+    line-height: 38px;
+    color: #27172f;
+    margin: 0 0 20px 0;
+    padding: 0 0 20px 0;
+    font-weight: 600;
+    position: relative;
+  }
+  .service-web-development-section
+    .features-benefits-area
+    .inner-block
+    .right-content
+    .subtitle::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 78px;
+    height: 1px;
+    background: #000;
+  }
+  .service-web-development-section
+    .features-benefits-area
+    .inner-block
+    .right-content
+    ul.point {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+  }
+  .service-web-development-section
+    .features-benefits-area
+    .inner-block
+    .right-content
+    ul.point
+    li {
+    font-family: "Questrial", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #27172f;
+    position: relative;
+    padding-left: 30px;
+  }
+  .service-web-development-section
+    .features-benefits-area
+    .inner-block
+    .right-content
+    ul.point
+    li:before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: 5px;
+    left: 0px;
+    background: url("<?= get_bloginfo('template_url'); ?>/assets/images/check_circle.png")
+      center center no-repeat;
+  }
+
+  .benefit-list-section {
+    padding: 0 0 50px 0;
+  }
+  .benefit-list-section .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .benefit-list-section .titlebar {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .benefit-list-section .titlebar h2 {
+    text-align: center;
+    font-family: "Sora", sans-serif;
+    font-size: 32px;
+    line-height: 44px;
+    color: #000;
+    font-weight: 600;
+    margin: 0 auto 18px auto;
+    max-width: 860px;
+    position: relative;
+    background: #ff0c15;
+    background: linear-gradient(to right, #ff0c15 0%, #000000 26%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .benefit-list-section .titlebar p {
+    text-align: center;
+    font-family: "Questrial", sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    color: #27172f;
+    font-weight: 400;
+    margin: 0px;
+  }
+  .benefit-list-section ul.benefitlist {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .benefit-list-section ul.benefitlist li {
+    background: #f8f8f8;
+    padding: 20px 40px;
+    margin: 0 0 12px 0;
+    border-radius: 8px;
+    width: 49.5%;
+    margin-right: 1%;
+  }
+  .benefit-list-section ul.benefitlist li:nth-child(2n) {
+    margin-right: 0px;
+  }
+  .benefit-list-section ul.benefitlist li h3 {
+    font-family: "Sora", sans-serif;
+    font-size: 28px;
+    line-height: 38px;
+    color: #27172f;
+    margin: 0 0 12px 0;
+    font-weight: 600;
+  }
+  .benefit-list-section ul.benefitlist li p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .online-success-guaranteed-area {
+    padding: 0px;
+  }
+  .online-success-guaranteed-area .guaranteed-block {
+    background: #000;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+  }
+  .online-success-guaranteed-area .guaranteed-block .content {
+    width: 50%;
+    padding: 46px 50px;
+  }
+  .online-success-guaranteed-area .guaranteed-block .content h2 {
+    font-family: "Sora", sans-serif;
+    font-size: 32px;
+    line-height: 44px;
+    color: #000;
+    font-weight: 600;
+    margin: 0 0 18px 0;
+    position: relative;
+    background: #ff0c15;
+    background: linear-gradient(to right, #ff0c15 0%, #fff 26%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .online-success-guaranteed-area .guaranteed-block .content p {
+    font-family: "Questrial", sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    color: #fff;
+    font-weight: 400;
+    margin: 0px;
+  }
+  .online-success-guaranteed-area .guaranteed-block .rightside {
+    width: 50%;
+    min-height: 150px;
+  }
+  .online-success-guaranteed-area .guaranteed-block .rightside .photo-block {
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  .online-success-guaranteed-area
+    .guaranteed-block
+    .rightside
+    .photo-block
+    img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    object-fit: cover;
+  }
+
+  .why-choose-list-section {
+    padding: 70px 0 0px 0;
+  }
+  .why-choose-list-section .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .why-choose-list-section .titlebar {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .why-choose-list-section .titlebar h2 {
+    text-align: center;
+    font-family: "Sora", sans-serif;
+    font-size: 32px;
+    line-height: 44px;
+    color: #000;
+    font-weight: 600;
+    margin: 0 auto 18px auto;
+    max-width: 600px;
+    position: relative;
+    background: #ff0c15;
+    background: linear-gradient(to right, #ff0c15 0%, #000000 26%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .why-choose-list-section .titlebar p {
+    font-family: "Questrial", sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    color: #27172f;
+    font-weight: 400;
+    margin: 0px;
+  }
+  .why-choose-list-section ul.whychooselist {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .why-choose-list-section ul.whychooselist li {
+    background: #f8f8f8;
+    padding: 20px 40px 20px 140px;
+    margin: 0 0 12px 0;
+    border-radius: 8px;
+    position: relative;
+    width: 49.5%;
+    margin-right: 1%;
+  }
+  .why-choose-list-section ul.whychooselist li:nth-child(2n) {
+    margin-right: 0px;
+  }
+  .why-choose-list-section ul.whychooselist li .icon {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: 85px;
+    height: 85px;
+  }
+  .why-choose-list-section ul.whychooselist li .icon img {
+    width: 100%;
+    height: 100%;
+  }
+  .why-choose-list-section ul.whychooselist li h3 {
+    font-family: "Sora", sans-serif;
+    font-size: 28px;
+    line-height: 38px;
+    color: #27172f;
+    margin: 0 0 12px 0;
+    font-weight: 600;
+  }
+  .why-choose-list-section ul.whychooselist li p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .industries-section {
+    padding: 40px 0 45px 0;
+  }
+  .industries-section .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .industries-section .titlebar {
+    width: 100%;
+  }
+  .industries-section .titlebar h2 {
+    text-align: center;
+    font-family: "Sora", sans-serif;
+    font-size: 32px;
+    line-height: 44px;
+    color: #000;
+    font-weight: 600;
+    margin: 0 auto 18px auto;
+    max-width: 350px;
+    position: relative;
+    background: #ff0c15;
+    background: linear-gradient(to right, #ff0c15 0%, #000000 26%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 0 0 26px 0;
+  }
+  .industries-section .titlebar h2:before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: calc(50% - 60px);
+    width: 120px;
+    height: 1px;
+    background: #000000;
+  }
+  .industries-section ul.industries-point {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .industries-section ul.industries-point li {
+    width: 49.5%;
+    margin-right: 1%;
+    display: flex;
+    align-items: center;
+    border-bottom: #d8d8d8 1px solid;
+    padding: 14px 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #27172f;
+  }
+  .industries-section ul.industries-point li:nth-child(2n) {
+    margin-right: 0;
+  }
+  .industries-section ul.industries-point li .icon {
+    width: 46px;
+    margin-right: 30px;
+  }
+  .industries-section ul.industries-point li strong {
+    font-weight: 600;
+    margin-right: 6px;
+  }
+
+  .testimonial-area {
+    background: #f8f8f8;
+    padding: 60px 0;
+  }
+  .testimonial-area h2 {
+    font-family: "Sora", sans-serif;
+    font-size: 32px;
+    line-height: 44px;
+    color: #000;
+    font-weight: 600;
+    margin: 0 0 40px 0;
+    position: relative;
+    background: #ff0c15;
+    background: linear-gradient(to right, #ff0c15 0%, #000000 26%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    max-width: 210px;
+    padding: 0 0 26px 0;
+  }
+  .testimonial-area h2:before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 120px;
+    height: 1px;
+    background: #000000;
+  }
+  .testimonial-area .review-block {
+    background: white;
+    margin: 70px 0;
+    padding: 30px;
+  }
+  .testimonial-area .review-block p {
+    font-size: 11px;
+    text-align: center;
+    line-height: 17px;
+    margin: 0 0 10px 0;
+  }
+  .testimonial-area .review-block h3 {
+    text-align: center;
+    font-size: 17px;
+    font-family: "Sora", sans-serif;
+    font-weight: 600;
+    max-width: 220px;
+    margin: 0 auto;
+    background: #ff0c15;
+    background: linear-gradient(to right, #ff0c15 0%, #000000 26%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .testimonial-area .swiper-slide.swiper-slide-active {
+    transform: scale(1.3) !important;
+    position: relative;
+  }
+  .testimonial-area .swiper-slide.swiper-slide-active:before {
+    content: "";
+    background: url("https://manage.chevalme.com/wp-content/themes/cheval-one/assets/images/red-quote.png")
+      center center no-repeat;
+    width: 62px;
+    height: 48px;
+    position: absolute;
+    top: 38px;
+    right: 30px;
+    background-size: contain;
+  }
+  .testimonial-area .swiper-slide.swiper-slide-prev,
+  .testimonial-area .swiper-slide.swiper-slide-next {
+    transform: scale(0.8);
+  }
+  .testimonial-area .swiper-slide.swiper-slide-prev .review-block {
+    left: -50px;
+    position: relative;
+  }
+  .testimonial-area .swiper-slide.swiper-slide-next .review-block {
+    right: -50px;
+    position: relative;
+  }
+  .testimonial-area
+    .swiper-slide.swiper-slide-active.swiper-slide-next
+    .review-block {
+    right: 0px;
+  }
+
+  .testimonial-area .swiper-slide.swiper-slide-prev .review-block p,
+  .testimonial-area .swiper-slide.swiper-slide-next .review-block p {
+    font-size: 12px;
+  }
+
+  .testimonial-area .swiper-pagination {
+    bottom: 0px;
+  }
+  .testimonial-area .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+  }
+  .testimonial-area .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: #ff0000;
+  }
+
+  .client-logo-area {
+    padding: 80px 0;
+  }
+  .client-logo-area h2 {
+    font-family: "Sora", sans-serif;
+    font-size: 35px;
+    line-height: 48px;
+    color: #000;
+    font-weight: 600;
+    margin: 0 0 40px 0;
+    position: relative;
+    background: #ff0c15;
+    background: linear-gradient(to right, #ff0c15 0%, #000000 26%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    max-width: 210px;
+    padding: 0 0 26px 0;
+  }
+  .client-logo-area h2:before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 120px;
+    height: 1px;
+    background: #000000;
+  }
+  .client-logo-area ul.logo-list {
+    margin: 0px -15px;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .client-logo-area ul.logo-list li {
+    width: 16.66%;
+    padding: 0 15px;
+  }
+  .client-logo-area ul.logo-list li .logo-block {
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 30px;
+  }
+  .client-logo-area ul.logo-list li .logo-block img {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    margin: auto;
+    filter: grayscale(100%);
+  }
+  .client-logo-area ul.logo-list li .logo-block:hover img {
+    filter: grayscale(0%);
+  }
+
+  .faq-secion {
+    padding: 0 0 60px 0;
+  }
+  .faq-secion h2 {
+    font-family: "Sora", sans-serif;
+    font-size: 35px;
+    line-height: 48px;
+    color: #000;
+    font-weight: 600;
+    margin: 0 0 40px 0;
+    position: relative;
+    background: #ff0c15;
+    background: linear-gradient(to right, #ff0c15 0%, #000000 26%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .landing-contact-form {
+    margin: 0 0 78px 0;
+    background: #f2f4f9;
+  }
+
+  .landing-contact-form h2 {
+    text-align: center;
+    font-family: "Sora", sans-serif;
+    font-size: 32px;
+    line-height: 44px;
+    color: #000;
+    font-weight: 600;
+    margin: 0 auto 8px auto;
+    max-width: 600px;
+    position: relative;
+    background: #ff0c15;
+    background: linear-gradient(to right, #ff0c15 0%, #000 26%);
+    background-clip: border-box;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .landing-contact-form p {
+    color: #27172f;
+    font-size: 16px;
+    line-height: 28px;
+    max-width: 520px;
+    margin: 0 auto 0 auto;
+  }
+
+  .landing-contact-form .wpcf7-form-control {
+    font-size: 16px !important;
+    color: #000000;
+    padding: 20px !important;
+    background: transparent !important;
+    border-radius: 5px;
+    border: 1px solid #8b8b8b;
+  }
+
+  .landing-contact-form .wpcf7-form-control::placeholder {
+    color: #000000;
+  }
+
+  .landing-contact-form .buttond_outer {
+    margin: 0 auto;
+  }
+
+  .landing-contact-form input[type="submit"] {
+    background: #000000 !important;
+    color: #fff !important;
+    font-size: 14px !important;
+    padding: 10px 20px !important;
+    margin: 0 auto;
+    border: none !important;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .top-video-section {
+      display: block;
+    }
+    .top-video-section .leftside {
+      width: 100%;
+    }
+    .top-video-section .video-area {
+      width: 100%;
+      height: 474px;
+    }
+    .top-video-section .third-full-content {
+      width: 100%;
+      padding: 25px 23px;
+    }
+    .top-video-section .third-full-content p {
+      font-size: 14px;
+      line-height: 24px;
+      margin: 0 0 15px 0;
+    }
+    .top-video-section .leftside .blue-part {
+      padding: 50px;
+    }
+    .top-video-section .leftside .blue-part h1 {
+      font-size: 32px;
+      line-height: 40px;
+    }
+    .top-video-section .leftside .blue-part::before {
+      width: 200px;
+      height: 200px;
+    }
+
+    .service-web-development-section {
+      padding: 25px;
+    }
+    .service-web-development-section ul.service-list li {
+      width: 50%;
+    }
+    .service-web-development-section ul.service-list li .service-block h3 {
+      font-size: 24px;
+      line-height: 30px;
+      min-height: 80px;
+      margin-bottom: 20px;
+    }
+    .service-web-development-section h2 {
+      font-size: 26px;
+      line-height: 36px;
+    }
+    .service-web-development-section .features-benefits-area h2 {
+      width: 500px;
+      margin: 0 auto 20px auto;
+    }
+
+    .service-web-development-section .features-benefits-area .row {
+      display: block;
+    }
+    .service-web-development-section .features-benefits-area .col-lg-6 {
+      width: 100%;
+    }
+    .service-web-development-section .features-benefits-area .inner-block {
+      margin-bottom: 10px;
+    }
+    .service-web-development-section
+      .features-benefits-area
+      .inner-block
+      .right-content
+      .subtitle {
+      font-size: 20px;
+      line-height: 30px;
+      margin: 0 0 12px 0;
+      padding: 0 0 12px 0;
+    }
+    .service-web-development-section
+      .features-benefits-area
+      .inner-block
+      .photo-block {
+      min-height: 220px;
+    }
+
+    .benefit-list-section {
+      padding: 0 25px 25px 25px;
+    }
+    .benefit-list-section .container {
+      display: block;
+    }
+    .benefit-list-section .titlebar {
+      width: 100%;
+      padding: 0 0 15px 0;
+    }
+    .benefit-list-section .titlebar h2 {
+      font-size: 26px;
+      line-height: 36px;
+      margin: 0 0 8px 0;
+    }
+    .benefit-list-section ul.benefitlist {
+      width: 100%;
+    }
+    .benefit-list-section ul.benefitlist li {
+      padding: 20px 25px;
+    }
+    .benefit-list-section ul.benefitlist li h3 {
+      font-size: 22px;
+      line-height: 22px;
+      margin: 0 0 8px 0;
+    }
+    .benefit-list-section ul.benefitlist li p {
+      font-size: 12px;
+      line-height: 20px;
+    }
+
+    .online-success-guaranteed-area {
+      padding: 0px 25px;
+    }
+    .online-success-guaranteed-area .guaranteed-block .content {
+      padding: 25px;
+    }
+    .online-success-guaranteed-area .guaranteed-block .content h2 {
+      font-size: 26px;
+      line-height: 36px;
+      margin: 0 0 14px 0;
+    }
+    .online-success-guaranteed-area .guaranteed-block .content p {
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    .why-choose-list-section {
+      padding: 25px;
+    }
+    .why-choose-list-section .container {
+      display: block;
+    }
+    .why-choose-list-section .titlebar {
+      width: 100%;
+      padding: 0 0 5px 0;
+    }
+    .why-choose-list-section .titlebar h2 {
+      font-size: 26px;
+      line-height: 36px;
+      margin: 0 0 8px 0;
+    }
+    .why-choose-list-section ul.whychooselist {
+      width: 100%;
+    }
+    .why-choose-list-section ul.whychooselist li {
+      padding: 20px 25px 20px 120px;
+    }
+    .why-choose-list-section ul.whychooselist li .icon {
+      width: 70px;
+      top: 20px;
+      height: 70px;
+    }
+    .why-choose-list-section ul.whychooselist li h3 {
+      font-size: 22px;
+      line-height: 22px;
+      margin: 0 0 8px 0;
+    }
+    .why-choose-list-section ul.whychooselist li p {
+      font-size: 12px;
+      line-height: 20px;
+    }
+
+    .industries-section {
+      padding: 0px 25px 25px 25px;
+    }
+    .industries-section .container {
+      display: block;
+    }
+    .industries-section .titlebar {
+      width: 100%;
+      padding-right: 0;
+    }
+    .industries-section .titlebar h2 {
+      font-size: 26px;
+      line-height: 36px;
+    }
+    .industries-section ul.industries-point {
+      width: 100%;
+    }
+    .industries-section ul.industries-point li {
+      font-size: 16px;
+      padding: 12px 0;
+    }
+    .industries-section ul.industries-point li .icon {
+      width: 26px;
+      margin-right: 10px;
+    }
+
+    .testimonial-area {
+      padding: 25px;
+    }
+    .testimonial-area h2 {
+      font-size: 26px;
+      line-height: 36px;
+    }
+    .testimonial-area .review-block {
+      margin: 70px 0 60px 0;
+      padding: 30px 15px 15px 15px;
+    }
+    .testimonial-area .review-block p {
+      font-size: 9px;
+      line-height: 15px;
+      margin: 0 0 6px 0;
+    }
+    .testimonial-area .review-block h3 {
+      font-size: 13px;
+      max-width: 140px;
+    }
+
+    .client-logo-area {
+      padding: 25px;
+    }
+    .client-logo-area h2 {
+      font-size: 26px;
+      line-height: 36px;
+      margin: 0 0 25px 0;
+      padding: 0 0 25px 0;
+    }
+    .client-logo-area ul.logo-list li {
+      width: 20%;
+    }
+    .client-logo-area ul.logo-list li .logo-block {
+      height: 80px;
+      margin-bottom: 10px;
+    }
+    .client-logo-area ul.logo-list li .logo-block img {
+      max-width: 90%;
+      max-height: 90%;
+    }
+
+    .faq-secion {
+      padding: 0 25px 25px 25px;
+    }
+    .faq-secion h2 {
+      font-size: 26px;
+      line-height: 36px;
+      margin: 0 0 20px 0;
+    }
+    .faq-secion .accordionItemHeading {
+      font-size: 16px;
+      padding-bottom: 14px;
+      padding-top: 14px;
+    }
+    .faq-secion .open .accordionItemContent {
+      padding-bottom: 14px;
+      padding-top: 14px;
+    }
+    .faq-secion .accordionItemContent {
+      font-size: 14px;
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    .top-video-section .leftside .blue-part {
+      padding: 30px;
+    }
+    .top-video-section .leftside .blue-part h1 {
+      font-size: 24px;
+      line-height: 34px;
+    }
+    .top-video-section .video-area {
+      width: 100%;
+      height: 320px;
+      min-height: 100%;
+    }
+
+    .service-web-development-section {
+      padding: 20px;
+    }
+    .service-web-development-section h2 {
+      font-size: 22px;
+      line-height: 32px;
+    }
+    .service-web-development-section ul.service-list li {
+      width: 100%;
+    }
+    .service-web-development-section ul.service-list li .service-block {
+      padding: 20px;
+    }
+    .service-web-development-section ul.service-list li .service-block h3 {
+      font-size: 18px;
+      line-height: 26px;
+      min-height: auto;
+      margin-bottom: 12px;
+      padding-bottom: 15px;
+    }
+    .service-web-development-section ul.service-list li .service-block p {
+      font-size: 13px;
+      line-height: 21px;
+    }
+
+    .service-web-development-section .features-benefits-area {
+      padding: 24px 0 0 0;
+    }
+    .service-web-development-section .features-benefits-area h2 {
+      width: 100%;
+    }
+    .service-web-development-section .features-benefits-area .inner-block {
+      display: block;
+    }
+    .service-web-development-section
+      .features-benefits-area
+      .inner-block
+      .photo-block {
+      width: 100%;
+      height: 220px;
+    }
+    .service-web-development-section
+      .features-benefits-area
+      .inner-block
+      .right-content {
+      padding: 20px;
+      width: 100%;
+    }
+
+    .benefit-list-section {
+      padding: 0 20px 20px 20px;
+    }
+    .benefit-list-section .titlebar h2 {
+      font-size: 22px;
+      line-height: 32px;
+    }
+    .benefit-list-section .titlebar p {
+      font-size: 13px;
+      line-height: 21px;
+    }
+    .benefit-list-section ul.benefitlist li {
+      padding: 15px;
+      width: 100%;
+      display: block;
+      margin-right: 0px;
+    }
+    .benefit-list-section ul.benefitlist li h3 {
+      font-size: 16px;
+      line-height: 18px;
+    }
+
+    .online-success-guaranteed-area {
+      padding: 0 20px;
+    }
+    .online-success-guaranteed-area .guaranteed-block {
+      display: block;
+    }
+    .online-success-guaranteed-area .guaranteed-block .content {
+      width: 100%;
+      padding: 20px;
+    }
+    .online-success-guaranteed-area .guaranteed-block .content h2 {
+      font-size: 22px;
+      line-height: 32px;
+    }
+    .online-success-guaranteed-area .guaranteed-block .rightside {
+      width: 100%;
+      height: 300px;
+    }
+
+    .why-choose-list-section {
+      padding: 20px;
+    }
+    .why-choose-list-section .titlebar h2 {
+      font-size: 22px;
+      line-height: 32px;
+    }
+    .why-choose-list-section ul.whychooselist li {
+      padding: 15px;
+      width: 100%;
+      margin-right: 0px;
+      display: block;
+    }
+    .why-choose-list-section ul.whychooselist li h3 {
+      font-size: 16px;
+      line-height: 18px;
+    }
+    .why-choose-list-section ul.whychooselist li .icon {
+      width: 50px;
+      top: 0;
+      height: 50px;
+      position: relative;
+      left: 0px;
+      margin: 0 0 10px 0;
+    }
+
+    .industries-section {
+      padding: 0 20px 20px 20px;
+    }
+    .industries-section .titlebar h2 {
+      font-size: 22px;
+      line-height: 32px;
+    }
+    .industries-section ul.industries-point li {
+      width: 100%;
+      display: block;
+      position: relative;
+      padding: 12px 0 12px 38px;
+    }
+    .industries-section ul.industries-point li .icon {
+      width: 26px;
+      margin-right: 10px;
+      position: absolute;
+      top: 12px;
+      left: 0;
+    }
+    .industries-section ul.industries-point li strong {
+      display: block;
+    }
+
+    .client-logo-area {
+      padding: 25px 20px;
+    }
+    .client-logo-area h2 {
+      font-size: 22px;
+      line-height: 32px;
+      margin: 0 0 15px 0;
+      padding: 0 0 15px 0;
+    }
+    .client-logo-area ul.logo-list li {
+      width: 50%;
+    }
+    .client-logo-area ul.logo-list li .logo-block {
+      height: 80px;
+      margin-bottom: 0;
+    }
+
+    .testimonial-area {
+      padding: 25px 20px;
+    }
+    .testimonial-area h2 {
+      font-size: 22px;
+      line-height: 32px;
+      margin: 0 0 20px 0;
+    }
+    .testimonial-area .swiper-slide.swiper-slide-active {
+      transform: scale(1);
+    }
+    .testimonial-area .swiper-slide.swiper-slide-active::before {
+      top: 0;
+    }
+    .testimonial-area .review-block {
+      margin: 30px 0 30px 0;
+      padding: 30px 15px 15px 15px;
+    }
+    .testimonial-area .review-block p {
+      font-size: 12px;
+      line-height: 20px;
+    }
+
+    .faq-secion {
+      padding: 0 20px 20px 20px;
+    }
+    .faq-secion h2 {
+      font-size: 22px;
+      line-height: 32px;
+    }
+    .faq-secion .accordionItemHeading {
+      font-size: 15px !important;
+    }
+
+    .landing-contact-form .buttond_outer {
+      margin-top: 20px;
+    }
+  }
+
+  .sub-main-title h2 {
+    text-align: center;
+    font-family: "Sora", sans-serif;
+    font-size: 32px;
+    line-height: 44px;
+    color: #000;
+    font-weight: 600;
+    margin: 0 auto 18px auto;
+    max-width: 860px;
+    position: relative;
+    background: #ff0c15;
+    background: linear-gradient(to right, #ff0c15 0%, #000000 26%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline;
+  }
+  .wd-proccess {
+    display: inline;
+  }
+  .sub-title-whyhire {
+    text-align: center;
+  }
+</style>
+
+<!--inner-top-area-->
+
+<div class="new-best-web-development-area">
+  <!--top-video-section-->
+  <div class="top-video-section">
+    <div class="leftside">
+      <div class="blue-part">
+        <h1>
+          Impactful Digital Solutions with Chevalme - Best Software Development
+          Company in Dubai
+        </h1>
+      </div>
+    </div>
+    <div class="video-area">
+      <div class="video-block">
+        <video autoplay="" loop="" muted="">
+          <source
+            src="https://manage.chevalme.com/services/software-development-company-in-dubai/l3video/"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+    </div>
+    <div class="third-full-content">
+      <div class="container">
+        <p>
+          Inefficiencies, outdated systems, software with clunky
+          interfaces—these are the struggles most organizations go through. You
+          just feel frustratingly invested in a solution with both time and
+          money, but which, in the end, does not meet the expectation of
+          changing the way your team members work around those limitations—time
+          wasted on activities that could otherwise be spent creating value for
+          growth. You need software that improves the operation to make life
+          easier and drives business forward.
+        </p>
+
+        <p>
+          That's where Chevalme comes in. We are not just a software company in
+          Dubai but your partner in creating digital experiences that truly make
+          a difference. After numerous years in service and having developed a
+          rich portfolio across industries, we became one of the leading
+          companies in Dubai to provide software development services. The way
+          we work is very simple: listen to needs, meaningfully innovate, and
+          deliver real value solutions. Our solutions range from custom software
+          development to fully integrated systems, with the goal of assuring
+          that every product developed meets your expectations and ensures a
+          strong return on your investment. With Chevalme, you're not just
+          buying software; you're acquiring an intelligence tool that propels
+          your business toward greater success.
+        </p>
+        <div class="sub-main-title">
+          <h2>We Believe In The Power Of Tailored Software Solutions</h2>
+        </div>
+
+        <p>
+          Chevalme develops custom software solutions, designed for your
+          particular business requirements, making us the leading Software
+          development company in Dubai. Be it the startup looking to disrupt the
+          market or the enterprise setting out to ensure its operations are
+          optimized to the optimal level, our team will make that vision come
+          alive with exacting and creative skills.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!--service-web-development-section-->
+  <div class="service-web-development-section">
+    <div class="container">
+      <ul class="service-list">
+        <li>
+          <h2>
+            Step up with Chevalme’s Software Development Services in Dubai
+          </h2>
+          <p>Step up with Chevalme’s Software Development Services in Dubai</p>
+        </li>
+        <li>
+          <div class="service-block">
+            <h3>Custom Software Development</h3>
+            <p>
+              At Chevalme, we are developing bespoke software solutions that
+              will blend perfectly with your business goals. Our customized
+              software services are designed to adapt to your needs, hence
+              giving flexibility and scalability that off-the-shelf software
+              can't provide.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="service-block">
+            <h3>Enterprise Software Development</h3>
+            <p>
+              We build robust, scalable enterprise software that will drive
+              efficiency and smoothen processes across your organization. The
+              solutions we develop integrate seamlessly with existing systems,
+              ensuring the smooth and efficient running of the enterprise.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="service-block">
+            <h3>Software UI/UX Designing</h3>
+            <p>
+              User experience is taken to be at the heart of our designing
+              process when it comes to software. Our UI/UX designers have an eye
+              for making intuitive and engaging interfaces that aid in enhancing
+              user satisfaction and making your software not only functional but
+              also a delight to use
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="service-block">
+            <h3>Software Integration Solutions</h3>
+            <p>
+              We are into the integration of software systems that work in
+              tandem, ensuring better data flow, operational efficiency, and
+              decision-making. Be it integrating third-party applications or
+              connecting discontinued systems; our integration solutions make
+              sure the process is seamless and smooth.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="service-block">
+            <h3>Software Testing</h3>
+            <p>
+              The Chevalme company holds the concern for quality of software
+              testing in deep regard. Our comprehensive software testing
+              services will help make your software reliable and secure, besides
+              showing the best performance across devices. We chase any bugs or
+              issues and get them fixed before they do any harm to your
+              business.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="service-block">
+            <h3>Software Development Consulting</h3>
+            <p>
+              Leverage our experience to help drive your software development
+              projects. From strategy through implementation, our consulting
+              services provide strategic insight and best practices to ensure
+              the success of your software development initiatives.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="service-block">
+            <h3>API Development</h3>
+            <p>
+              We will develop robust and secure APIs that enable your software
+              to communicate smoothly with other applications. Our API
+              development services are designed to improve the functionality and
+              facilitate seamless integration of your product with external
+              systems.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="service-block">
+            <h3>ERP Software Development</h3>
+            <p>
+              Our ERP solutions are aimed at smoothening business processes,
+              enhancing decision-making, and enhancing productivity. We develop
+              custom ERP software that centralizes your data and provides access
+              in real time for better actionability.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="service-block">
+            <h3>Software Product Development</h3>
+            <p>
+              From concept through to launch, we develop software products that
+              engage your target audience. Our end-to-end product development
+              services are designed to get your software product fit and ready
+              for market.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="service-block">
+            <h3>AI Software Development</h3>
+            <p>
+              We put AI to work in developing smart data-driven software
+              solutions. Our AI development services help you automate
+              processes, derive insights, and deliver experiences that are
+              personalized for your customers.
+            </p>
+          </div>
+        </li>
+      </ul>
+      <div class="features-benefits-area">
+        <h2></h2>
+        <div class="row"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="benefit-list-section">
+    <div class="container">
+      <div class="titlebar">
+        <h2>
+          <div class="wd-proccess">
+            Get To Know Chevalme’s Expert Software Developers
+          </div>
+        </h2>
+        <p>
+          The team of skilled developers are the spine of Chevalme success. With
+          profound technical knowledge and a passion for innovating, our
+          developers hold the torch for quality software solution development at
+          your request. Whether you require a full development team or a few
+          experts to complement your in-house crew, we hold the talent required
+          to get your job done.
+        </p>
+        <div class="sub-main-title" style="text-align: center">
+          <h2>Chevalme As The Go-To Software Development Company</h2>
+        </div>
+        <p></p>
+      </div>
+      <ul class="benefitlist">
+        <li>
+          <div class="gray-block">
+            <h3>Expert Team</h3>
+            <p>
+              Our team has years of industry-specific experience, shared among
+              seasoned developers, designers, and strategists. We understand the
+              problems businesses face and have the know-how to build solutions
+              that handle them effectively.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="gray-block">
+            <h3>Client-Centric</h3>
+            <p>
+              With Chevalme, the primacy always goes to the needs of the client
+              and their goals. Our process is collaborative and involves you in
+              each stage of development, meaning at the end you receive a
+              product that allows you to achieve the visionary features.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="gray-block">
+            <h3>Full support</h3>
+            <p>
+              From the initial consultation to post-launch maintenance, we are
+              fully prepared to support you to ensure that your software
+              functions with a high performance level. We don't stop at
+              delivery; we are here to see you through to success in the long
+              run.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="gray-block">
+            <h3>ROI Driven</h3>
+            <p>
+              As one of the top software development companies in Dubai, our
+              solutions are nailed down to return measurable returns, ensuring
+              each investment you make in software development pays off and
+              yields more benefits to your business.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="gray-block">
+            <h3>Innovation</h3>
+            <p>
+              Keeping ahead of the curve, we use the latest technologies and
+              revision methodologies to offer innovative solutions that put you
+              in the competition.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="benefit-list-section">
+    <div class="container">
+      <div class="titlebar">
+        <h2>
+          Unleashing the Latest Technologies for Software Development in Dubai
+        </h2>
+      </div>
+      <ul class="benefitlist">
+        <li>
+          <div class="gray-block">
+            <h3>Blockchain Development</h3>
+            <p>
+              Harnessing blockchain technology to come up with secure,
+              transparent, decentralized software solutions. Our blockchain
+              services best fit industries that require secure transactions and
+              data integrity
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="gray-block">
+            <h3>Metaverse Development</h3>
+            <p>
+              Being on the crest of development in metaverse technologies,
+              Chevalme is creating immersive digital experiences that bridge the
+              gap between physical and virtual realities. Our metaverse
+              solutions enable businesses to engage with their customers in
+              totally new ways.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="gray-block">
+            <h3>AR/VR Software Development</h3>
+            <p>
+              Our AR/VR solutions bring your idea alive with immersive
+              experiences, fully capturing and engaging users. From virtual
+              showrooms to augmented reality apps, we have created cutting-edge
+              AR/VR software that drives innovation.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="gray-block">
+            <h3>Cloud Software Development</h3>
+            <p>
+              We design and develop affordable cloud-based software solutions.
+              Our cloud services ensure access to your software from anywhere at
+              any time on any device.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="gray-block">
+            <h3>IoT Software Development</h3>
+            <p>
+              Our IoT solutions help connect devices, gather data, and provide
+              actionable insights that speed up the business growth. We develop
+              IoT software that will help you unlock the full potential of
+              connected devices.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="gray-block">
+            <h3>EV Software Development</h3>
+            <p>
+              Along with expanding markets for electric vehicles come growing
+              demands for increasingly specialized software. We develop EV
+              software that will improve battery performance, enhance
+              connectivity, and enable electrification.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="benefit-list-section">
+    <div class="container">
+      <div class="titlebar">
+        <h2>Why Hire Software Developers in Dubai?</h2>
+        <p>
+          Being the city of global innovation, hiring local software developers
+          means gaining access to a population of professionals who are all too
+          conscious of regional challenges and opportunities. At Chevalme, our
+          developers are skilled, both technically and in full understanding of
+          the local market, meaning your software will be globally competitive
+          yet locally relevant.
+        </p>
+        <div class="sub-title-whyhire">
+          <h2>Our Software Development Process</h2>
+        </div>
+        <p></p>
+      </div>
+      <ul class="benefitlist">
+        <li>
+          <div class="gray-block">
+            <h3>Research</h3>
+            <p>
+              Our development process begins with thorough research to
+              understand your business, your customers, and your goals. We
+              analyze your requirements and explore the best solutions to meet
+              your needs.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="gray-block">
+            <h3>Prototype</h3>
+            <p>
+              We do the prototyping in order to validate ideas and elicit
+              feedback. This iterative process ensures that the final product
+              meets your expectations and actually delivers what it is supposed
+              to.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="gray-block">
+            <h3>Design</h3>
+            <p>
+              We focus on actionable and exciting user experience. User
+              Interfaces will be visually engaging while easy to navigate. We
+              make sure your software isn't just functional but it's also
+              convenient to use.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="gray-block">
+            <h3>Build and Test</h3>
+            <p>
+              Our developers bring to life what the designers made, producing
+              solid and scalable software according to your prepared
+              requirements. Then, thorough testing is done to ensure the
+              security, reliability, and optimal functioning of the software.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="gray-block">
+            <h3>Deploy</h3>
+            <p>
+              Later, we deploy the software into your environment in such a way
+              that it turns out to be smooth with least disruptions to your
+              operations. Full support is provided during deployment, ensuring
+              that any issues arising are fully addressed.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="gray-block">
+            <h3>Maintenance and Optimization</h3>
+            <p>
+              We don't stop working when the deployment is done. We offer
+              continuous services in maintenance and optimization to ensure your
+              software stays at the top of its game. It is through performance
+              monitoring, updates, and improvements that help in keeping your
+              software updated and running without many hiccups.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!--industries-section-->
+  <div class="industries-section">
+    <div class="container">
+      <div class="titlebar">
+        <h2>Industries We Serve</h2>
+      </div>
+      <ul class="industries-point">
+        <li>
+          <div class="icon">
+            <img
+              src="https://manage.chevalme.com/wp-content/uploads/2024/10/B2B.svg"
+              alt="B2B software development solutions"
+            />
+          </div>
+          <strong>B2B</strong>
+        </li>
+
+        <li>
+          <div class="icon">
+            <img
+              src="https://manage.chevalme.com/wp-content/uploads/2024/10/B2C.svg"
+              alt="B2C software development solutions"
+            />
+          </div>
+          <strong>B2C</strong>
+        </li>
+
+        <li>
+          <div class="icon">
+            <img
+              src="https://manage.chevalme.com/wp-content/uploads/2024/10/e-commerce.svg"
+              alt="E-commerce software development services"
+            />
+          </div>
+          <strong>E-commerce</strong>
+        </li>
+
+        <li>
+          <div class="icon">
+            <img
+              src="https://manage.chevalme.com/wp-content/uploads/2024/10/Education.svg"
+              alt="Educational software development services"
+            />
+          </div>
+          <strong>Education</strong>
+        </li>
+
+        <li>
+          <div class="icon">
+            <img
+              src="https://manage.chevalme.com/wp-content/uploads/2024/10/Enterprise.svg"
+              alt="Enterprise software development solutions"
+            />
+          </div>
+          <strong>Enterprise</strong>
+        </li>
+
+        <li>
+          <div class="icon">
+            <img
+              src="https://manage.chevalme.com/wp-content/uploads/2024/10/Startup.svg"
+              alt="Startup software development services"
+            />
+          </div>
+          <strong>Startups</strong>
+        </li>
+
+        <li>
+          <div class="icon">
+            <img
+              src="https://manage.chevalme.com/wp-content/uploads/2024/10/BankingFinance.svg"
+              alt="Banking and finance software development services"
+            />
+          </div>
+          <strong>Banking and Finance</strong>
+        </li>
+
+        <li>
+          <div class="icon">
+            <img
+              src="https://manage.chevalme.com/wp-content/uploads/2024/10/Healthcare.svg"
+              alt="Healthcare software development solutions"
+            />
+          </div>
+          <strong>Healthcare</strong>
+        </li>
+
+        <li>
+          <div class="icon">
+            <img
+              src="https://manage.chevalme.com/wp-content/uploads/2024/10/IT.svg"
+              alt="IT software development services"
+            />
+          </div>
+          <strong>IT</strong>
+        </li>
+
+        <li>
+          <div class="icon">
+            <img
+              src="https://manage.chevalme.com/wp-content/uploads/2024/10/Aviation.svg"
+              alt="Aviation software development services"
+            />
+          </div>
+          <strong>Aviation</strong>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!--testimonial-area-->
+  <div class="testimonial-area">
+    <div class="container">
+      <h2>Testimonials</h2>
+      <div
+        class="swiper testimonial-center-slider swiper-initialized swiper-horizontal swiper-backface-hidden"
+      >
+        <div
+          class="swiper-wrapper"
+          id="swiper-wrapper-601076e92b75e610f2"
+          aria-live="polite"
+          style="
+            transition-duration: 0ms;
+            transition-delay: 0ms;
+            transform: translate3d(430px, 0px, 0px);
+          "
+        >
+          <div
+            class="swiper-slide swiper-slide-active swiper-slide-next"
+            role="group"
+            aria-label="1 / 1"
+            data-swiper-slide-index="0"
+            style="width: 430px"
+          >
+            <div class="review-block">
+              <p>
+                “With the help of Cheval ME’s web development company in Dubai,
+                we were able to make our website much more useful while cutting
+                our costs. Our website is much easier to use, has many more
+                features than it used to, and is very simple to keep up with. We
+                love our new website more than anything!&nbsp;Thank you, Cheval
+                ME.”
+              </p>
+              <h3>Terence-Founder of Retail Company</h3>
+            </div>
+          </div>
+        </div>
+        <div
+          class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal swiper-pagination-lock"
+        >
+          <span
+            class="swiper-pagination-bullet swiper-pagination-bullet-active"
+            tabindex="0"
+            role="button"
+            aria-label="Go to slide 1"
+            aria-current="true"
+          ></span>
+        </div>
+        <span
+          class="swiper-notification"
+          aria-live="assertive"
+          aria-atomic="true"
+        ></span>
+      </div>
+    </div>
+  </div>
+
+  <!--client-logo-area-->
+  <div class="client-logo-area">
+    <div class="container">
+      <h2>Clients</h2>
+      <ul class="logo-list">
+        <li>
+          <div class="logo-block">
+            <img
+              src="https://manage.chevalme.com/wp-content/uploads/2024/03/app-client-1.png"
+              alt="web, mobile app and software development agency in dubai - Client Logo"
+            />
+          </div>
+        </li>
+
+        <li>
+          <div class="logo-block">
+            <img
+              src="https://manage.chevalme.com/wp-content/uploads/2024/03/app-client-2.png"
+              alt="web, mobile app and software development agency in dubai - Client Logo"
+            />
+          </div>
+        </li>
+
+        <li>
+          <div class="logo-block">
+            <img
+              src="https://manage.chevalme.com/wp-content/uploads/2024/03/app-client-3.png"
+              alt="web, mobile app and software development agency in dubai - Client Logo"
+            />
+          </div>
+        </li>
+
+        <li>
+          <div class="logo-block">
+            <img
+              src="https://manage.chevalme.com/wp-content/uploads/2024/03/app-client-4.png"
+              alt="web, mobile app and software development agency in dubai - Client Logo"
+            />
+          </div>
+        </li>
+
+        <li>
+          <div class="logo-block">
+            <img
+              src="https://manage.chevalme.com/wp-content/uploads/2024/03/app-client-5.png"
+              alt="web, mobile app and software development agency in dubai - Client Logo"
+            />
+          </div>
+        </li>
+
+        <li>
+          <div class="logo-block">
+            <img
+              src="https://manage.chevalme.com/wp-content/uploads/2024/03/app-client-6.png"
+              alt="web, mobile app and software development agency in dubai - Client Logo"
+            />
+          </div>
+        </li>
+
+        <li>
+          <div class="logo-block">
+            <img
+              src="https://manage.chevalme.com/wp-content/uploads/2024/03/app-client-7.png"
+              alt="web, mobile app and software development agency in dubai - Client Logo"
+            />
+          </div>
+        </li>
+
+        <li>
+          <div class="logo-block">
+            <img
+              src="https://manage.chevalme.com/wp-content/uploads/2024/03/app-client-8.png"
+              alt="web, mobile app and software development agency in dubai - Client Logo"
+            />
+          </div>
+        </li>
+
+        <li>
+          <div class="logo-block">
+            <img
+              src="https://manage.chevalme.com/wp-content/uploads/2024/03/app-client-9.png"
+              alt="web, mobile app and software development agency in dubai - Client Logo"
+            />
+          </div>
+        </li>
+
+        <li>
+          <div class="logo-block">
+            <img
+              src="https://manage.chevalme.com/wp-content/uploads/2024/03/app-client-10.png"
+              alt="web, mobile app and software development agency in dubai - Client Logo"
+            />
+          </div>
+        </li>
+
+        <li>
+          <div class="logo-block">
+            <img
+              src="https://manage.chevalme.com/wp-content/uploads/2024/03/app-client-11.png"
+              alt="web, mobile app and software development agency in dubai - Client Logo"
+            />
+          </div>
+        </li>
+
+        <li>
+          <div class="logo-block">
+            <img
+              src="https://manage.chevalme.com/wp-content/uploads/2024/03/app-client-12.png"
+              alt="web, mobile app and software development agency in dubai - Client Logo"
+            />
+          </div>
+        </li>
+
+        <li>
+          <div class="logo-block">
+            <img
+              src="https://manage.chevalme.com/wp-content/uploads/2024/03/app-client-13.png"
+              alt="web, mobile app and software development agency in dubai - Client Logo"
+            />
+          </div>
+        </li>
+
+        <li>
+          <div class="logo-block">
+            <img
+              src="https://manage.chevalme.com/wp-content/uploads/2024/03/app-client-14.png"
+              alt="web, mobile app and software development agency in dubai - Client Logo"
+            />
+          </div>
+        </li>
+
+        <li>
+          <div class="logo-block">
+            <img
+              src="https://manage.chevalme.com/wp-content/uploads/2024/03/app-client-15.png"
+              alt="web, mobile app and software development agency in dubai - Client Logo"
+            />
+          </div>
+        </li>
+
+        <li>
+          <div class="logo-block">
+            <img
+              src="https://manage.chevalme.com/wp-content/uploads/2024/03/app-client-16.png"
+              alt="web, mobile app and software development agency in dubai - Client Logo"
+            />
+          </div>
+        </li>
+
+        <li>
+          <div class="logo-block">
+            <img
+              src="https://manage.chevalme.com/wp-content/uploads/2024/03/app-client-17.png"
+              alt="web, mobile app and software development agency in dubai - Client Logo"
+            />
+          </div>
+        </li>
+
+        <li>
+          <div class="logo-block">
+            <img
+              src="https://manage.chevalme.com/wp-content/uploads/2024/03/app-client-18.png"
+              alt="web, mobile app and software development agency in dubai - Client Logo"
+            />
+          </div>
+        </li>
+
+        <li>
+          <div class="logo-block">
+            <img
+              src="https://manage.chevalme.com/wp-content/uploads/2024/03/app-client-19.png"
+              alt="web, mobile app and software development agency in dubai - Client Logo"
+            />
+          </div>
+        </li>
+
+        <li>
+          <div class="logo-block">
+            <img
+              src="https://manage.chevalme.com/wp-content/uploads/2024/03/app-client-20.png"
+              alt="web, mobile app and software development agency in dubai - Client Logo"
+            />
+          </div>
+        </li>
+
+        <li>
+          <div class="logo-block">
+            <img
+              src="https://manage.chevalme.com/wp-content/uploads/2024/03/app-client-21.png"
+              alt="web, mobile app and software development agency in dubai - Client Logo"
+            />
+          </div>
+        </li>
+
+        <li>
+          <div class="logo-block">
+            <img
+              src="https://manage.chevalme.com/wp-content/uploads/2024/03/app-client-22.png"
+              alt="web, mobile app and software development agency in dubai - Client Logo"
+            />
+          </div>
+        </li>
+
+        <li>
+          <div class="logo-block">
+            <img
+              src="https://manage.chevalme.com/wp-content/uploads/2024/03/app-client-23.png"
+              alt="web, mobile app and software development agency in dubai - Client Logo"
+            />
+          </div>
+        </li>
+
+        <li>
+          <div class="logo-block">
+            <img
+              src="https://manage.chevalme.com/wp-content/uploads/2024/03/app-client-24.png"
+              alt="web, mobile app and software development agency in dubai - Client Logo"
+            />
+          </div>
+        </li>
+
+        <li>
+          <div class="logo-block">
+            <img
+              src="https://manage.chevalme.com/wp-content/uploads/2024/03/app-client-25.png"
+              alt="web, mobile app and software development agency in dubai - Client Logo"
+            />
+          </div>
+        </li>
+
+        <li>
+          <div class="logo-block">
+            <img
+              src="https://manage.chevalme.com/wp-content/uploads/2024/03/app-client-26.png"
+              alt="web, mobile app and software development agency in dubai - Client Logo"
+            />
+          </div>
+        </li>
+
+        <li>
+          <div class="logo-block">
+            <img
+              src="https://manage.chevalme.com/wp-content/uploads/2024/03/app-client-27.png"
+              alt="web, mobile app and software development agency in dubai - Client Logo"
+            />
+          </div>
+        </li>
+
+        <li>
+          <div class="logo-block">
+            <img
+              src="https://manage.chevalme.com/wp-content/uploads/2024/03/app-client-28.png"
+              alt="web, mobile app and software development agency in dubai - Client Logo"
+            />
+          </div>
+        </li>
+
+        <li>
+          <div class="logo-block">
+            <img
+              src="https://manage.chevalme.com/wp-content/uploads/2024/03/app-client-29.png"
+              alt="web, mobile app and software development agency in dubai - Client Logo"
+            />
+          </div>
+        </li>
+
+        <li>
+          <div class="logo-block">
+            <img
+              src="https://manage.chevalme.com/wp-content/uploads/2024/03/app-client-30.png"
+              alt="web, mobile app and software development agency in dubai - Client Logo"
+            />
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!--contact section-->
+  <div class="landing-contact-form">
+    <div class="form-section">
+      <div
+        class="flex items-top relative md:flex-row flex-col px-3 wow animate animated animated"
+        style="visibility: visible"
+      >
+        <div
+          class="md:w-1/2 d-sm-none d-tab-none"
+          style="
+            background-size: cover;
+            background-image: url(https://manage.chevalme.com/wp-content/uploads/2023/07/Rectangle-19-1-1.jpg);
+            height: auto;
+          "
+        ></div>
+        <div class="md:w-1/2 cus-head tab-w-100">
+          <h2>Have a question or need assistance?</h2>
+          <p>
+            You're just a few clicks away! Complete the contact form to reach
+            out to us and let us know how we can assist you.
+          </p>
+          <div
+            class="wpcf7 js"
+            id="wpcf7-f844-o1"
+            lang="en-US"
+            dir="ltr"
+            data-wpcf7-id="844"
+          >
+            <div class="screen-reader-response">
+              <p role="status" aria-live="polite" aria-atomic="true"></p>
+              <ul></ul>
+            </div>
+            <form
+              class="wpcf7-form theme_0 errorMsgshow init"
+              data-status="init"
+            >
+              <div style="display: none">
+                <input type="hidden" name="_wpcf7" value="844" />
+                <input type="hidden" name="_wpcf7_version" value="6.0.6" />
+                <input type="hidden" name="_wpcf7_locale" value="en_US" />
+                <input
+                  type="hidden"
+                  name="_wpcf7_unit_tag"
+                  value="wpcf7-f844-o1"
+                />
+                <input type="hidden" name="_wpcf7_container_post" value="0" />
+                <input type="hidden" name="_wpcf7_posted_data_hash" value="" />
+              </div>
+              <div class="flex flex-wrap" style="padding-top: 30px">
+                <div class="sm:w-1/2 w-full">
+                  <div class="pb-[20px]">
+                    <span class="wpcf7-form-control-wrap" data-name="text-name"
+                      ><input
+                        size="40"
+                        maxlength="50"
+                        required
+                        class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required required"
+                        aria-required="true"
+                        aria-invalid="false"
+                        placeholder="First Name *"
+                        value=""
+                        type="text"
+                        name="text-name"
+                        fdprocessedid="cwmfz"
+                    /></span>
+                  </div>
+                </div>
+                <div class="sm:w-1/2 w-full">
+                  <div class="pb-[20px] sm:pl-2.5">
+                    <span class="wpcf7-form-control-wrap" data-name="last-name"
+                      ><input
+                        size="40"
+                        maxlength="50"
+                        class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required required"
+                        aria-required="true"
+                        aria-invalid="false"
+                        placeholder="Last Name *"
+                        value=""
+                        required
+                        type="text"
+                        name="last-name"
+                        fdprocessedid="ddsxe8"
+                    /></span>
+                  </div>
+                </div>
+                <div class="sm:w-1/2 w-full">
+                  <div class="pb-[20px]">
+                    <span
+                      class="wpcf7-form-control-wrap"
+                      data-name="email-address"
+                      ><input
+                        size="40"
+                        maxlength="50"
+                        class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email required email"
+                        aria-required="true"
+                        aria-invalid="false"
+                        placeholder="Email*"
+                        value=""
+                        required
+                        type="email"
+                        name="email-address"
+                        fdprocessedid="zpizj6"
+                    /></span>
+                  </div>
+                </div>
+                <div class="sm:w-1/2 w-full">
+                  <div class="pb-[20px] sm:pl-2.5">
+                    <span class="wpcf7-form-control-wrap" data-name="text-phone"
+                      ><input
+                        size="40"
+                        maxlength="15"
+                        class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required required"
+                        aria-required="true"
+                        aria-invalid="false"
+                        placeholder="Phone Number *"
+                        value=""
+                        type="number"
+                        name="text-phone"
+                        fdprocessedid="fabafl"
+                    /></span>
+                  </div>
+                </div>
+                <div class="sm:w-1/2 w-full">
+                  <div class="pb-[20px]">
+                    <span
+                      class="wpcf7-form-control-wrap"
+                      data-name="text-company"
+                      ><input
+                        size="40"
+                        maxlength="50"
+                        class="wpcf7-form-control wpcf7-text"
+                        aria-invalid="false"
+                        placeholder="Location"
+                        value=""
+                        type="text"
+                        name="text-company"
+                        fdprocessedid="3f3b74"
+                    /></span>
+                  </div>
+                </div>
+                <div class="sm:w-1/2 w-full">
+                  <div class="pb-[20px] sm:pl-2.5">
+                    <span
+                      class="wpcf7-form-control-wrap"
+                      data-name="text-service"
+                      ><input
+                        size="40"
+                        maxlength="50"
+                        class="wpcf7-form-control wpcf7-text"
+                        aria-invalid="false"
+                        placeholder="Types Of Services"
+                        value=""
+                        type="text"
+                        name="text-service"
+                        fdprocessedid="zkg08d"
+                    /></span>
+                  </div>
+                </div>
+                <div class="w-full w_submit_c">
+                  <div class="pb-[34px]">
+                    <span
+                      class="wpcf7-form-control-wrap"
+                      data-name="textarea-msg"
+                    >
+                      <textarea
+                        cols="40"
+                        rows="10"
+                        maxlength="250"
+                        class="wpcf7-form-control wpcf7-textarea h-10 w-full border-b border-b-sealbrown border-b-solid text-base text-ironsidegrey placeholdertext-ironsidegrey focusborder-b-cinnabar hoverborder-b-cinnabar focus-visibleshadow-none focus-visibleoutline-none resize-none"
+                        aria-invalid="false"
+                        placeholder="Message"
+                        name="textarea-msg"
+                      ></textarea>
+                    </span>
+                  </div>
+                  <!-- <div class="recaptcha_outer">
+                    <div
+                      id="cf7sr-67fdf15455bcb"
+                      class="cf7sr-g-recaptcha"
+                      data-theme="light"
+                      data-type="image"
+                      data-size="normal"
+                      data-sitekey="6LfeWAslAAAAAM1vvHJadFv6NB83ezUAJQ2UOntz"
+                    ></div>
+                    <span
+                      class="wpcf7-form-control-wrap cf7sr-recaptcha"
+                      data-name="cf7sr-recaptcha"
+                      ><input
+                        type="hidden"
+                        name="cf7sr-recaptcha"
+                        value=""
+                        class="wpcf7-form-control"
+                    /></span>
+                  </div> -->
+                </div>
+                <div class="buttond_outer form-btn">
+                  <input
+                    class="wpcf7-form-control wpcf7-submit has-spinner theme-btn my-5"
+                    type="submit"
+                    value="SUBMIT MESSAGE"
+                    fdprocessedid="0b6h2j"
+                  /><span class="wpcf7-spinner"></span>
+                </div>
+              </div>
+              <div class="wpcf7-response-output" aria-hidden="true"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--faq-section-->
+  <div class="faq-secion">
+    <div class="container">
+      <h2>FAQs</h2>
+      <div class="accordionWrapper">
+        <div class="accordionItem open">
+          <h6 class="accordionItemHeading">
+            What is custom software development?
+          </h6>
+          <div class="accordionItemContent">
+            <p>
+              Custom software development is the creation of software in
+              accordance with the requirements of a business, not by use of
+              ready-made available solutions. This offers a lot more
+              possibilities in flexibility, scalability, and better alignment
+              with the business processes.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordionItem close">
+          <h6 class="accordionItemHeading">
+            What is the budget to develop software in Dubai?
+          </h6>
+          <div class="accordionItemContent">
+            <p>
+              The cost depends on the intricacy of the project. At Chevalme, we
+              derive a budget that fits within your budget.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordionItem close">
+          <h6 class="accordionItemHeading">
+            How long does it take to develop software in Dubai?
+          </h6>
+          <div class="accordionItemContent">
+            <p>
+              This depends on the project's complexity, which is from a few
+              months to over a year. At Chevalme, our Agile process is designed
+              to have the prototype delivered in the fastest possible time while
+              the final product meets your expectations.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordionItem close">
+          <h6 class="accordionItemHeading">
+            What makes Cheval a leading custom software development company in
+            Dubai?
+          </h6>
+          <div class="accordionItemContent">
+            <p>
+              Chevalme excels through our innovation, quality, and client
+              satisfaction—combining technical expertise with deep understanding
+              of business needs. The ROI-driven approach and cutting edge
+              technology usage not only make us stand out but give you an edge
+              over the competition.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordionItem close">
+          <h6 class="accordionItemHeading">
+            How will you benefit by choosing Cheval for your software
+            development in Dubai?
+          </h6>
+          <div class="accordionItemContent">
+            <p>
+              Partnering with Chevalme means bespoke software solutions tailored
+              to your business objectives and guaranteeing flexibility and
+              scalability. Local expertise and commitment ensure that the result
+              is of high quality and cost-effective, with a robust ROI.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordionItem close">
+          <h6 class="accordionItemHeading">
+            Why should I invest in custom software development when I can
+            purchase monthly subscriptions to commercial software?
+          </h6>
+          <div class="accordionItemContent">
+            <p>
+              Tailored to your specific needs, it provides more flexibility and
+              integration than commercial options. In the long run, this gives
+              you better cost efficiency and productivity.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordionItem close">
+          <h6 class="accordionItemHeading">
+            What are the primary differences between custom software and
+            commercial software?
+          </h6>
+          <div class="accordionItemContent">
+            <p>
+              Since custom software would be made for your business, you will
+              have tailored features and better integration. Commercial software
+              is a generic solution that may not provide the features or enable
+              any customization.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordionItem close">
+          <h6 class="accordionItemHeading">
+            How do I know if my business needs custom software?
+          </h6>
+          <div class="accordionItemContent">
+            <p>
+              Most likely, if existing commercial solutions don't satisfy your
+              requirements in any manner, going for tailor-made software is the
+              way. If you're in search of the best software development
+              companies in Dubai, Chevalme shall help you analyze your needs and
+              come up with the best solution.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".testimonial-center-slider", {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    centeredSlides: true,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 0,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 0,
+      },
+    },
+  });
+</script>
