@@ -1,6 +1,6 @@
 import FaqSchemaAccordion from "@/components/common/FaqSchemaAccordion";
-import Section11 from "@/components/Home/Section11";
 import Section9 from "@/components/Home/Section9";
+// import Section11 from "@/components/Home/Section11";
 // import LocationContact from "@/components/Location/Common/LocationContact";
 import Section1 from "@/components/locationSubPage/Section1";
 import LocationServicesLoc from "@/components/locationSubPage/ServicesLoc";
@@ -9,6 +9,7 @@ import dynamic from "next/dynamic";
 const LocationContact = dynamic(
   () => import("../../../components/Location/Common/LocationContact")
 );
+const Section11 = dynamic(() => import("@/components/Home/Section11"));
 
 import React from "react";
 
